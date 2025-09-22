@@ -141,7 +141,7 @@ main{padding: 110px 0 70px;}
 #brandWrap{padding: 50px 0 0;}
 #brandWrap .subText{margin:5px 0 25px; font-size: 12px; }
 #brandWrap .brandBox{position: relative; padding-bottom: 90px; border-bottom: 1px solid var(--border); overflow: hidden;}
-#brandWrap .brandList{display: flex; gap: 0 30px; animation: marquee 12s linear infinite;}
+#brandWrap .brandList{width: 1120px; display: flex; gap: 0 30px; animation: marquee 35s linear infinite;}
 #brandWrap .brandList.pause{animation-play-state: paused;}
 #brandWrap .brandBox::before,
 #brandWrap .brandBox::after {content: ""; position: absolute; top: 80px; bottom: 0; width: 60px; pointer-events: none; z-index: 99;}
@@ -162,13 +162,12 @@ main{padding: 110px 0 70px;}
 
 @keyframes marquee {
   0%   { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  100% { transform: translateX(-2548px); }
 }
 
 @media (max-width: 767px){
 
   #brandWrap{padding: 0;}
-  #brandWrap .brandList{animation: marquee 5s linear infinite;}
 
 }
 
