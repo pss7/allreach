@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+main{padding: 110px 0 70px;}
+
+@media (max-width: 1199px){
+
+  main{padding: 54px 0 70px;}
+
+}
+
+/* 메인 이미지 슬라이드 영역 */
+#mainSlideWrap{padding: 125px 0;}
+#mainSlideWrap .mainSlideBox{position: relative; overflow: hidden; padding: 150px 0;  margin: -110px 0;}
+#mainSlideWrap .swiper-slide { width: 375px; height: 266px; overflow: visible; }
+#mainSlideWrap .swiper-slide a{width: 375px; height: 266px; position: relative; display: block; transform-origin: center center;
+  transition: all .15s}
+#mainSlideWrap .swiper-slide a .imgBox::after{content: ''; position: absolute; top:0; left:0; right: 0; bottom: 0; background-color: rgba(255,255,255, .5);}
+#mainSlideWrap .swiper-slide a .imgBox{position: relative; width: 100%; height: 100%;}
+#mainSlideWrap .swiper-slide a .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
+#mainSlideWrap .swiper-slide a .textBox{position: absolute; left:8px; bottom: 23px; z-index: 9;}
+#mainSlideWrap .swiper-slide a .textBox h2{margin-bottom: 15px; font-size: 18px; color: var(--color-white);}
+#mainSlideWrap .swiper-slide a .textBox p{font-size: 14px; color: var(--color-white);}
+#mainSlideWrap .swiper-slide-active a{z-index: 9999;}
+#mainSlideWrap .swiper-slide-active a .imgBox{transform: scale(1.6, 1.31579); border-radius: 10px; overflow: hidden;}
+#mainSlideWrap .swiper-slide-active a .imgBox::after{background-color: rgba(0,0,0,.5);}
+#mainSlideWrap .swiper-slide-active a .textBox{padding: 0 0 30px 30px; display: flex; flex-direction: column; justify-content: flex-end; width: 600px; height: 350px; left: 50%; top:50%; transform: translate(-50%, -50%);}
+#mainSlideWrap .swiper-slide-active a .textBox h2{font-size: 26px;}
+#mainSlideWrap .swiper-slide-active a .textBox p{font-size: 16px;}
+#mainSlideWrap .mainSlideBox button{position: absolute; top: 50%; transform: translateY(-50%); width: 42px; height: 42px; border-radius: 50%; background-color: rgba(0,0,0,.15); z-index: 999; transition: all .15s;}
+#mainSlideWrap .mainSlideBox button svg{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff;}
+#mainSlideWrap .mainSlideBox button:hover{background-color: rgba(0,0,0,.3);}
+#mainSlideWrap .mainSlideBox .prev{left:30px;}
+#mainSlideWrap .mainSlideBox .next{right:30px;}
+
+@media (max-width: 1024px){
+
+  #mainSlideWrap{padding: 60px 0; margin: 0;}
+  #mainSlideWrap .swiper-slide{height: 332px;}
+  #mainSlideWrap .swiper-slide-active a .imgBox{transform: none;}
+  #mainSlideWrap .swiper-slide a{width: 100%; height: 100%;}
+  #mainSlideWrap .swiper-slide a .textBox{padding: 20px; top:0; left:0; transform: none; width: 100%; height: 100%;}
+  #mainSlideWrap .swiper-slide a .textBox h2{margin-bottom: 6px; font-size: 20px;}
+  #mainSlideWrap .swiper-slide a .textBox p{font-size: 15px;}
+  #mainSlideWrap .mainSlideBox .prev{left:20px;}
+  #mainSlideWrap .mainSlideBox .next{right:20px;}
+  #mainSlideWrap .mainSlideBox button{border: 1px solid rgba(255,255,255,.2);}
+
+}
+
+@media (max-width: 767px){
+
+  #mainSlideWrap .mainSlideBox button{width: 35px; height: 35px;}
+  #mainSlideWrap .swiper-slide a .textBox h2{font-size: 18px;}
+  #mainSlideWrap .swiper-slide a .textBox p{font-size: 14px;}
+
+}
+
+@media (max-width: 480px){
+
+  #mainSlideWrap .swiper-slide{height: 257px;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#experienceWrap{padding: 0 0 85px;}
+
+/* 숏폼 영역 */
+#shortFormWrap{padding: 0 0 85px;}
+
+
+
+
+
+
+/* 올리치어 전당 영역 */
+#templeWrap{padding: 0 0 85px;}
+#templeWrap .templeTopBox{margin-bottom: 30px; display: flex; flex-wrap: wrap; gap: 20px 1.5%;}
+#templeWrap .templeTopBox .box{position: relative; padding: 20px; border: 1px solid var(--border); border-radius: 15px;}
+#templeWrap .templeTopBox .box .ranking{position: absolute; top:-8px; left:-10px; width: 46px; height: 46px; border-radius: 50%; }
+#templeWrap .templeTopBox .box .ranking svg{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 15px; height: 15px; }
+#templeWrap .templeTopBox .box .ranking01{background: linear-gradient(90deg,#f4ba00 0%, #efac00 35%,  #da9400 100%);}
+#templeWrap .templeTopBox .box .ranking01 svg{color: var(--color-yellow-400);}
+#templeWrap .templeTopBox .box .ranking02{background: linear-gradient(90deg,
+    #bbc0c8 0%, #9aa2b0 45%,#7f8795 100% );}
+#templeWrap .templeTopBox .box .ranking02 svg{color: var(--color-gray-300);}
+#templeWrap .templeTopBox .box .ranking03{background: linear-gradient(90deg,
+    #f9a900 0%, #f39200 40%,#e98100 100% );}
+#templeWrap .templeTopBox .box .ranking03 svg{color: var(--color-amber-600);}
+#templeWrap .templeTopBox .imgBox{width: 70px; height: 70px; margin: 0 auto 10px; border: 1px solid var(--color-white); border-radius: 50%; overflow: hidden; box-shadow: 0 7px 10px rgba(0,0,0,.2);}
+#templeWrap .templeTopBox .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
+#templeWrap .templeTopBox .accountBox{margin-bottom: 5px;}
+#templeWrap .templeTopBox .accountBox span{display: block; font-size: 14px; text-align: center; font-weight: 700; color: var(--color-black);}
+#templeWrap .templeTopBox .infoBox{display: flex; justify-content: center; gap: 0 25px;}
+#templeWrap .templeTopBox .infoBox .layoutBox{position: relative;}
+#templeWrap .templeTopBox .infoBox .layoutBox::after{content: ''; position: absolute; top:9px; right:-11px; width: 1px; height: 18px; background-color: var(--border);}
+#templeWrap .templeTopBox .infoBox .layoutBox:last-child:after{display: none;}
+#templeWrap .templeTopBox .infoBox strong{display: block; text-align: center; font-size: 14px; color: var(--color-primary); font-weight: 800;}
+#templeWrap .templeTopBox .infoBox em{display: block; font-size: 12px;}
+#templeWrap .templeList{padding: 20px; display: flex; gap: 20px 1.5%; background-color: var(--color-gray-50); border-radius: 15px;}
+#templeWrap .templeList .box{position: relative; padding: 40px 20px 20px; background-color: var(--color-white); border: 1px solid var(--border); border-radius: 8px;}
+#templeWrap .templeList .box .ranking{padding: 4px 8px; position: absolute; top:10px; left:10px; color: var(--color-black); font-size: 12px; background-color: var(--color-gray-100); font-weight: 800; border-radius: 5px;}
+#templeWrap .templeList .box .imgBox{width: 49px; height: 49px; margin: 0 auto 7px; border-radius: 50%; overflow: hidden;}
+#templeWrap .templeList .box .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
+#templeWrap .templeList .box .accountBox span{display: block; font-size: 14px; text-align: center; font-weight: 700; color: var(--color-black);}
+#templeWrap .templeList .box .infoBox{display: flex; justify-content: center; align-items: center; gap: 0 5px;}
+#templeWrap .templeList .box .infoBox span{font-size: 12px;}
+
+/* 테마별 캠페인 영역 */
+#campaignWrap{padding: 0 0 110px;}
+#campaignWrap .layoutBox{display: flex; flex-wrap: wrap; gap: 20px 1.5%;}
+#campaignWrap .campaignList li{margin-bottom: 15px;}
+#campaignWrap .campaignList li a{display: block; position: relative; height: 140px; border-radius: 10px; overflow: hidden; transition: all .5s;}
+#campaignWrap .campaignList li a .imgBox{position: absolute; top:0; left:0; right:0; bottom: 0;}
+#campaignWrap .campaignList li a .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover; transition: all .5s;}
+#campaignWrap .campaignList li a .textBox{padding: 90px 0 0 10px; position: relative;}
+#campaignWrap .campaignList li a .textBox h3{margin-bottom: 3px; color: var(--color-white); font-size: 12px;}
+#campaignWrap .campaignList li a .textBox span{display: block; font-size: 11px; color: var(--color-gray-50); font-weight: 300;}
+#campaignWrap .campaignList li a:hover{box-shadow: 0 5px 8px rgba(0,0,0,.1);}
+#campaignWrap .campaignList li a:hover .imgBox img{transform: scale(1.07);}
+
+@media (max-width: 767px){
+
+  #campaignWrap{padding: 0 0 85px;}
+
+}
+
+/* 브랜드관 영역 */
+#brandWrap{padding: 50px 0 0;}
+#brandWrap .subText{margin:5px 0 25px; font-size: 12px; }
+#brandWrap .brandBox{position: relative; padding-bottom: 90px; border-bottom: 1px solid var(--border); overflow: hidden;}
+#brandWrap .brandList{display: flex; gap: 0 30px; animation: marquee 12s linear infinite;}
+#brandWrap .brandList.pause{animation-play-state: paused;}
+#brandWrap .brandBox::before,
+#brandWrap .brandBox::after {content: ""; position: absolute; top: 80px; bottom: 0; width: 60px; pointer-events: none; z-index: 99;}
+#brandWrap .brandBox::before{left: 0; background: linear-gradient(90deg, rgba(255,255,255,1), rgba(255,255,255,0));}
+#brandWrap .brandBox::after {right: 0; background: linear-gradient(270deg, rgba(255,255,255,1), rgba(255,255,255,0));}
+#brandWrap .brandList li a{position: relative; display: block; width: 334px; height: 260px; border-radius: 10px; overflow: hidden;}
+#brandWrap .brandList li a::after{content: ''; position: absolute; top:0; left:0; right:0; bottom: 0; background-color: rgba(0,0,0,.3);}
+#brandWrap .brandList li a .imgBox{position: absolute; top:0; left:0; right:0; bottom: 0;}
+#brandWrap .brandList li a .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover; transition: all .5s;}
+#brandWrap .brandList li a .textBox{padding: 150px 0 0 20px; position: relative; z-index: 9;}
+#brandWrap .brandList li a .textBox h3{margin-bottom: 10px; color: #fff; font-size: 21px; font-weight: 800;}
+#brandWrap .brandList li a .textBox span{margin-bottom: 8px; display: block; color: #fff; font-size: 14px;}
+#brandWrap .brandList li a .textBox p{font-size: 12px; color: #fff;}
+#brandWrap .brandList li a:hover{box-shadow: 0 5px 8px rgba(0,0,0,.1);}
+#brandWrap .brandList li a:hover .imgBox img{transform: scale(1.07);}
+#brandWrap .brandList li a .view{opacity: 0; padding: 6px 12px; position: absolute; top: 15px; right:15px; color: var(--color-gray-800); border-radius: 50px; text-align: center; font-weight: 700; background-color: var(--color-white); font-size: 14px; transition: all .5s;}
+#brandWrap .brandList li a:hover .view{opacity: 1;}
+
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@media (max-width: 767px){
+
+  #brandWrap{padding: 0;}
+  #brandWrap .brandList{animation: marquee 5s linear infinite;}
+
+}
+
