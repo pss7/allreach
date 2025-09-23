@@ -82,55 +82,12 @@ main{flex: 1; padding: 110px 0 70px;}
 /* 여백 */
 .mb-30 {margin-bottom: 30px !important;}
 .mb-20 {margin-bottom: 20px !important;}
+.mb-50 {margin-bottom: 50px !important;}
 
 /* 가운데영역 */
 .container {max-width: 1160px; margin: 0 auto; padding: 0 20px;}
 
-/* 헤더 */
-#headerWrap{position: fixed; top:0; left:0; right:0; background-color: #fff; z-index: 99999;}
-#headerWrap .headerTopWrap{border-bottom: 1px solid var(--border);}
-#headerWrap .headerTopBox{display: flex; align-items: center; justify-content: space-between;}
-#headerWrap .headerTopBox .logoBox h1 a {display: block; padding: 13px 0; color: var(--color-primary);
-  font-size: 21px; font-weight: 800;}
-#headerWrap .headerTopBox .searchBox {position: relative; width: 280px; height: 31px;}
-#headerWrap .headerTopBox .searchBox input {padding-left: 29px; display: block; width: 100%;
-  height: 100%; border-radius: 6px; background-color: var(--color-gray-100); border: 1px solid var(--border);
-  font-size: 14px;}
-#headerWrap .headerTopBox .searchBox input::placeholder{color: var(--color-gray-300);}
-#headerWrap .headerTopBox .searchBox::before {content: ''; position: absolute; top: 50%; transform: translateY(-50%); left: 0;}
-#headerWrap .headerTopBox .searchBox .searchBtn{display: block; position: absolute; top: 53%; transform: translateY(-50%); left: 7px;}
-#headerWrap .headerTopBox .searchBox .searchBtn svg {width: 14px; height: 14px; color: var(--color-gray-300);}
-#headerWrap .headerTopBox .linkBox {display: flex; align-items: center; gap: 0 10px;}
-#headerWrap .headerTopBox .linkBox .linkList {margin-right: 8px; display: flex; gap: 0 12px;}
-#headerWrap .headerTopBox .linkBox .linkList li a {display: block; font-size: 12px; font-weight: 700; transition: all .15s;}
-#headerWrap .headerTopBox .linkBox .linkList li a:hover {color: var(--color-primary);}
-#headerWrap .headerTopBox .mobileAuthBox{display: none;}
-#headerWrap .headerTopBox .authBox a {display: block; padding: 7px 12px; border-radius: 7px; background-color: var(--color-primary); color: var(--color-white); font-size: 12px; text-align: center; font-weight: 500;
-  transition: all .15s;}
-#headerWrap .headerTopBox .authBox a:hover {background-color: var(--color-blue-600);}
-#headerWrap .headerBottomWrap {box-shadow: 0 2px 2px rgba(0, 0, 0, .1);}
-#headerWrap .headerBottomBox {display: flex; align-items: center; gap: 0 25px;}
-#headerWrap .headerBottomBox a {display: block; padding: 15px 6px; font-size: 14px; font-weight: 700; transition: all .15s;}
-#headerWrap .headerBottomBox a:hover { color: var(--color-primary);}
 
-@media (max-width: 1199px){
-
-  #headerWrap .headerTopBox .linkBox,
-  #headerWrap .headerBottomWrap{display: none;}
-
-  #headerWrap .headerTopBox .mobileAuthBox{display: block;}
-  #headerWrap .headerTopBox .mobileAuthBox a{position: relative; display: block; width: 35px; height: 30px; border-radius: 5px; background-color: var(--color-primary);}
-  #headerWrap .headerTopBox .mobileAuthBox a svg{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: var(--color-white); width: 13px; height: 13px;}
-
-  #headerWrap .headerTopBox .logoBox h1 a{font-size: 18px;}
-
-}
-
-@media (max-width: 480px){
-
-  #headerWrap .headerTopBox .searchBox{width: 50%;}
-
-}
 
 /* 제목 */
 .titleBox {
@@ -274,63 +231,106 @@ main{flex: 1; padding: 110px 0 70px;}
 
 }
 
+/* 탭 */
+.topLayoutBox{display: flex; align-items: center; justify-content: space-between; padding-bottom: 10px; border-bottom: 1px solid var(--border);}
+.comtabList{display: flex; flex-wrap: wrap; align-items: center; gap: 10px 30px;}
+.comtabList li .btn{position: relative; padding: 0 3px 14px; font-size: 12px;}
+.comtabList li .btn::before{opacity: 0; content: ''; position: absolute; left:0; right:0; bottom: 0;  height: 2px; visibility: hidden; transition: all .5s;}
+.comtabList li .btn:hover:before{opacity: 1; visibility: visible; background-color: var(--color-gray-200);}
+.comtabList li .btn.active{color: var(--color-primary);}
+.comtabList li .btn.active::before{opacity: 1; visibility: visible; background-color: var(--color-primary);}
+
+/* 선택 박스 */
+.selectLayoutBox{display: flex; gap: 0 10px;}
+.selectBox{position: relative;}
+.selectBox .selectBtn{position: relative; display: block; padding: 0 10px 0 15px; width: 112px; height: 32px; border-radius: 5px; font-size: 12px; background-color: var(--color-gray-100); text-align: left; color: #000;}
+.selectBox .selectBtn::after {content: ""; position: absolute; top: 50%; transform: translateY(-50%); right: 10px;
+  width: 4px; height: 4px; transform: translateY(-50%) rotate(45deg); border-right: 1px solid var(--color-gray-400);; border-bottom: 1px solid var(--color-gray-400);}
+.selectBox .selectList{opacity: 0; padding: 5px; position: absolute; top:40px; left:0; right: 0; background-color: var(--color-white); border-radius: 5px; box-shadow: 0 3px 6px rgba(0,0,0,.2); border: 1px solid var(--border); visibility: hidden; transition: all .5s; z-index: 999;}
+.selectBox .selectList .btn{display: block; width: 100%; padding: 5px 10px; font-size: 12px; text-align: left; color: #000;}
+.selectBox .selectList .btn:hover{background-color: var(--color-gray-200); border-radius: 5px;}
+.selectBox .selectList.active{opacity: 1; visibility: visible;}
+
+
+@media (max-width: 1024px){
+
+  .comtabList li .btn{padding: 0 3px 10px;}
+  .topLayoutBox{flex-direction: column; gap :15px 0;}  
+
+}
+
+@media (max-width: 480px){
+
+  .selectLayoutBox{width: 100%;}
+  .selectBox{flex: 1;}
+  .selectBox .selectBtn{width: 100%;}
+
+}
+
+
+
+
+
+
+
+/* 헤더 */
+#headerWrap{position: fixed; top:0; left:0; right:0; background-color: #fff; z-index: 99999;}
+#headerWrap .headerTopWrap{border-bottom: 1px solid var(--border);}
+#headerWrap .headerTopBox{display: flex; align-items: center; justify-content: space-between;}
+#headerWrap .headerTopBox .logoBox h1 a {display: block; padding: 13px 0; color: var(--color-primary);
+  font-size: 21px; font-weight: 800;}
+#headerWrap .headerTopBox .searchBox {position: relative; width: 280px; height: 31px;}
+#headerWrap .headerTopBox .searchBox input {padding-left: 29px; display: block; width: 100%;
+  height: 100%; border-radius: 6px; background-color: var(--color-gray-100); border: 1px solid var(--border);
+  font-size: 14px;}
+#headerWrap .headerTopBox .searchBox input::placeholder{color: var(--color-gray-300);}
+#headerWrap .headerTopBox .searchBox::before {content: ''; position: absolute; top: 50%; transform: translateY(-50%); left: 0;}
+#headerWrap .headerTopBox .searchBox .searchBtn{display: block; position: absolute; top: 53%; transform: translateY(-50%); left: 7px;}
+#headerWrap .headerTopBox .searchBox .searchBtn svg {width: 14px; height: 14px; color: var(--color-gray-300);}
+#headerWrap .headerTopBox .linkBox {display: flex; align-items: center; gap: 0 10px;}
+#headerWrap .headerTopBox .linkBox .linkList {margin-right: 8px; display: flex; gap: 0 12px;}
+#headerWrap .headerTopBox .linkBox .linkList li a {display: block; font-size: 12px; font-weight: 700; transition: all .15s;}
+#headerWrap .headerTopBox .linkBox .linkList li a:hover {color: var(--color-primary);}
+#headerWrap .headerTopBox .mobileAuthBox{display: none;}
+#headerWrap .headerTopBox .authBox a {display: block; padding: 7px 12px; border-radius: 7px; background-color: var(--color-primary); color: var(--color-white); font-size: 12px; text-align: center; font-weight: 500;
+  transition: all .15s;}
+#headerWrap .headerTopBox .authBox a:hover {background-color: var(--color-blue-600);}
+#headerWrap .headerBottomWrap {box-shadow: 0 2px 2px rgba(0, 0, 0, .1);}
+#headerWrap .headerBottomBox {display: flex; align-items: center; gap: 0 25px;}
+#headerWrap .headerBottomBox a {display: block; padding: 15px 6px; font-size: 14px; font-weight: 700; transition: all .15s;}
+#headerWrap .headerBottomBox a:hover { color: var(--color-primary);}
+
+@media (max-width: 1199px){
+
+  #headerWrap .headerTopBox .linkBox,
+  #headerWrap .headerBottomWrap{display: none;}
+
+  #headerWrap .headerTopBox .mobileAuthBox{display: block;}
+  #headerWrap .headerTopBox .mobileAuthBox a{position: relative; display: block; width: 35px; height: 30px; border-radius: 5px; background-color: var(--color-primary);}
+  #headerWrap .headerTopBox .mobileAuthBox a svg{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: var(--color-white); width: 13px; height: 13px;}
+
+  #headerWrap .headerTopBox .logoBox h1 a{font-size: 18px;}
+
+}
+
+@media (max-width: 480px){
+
+  #headerWrap .headerTopBox .searchBox{width: 50%;}
+
+}
+
 /* 푸터 */
-#footerWrap {
-  padding: 60px 0;
-  background: var(--color-gray-50);
-}
-
-#footerWrap .leftBox {
-  width: 50%;
-}
-
-#footerWrap .rightBox {
-  width: 50%;
-}
-
-#footerWrap h3 {
-  margin-bottom: 10px;
-  font-size: 14px;
-  font-weight: 800;
-}
-
-#footerWrap .footerTopBox {
-  padding: 0 0 30px;
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid var(--border);
-}
-
-#footerWrap .footerTopBox .leftBox .logoBox {
-  margin-bottom: 10px;
-}
-
-#footerWrap .footerTopBox .leftBox .logoBox h1 {
-  color: var(--color-primary);
-  font-size: 21px;
-  font-weight: 800;
-}
-
-#footerWrap .footerTopBox .leftBox p {
-  margin-bottom: 10px;
-  font-size: 12px;
-}
-
-#footerWrap .footerTopBox .leftBox .snsBox {
-  display: flex;
-  align-items: center;
-  gap: 0 10px;
-}
-
-#footerWrap .footerTopBox .leftBox .snsBox span {
-  font-size: 12px;
-}
-
-#footerWrap .footerTopBox .leftBox .snsBox .snsList {
-  display: flex;
-  gap: 0 10px;
-}
-
+#footerWrap {padding: 60px 0; background: var(--color-gray-50);}
+#footerWrap .leftBox{width: 50%;}
+#footerWrap .rightBox{width: 50%;}
+#footerWrap h3 {margin-bottom: 10px; font-size: 14px; font-weight: 800;}
+#footerWrap .footerTopBox {padding: 0 0 30px; display: flex; justify-content: space-between; border-bottom: 1px solid var(--border);}
+#footerWrap .footerTopBox .leftBox .logoBox{margin-bottom: 10px;}
+#footerWrap .footerTopBox .leftBox .logoBox h1 {color: var(--color-primary); font-size: 21px; font-weight: 800;}
+#footerWrap .footerTopBox .leftBox p {margin-bottom: 10px; font-size: 12px;}
+#footerWrap .footerTopBox .leftBox .snsBox {display: flex; align-items: center; gap: 0 10px;}
+#footerWrap .footerTopBox .leftBox .snsBox span {font-size: 12px;}
+#footerWrap .footerTopBox .leftBox .snsBox .snsList {display: flex; gap: 0 10px;}
 #footerWrap .footerTopBox .leftBox .snsBox .snsList li a {position: relative; display: block;
   width: 28px; height: 28px; border-radius: 50%; background: var(--color-gray-200); transition: all .5s;}
 #footerWrap .footerTopBox .leftBox .snsBox .snsList li a svg {width: 14px; height: 14px; position: absolute;
