@@ -1,5 +1,6 @@
 $(function () {
 
+  //이미지 목록 공통 슬라이드
   function initComLists() {
 
     $('.comSlideList').each(function () {

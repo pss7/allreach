@@ -87,65 +87,19 @@ main{flex: 1; padding: 110px 0 70px;}
 /* 가운데영역 */
 .container {max-width: 1160px; margin: 0 auto; padding: 0 20px;}
 
-
-
 /* 제목 */
-.titleBox {
-  display: flex;
-  align-items: center;
-  gap: 0 10px;
-}
-
-.titleBox svg {
-  width: 24px;
-  height: 24px;
-  color: var(--color-primary);
-}
-
-.comTitle01 {
-  font-size: 21px;
-}
-
-.comTitle02 {
-  font-size: 16px;
-}
-
-
-.bar {
-  position: relative;
-  padding-left: 17px;
-}
-
-.bar::after {
-  content: '';
-  width: 7px;
-  height: 21px;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  border-radius: 20px;
-}
-
-.blueBar::after {
-  background-color: var(--color-primary);
-}
-
-.pinkGradBar::after {
-  background: linear-gradient(to bottom, #fb69b7, #ff2e63);
-}
-
-.yellowGradBar::after {
-  background: linear-gradient(to bottom, #ffc42c, #ff6f00);
-}
-
-.purpleGradBar::after {
-  background: linear-gradient(to bottom, #a780ff, #ad4cff);
-}
-
-.greenGradBar::after {
-  background: linear-gradient(to bottom, #0ad597, #09beaa);
-}
+.titleBox {display: flex; align-items: center; gap: 0 10px;}
+.titleBox svg {width: 24px; height: 24px; color: var(--color-primary);}
+.comTitle01 {font-size: 21px;}
+.comTitle02 {font-size: 16px;}
+.bar {position: relative; padding-left: 17px;}
+.bar::after {content: ''; width: 7px; height: 21px; position: absolute; top: 50%;
+  left: 0; transform: translateY(-50%); border-radius: 20px;}
+.blueBar::after {background-color: var(--color-primary);}
+.pinkGradBar::after {background: linear-gradient(to bottom, #fb69b7, #ff2e63);}
+.yellowGradBar::after {background: linear-gradient(to bottom, #ffc42c, #ff6f00);}
+.purpleGradBar::after {background: linear-gradient(to bottom, #a780ff, #ad4cff);}
+.greenGradBar::after {background: linear-gradient(to bottom, #0ad597, #09beaa);}
 
 /* 이미지형 목록 */
 .comList {display: flex; flex-wrap: wrap; gap: 20px 1.5%;}
@@ -268,12 +222,6 @@ main{flex: 1; padding: 110px 0 70px;}
   .selectBox .selectBtn{width: 100%;}
 
 }
-
-
-
-
-
-
 
 /* 헤더 */
 #headerWrap{position: fixed; top:0; left:0; right:0; background-color: #fff; z-index: 99999;}
