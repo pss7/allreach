@@ -1,12 +1,5 @@
 @charset "UTF-8";
 
-main{padding: 110px 0 70px;}
-
-@media (max-width: 1199px){
-
-  main{padding: 54px 0 70px;}
-
-}
 
 /* 메인 이미지 슬라이드 영역 */
 #mainSlideWrap{padding: 125px 0;}

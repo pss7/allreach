@@ -1,14 +1,5 @@
 @charset "UTF-8";
 
-#wrap {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  overflow-x: hidden;
-}
-
-main{flex: 1;}
-
 /* 색상 변수 */
 :root {
 
@@ -75,6 +66,16 @@ main{flex: 1;}
   --color-black: #000000;
 
   --border: #e5e7eb;
+
+}
+
+/* 레이아웃 */
+#wrap {height: 100%; display: flex; flex-direction: column; overflow-x: hidden;}
+main{flex: 1; padding: 110px 0 70px;}
+
+@media (max-width: 1199px){
+
+  main{padding: 54px 0 70px;}
 
 }
 
@@ -189,10 +190,6 @@ main{flex: 1;}
   background: linear-gradient(to bottom, #0ad597, #09beaa);
 }
 
-
-
-
-
 /* 이미지형 목록 */
 .comList {display: flex; flex-wrap: wrap; gap: 20px 1.5%;}
 .comList .box a {position: relative; display: block; border: 1px solid var(--border); border-radius: 10px;
@@ -216,29 +213,16 @@ main{flex: 1;}
     #fd5949 45%, #d6249f 65%, #285AEB 100% );}
 .comList .box a .snsBox .instagram svg{width: 14px; height: 14px; color: var(--color-white);}
 .comList .box a .info01 {position: absolute; top: 8px; left: 10px; padding: 3px 8px; background-color: var(--color-blue-600); color: var(--color-white); font-size: 10px; border-radius: 5px;}
-.comList {display: flex; flex-wrap: wrap; gap: 20px 1.5%;}
 .comList .box a:hover{transform: scale(1.03); box-shadow: 0 5px 12px rgba(0, 0, 0, .1);}
 
-
-.comSlideList{position: relative;}
-
-
-
-
-
+/* 이미지형 목록 - 슬라이드 기능 */
+.comSlideList{display: block; position: relative;}
 .comSlideList button{width: 35px; height: 35px; position: absolute; top: 50%; transform: translateY(-50%); background-color: var(--color-white); border-radius: 50%; box-shadow: 0 0 7px rgba(0, 0, 0, .2); z-index: 999;}
 .comSlideList button svg{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 18px; height: 18px;}
 .comSlideList .prev{left:15px;}
 .comSlideList .next{right:15px;}
 .comSlideList .slick .slick-list{overflow: visible;}
 .comSlideList .slick .slick-slide{width: 208px; margin: 0 10px;}
-
-
-
-
-
-
-
 
 .cols-1>* {flex: 0 0 100%; max-width: 100%;}
 .cols-2>* {flex: 0 0 calc((100% - 1.5%*(2 - 1)) / 2); max-width: calc((100% - 1.5%*(2 - 1)) / 2);}
@@ -284,6 +268,9 @@ main{flex: 1;}
   .cols-4>*,
   .cols-3>*,
   .cols-2>* {flex-basis: 100%; max-width: 100%;}
+
+  .comSlideList .prev{left:0;}
+  .comSlideList .next{right:0;}
 
 }
 
