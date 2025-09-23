@@ -109,7 +109,8 @@ main{padding: 110px 0 70px;}
 #templeWrap .templeTopBox .infoBox .layoutBox:last-child:after{display: none;}
 #templeWrap .templeTopBox .infoBox strong{display: block; text-align: center; font-size: 14px; color: var(--color-primary); font-weight: 800;}
 #templeWrap .templeTopBox .infoBox em{display: block; font-size: 12px;}
-#templeWrap .templeList{padding: 20px; display: flex; gap: 20px 1.5%; background-color: var(--color-gray-50); border-radius: 15px;}
+#templeWrap .templeList{padding: 20px; background-color: var(--color-gray-50); border-radius: 15px;}
+#templeWrap .templeList .slideBox{display: flex; gap: 20px 1.5%; }
 #templeWrap .templeList .box{position: relative; padding: 40px 20px 20px; background-color: var(--color-white); border: 1px solid var(--border); border-radius: 8px;}
 #templeWrap .templeList .box .ranking{padding: 4px 8px; position: absolute; top:10px; left:10px; color: var(--color-black); font-size: 12px; background-color: var(--color-gray-100); font-weight: 800; border-radius: 5px;}
 #templeWrap .templeList .box .imgBox{width: 49px; height: 49px; margin: 0 auto 7px; border-radius: 50%; overflow: hidden;}
@@ -117,6 +118,32 @@ main{padding: 110px 0 70px;}
 #templeWrap .templeList .box .accountBox span{display: block; font-size: 14px; text-align: center; font-weight: 700; color: var(--color-black);}
 #templeWrap .templeList .box .infoBox{display: flex; justify-content: center; align-items: center; gap: 0 5px;}
 #templeWrap .templeList .box .infoBox span{font-size: 12px;}
+#templeWrap .slick-dots{margin-top: 20px; display: flex!important; gap: 0 3px; align-items: center; justify-content: center; width: 100%;}
+#templeWrap .slick-dots li.slick-active button{width: 14px; background: var(--color-primary);}
+#templeWrap .slick-dots li button{display: block; width: 5px; height: 5px; text-indent: -9999px; border-radius: 50px; background-color: var(--color-gray-300); cursor: pointer;}
+#templeWrap .controlBox{margin-bottom: 20px; display: flex; gap: 0 6px; justify-content: flex-end;}
+#templeWrap .controlBox button{position: relative; width: 28px; height: 28px; background-color: var(--color-white); border-radius: 50%; box-shadow: 0 0 7px rgba(0,0,0,.2);}
+#templeWrap .controlBox button svg{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 14px; height: 14px;}
+#templeWrap .slick-list{margin: 0 -8px;}
+#templeWrap .slick-slide{margin: 0 8px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* 테마별 캠페인 영역 */
 #campaignWrap{padding: 0 0 110px;}
@@ -157,7 +184,7 @@ main{padding: 110px 0 70px;}
 #brandWrap .brandList li a .textBox p{font-size: 12px; color: #fff;}
 #brandWrap .brandList li a:hover{box-shadow: 0 5px 8px rgba(0,0,0,.1);}
 #brandWrap .brandList li a:hover .imgBox img{transform: scale(1.07);}
-#brandWrap .brandList li a .view{opacity: 0; padding: 6px 12px; position: absolute; top: 15px; right:15px; color: var(--color-gray-800); border-radius: 50px; text-align: center; font-weight: 700; background-color: var(--color-white); font-size: 14px; transition: all .5s;}
+#brandWrap .brandList li a .view{opacity: 0; padding: 6px 12px; position: absolute; top: 15px; right:15px; color: var(--color-gray-800); border-radius: 50px; text-align: center; font-weight: 700; background-color: var(--color-white); font-size: 14px; transition: all .5s; z-index: 9;}
 #brandWrap .brandList li a:hover .view{opacity: 1;}
 
 @keyframes marquee {
