@@ -61,6 +61,22 @@ $(function () {
 
   });
 
+  $(".comList.slick").slick({
+    autoplay: false,
+    arrows: true,
+    dots: true,
+    accessibility: false,
+    draggable: true,
+    infinite: false,
+    slidesToShow: 5,
+    slidesToScroll: 4,
+    zIndex: 1000,
+    pauseOnHover: false,
+    autoplaySpeed: 700,
+    speed: 1000,
+    prevArrow: $('#templeWrap .controlBox .prev'),
+    nextArrow: $('#templeWrap .controlBox .next'),
+  });
 
 
 

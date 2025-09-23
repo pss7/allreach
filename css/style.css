@@ -126,11 +126,6 @@
 
 }
 
-
-
-
-
-
 /* 제목 */
 .titleBox {
   display: flex;
@@ -194,201 +189,65 @@
 
 
 /* 이미지형 목록 */
-.comList {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px 1.5%;
-}
-
-.comList li a {
-  position: relative;
-  display: block;
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  overflow: hidden;
-  transition: all .15s;
-}
-
-.comList li a .imgBox {
-  height: 196px;
-  overflow: hidden;
-}
-
-.comList li a .imgBox img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.comList li a .textBox {
-  padding: 30px 10px 15px;
-}
-
-.comList li a .textBox h3 {
-  font-size: 12px;
-  font-weight: 800;
-}
-
-.comList li a .textBox p {
-  font-size: 11px;
-}
-
-.comList li a .textBox .infoBox {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.comList li a .textBox .infoBox span {
-  font-size: 12px;
-  color: var(--color-primary);
-  font-weight: 700;
-}
-
-.comList li a .textBox .infoBox em {
-  font-size: 10px;
-}
-
-.comList li a .snsBox{margin-bottom: 8px; position: relative; width: 21px; height: 21px; border-radius: 50%;}
-.comList li a .snsBox svg{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
-.comList li a .snsBox.naver{background-color: var(--color-green-500);}
-.comList li a .snsBox.naver svg{width: 12px; height: 12px; color: var(--color-white);}
-.comList li a .snsBox.youtube{background-color: var(--color-red-500);}
-.comList li a .snsBox.youtube svg{width: 14px; height: 14px; color: var(--color-white);}
-.comList li a .snsBox.instagram{ background: linear-gradient(45deg, #fdf497 0%,
+.comList {display: flex; flex-wrap: wrap; gap: 20px 1.5%;}
+.comList .box a {position: relative; display: block; border: 1px solid var(--border); border-radius: 10px;
+  overflow: hidden; transition: all .15s;}
+.comList .box a .imgBox {height: 196px; overflow: hidden;}
+.comList .box a .imgBox img {display: block; width: 100%; height: 100%; object-fit: cover;}
+.comList .box a .textBox {padding: 30px 10px 15px;}
+.comList .box a .textBox h3 {font-size: 12px; font-weight: 800;}
+.comList .box a .textBox p {font-size: 11px;}
+.comList .box a .textBox .infoBox{display: flex; align-items: center; justify-content: space-between;}
+.comList .box a .textBox .infoBox span {font-size: 12px; color: var(--color-primary); font-weight: 700;}
+.comList .box a .textBox .infoBox em {font-size: 10px;}
+.comList .box a .snsBox{display: flex; gap: 0 10px; margin-bottom: 8px; }
+.comList .box a .snsBox .box{position: relative; width: 21px; height: 21px; border-radius: 50%;}
+.comList .box a .snsBox .box svg{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.comList .box a .snsBox .naver{background-color: var(--color-green-500);}
+.comList .box a .snsBox .naver svg{width: 12px; height: 12px; color: var(--color-white);}
+.comList .box a .snsBox .youtube{background-color: var(--color-red-500);}
+.comList .box a .snsBox .youtube svg{width: 14px; height: 14px; color: var(--color-white);}
+.comList .box a .snsBox .instagram{ background: linear-gradient(45deg, #fdf497 0%,
     #fd5949 45%, #d6249f 65%, #285AEB 100% );}
-.comList li a .snsBox.instagram svg{width: 14px; height: 14px; color: var(--color-white);}
+.comList .box a .snsBox .instagram svg{width: 14px; height: 14px; color: var(--color-white);}
+.comList .box a .info01 {position: absolute; top: 8px; left: 10px; padding: 3px 8px; background-color: var(--color-blue-600); color: var(--color-white); font-size: 10px; border-radius: 5px;}
+.comList {display: flex; flex-wrap: wrap; gap: 20px 1.5%;}
+.comList .box a:hover{transform: scale(1.03); box-shadow: 0 5px 12px rgba(0, 0, 0, .1);}
 
-
-.comList li a .info01 {
-  position: absolute;
-  top: 8px;
-  left: 10px;
-  padding: 3px 8px;
-  background-color: var(--color-blue-600);
-  color: var(--color-white);
-  font-size: 10px;
-  border-radius: 5px;
-}
-
-.comList {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px 1.5%;
-}
-
-.comList li a:hover {
-  transform: scale(1.03);
-}
-
-.comList li a:hover {
-  box-shadow: 0 5px 12px rgba(0, 0, 0, .1);
-}
-
-
-.cols-1>* {
-  flex: 0 0 100%;
-  max-width: 100%;
-}
-
-.cols-2>* {
-  flex: 0 0 calc((100% - 1.5%*(2 - 1)) / 2);
-  max-width: calc((100% - 1.5%*(2 - 1)) / 2);
-}
-
-.cols-3>* {
-  flex: 0 0 calc((100% - 1.5%*(3 - 1)) / 3);
-  max-width: calc((100% - 1.5%*(3 - 1)) / 3);
-}
-
-.cols-4>* {
-  flex: 0 0 calc((100% - 1.5%*(4 - 1)) / 4);
-  max-width: calc((100% - 1.5%*(4 - 1)) / 4);
-}
-
-.cols-5>* {
-  flex: 0 0 calc((100% - 1.5%*(5 - 1)) / 5);
-  max-width: calc((100% - 1.5%*(5 - 1)) / 5);
-}
-
-.cols-6>* {
-  flex: 0 0 calc((100% - 1.5%*(6 - 1)) / 6);
-  max-width: calc((100% - 1.5%*(6 - 1)) / 6);
-}
+.cols-1>* {flex: 0 0 100%; max-width: 100%;}
+.cols-2>* {flex: 0 0 calc((100% - 1.5%*(2 - 1)) / 2); max-width: calc((100% - 1.5%*(2 - 1)) / 2);}
+.cols-3>* {flex: 0 0 calc((100% - 1.5%*(3 - 1)) / 3); max-width: calc((100% - 1.5%*(3 - 1)) / 3);}
+.cols-4>* {flex: 0 0 calc((100% - 1.5%*(4 - 1)) / 4); max-width: calc((100% - 1.5%*(4 - 1)) / 4);}
+.cols-5>* {flex: 0 0 calc((100% - 1.5%*(5 - 1)) / 5); max-width: calc((100% - 1.5%*(5 - 1)) / 5);}
+.cols-6>* {flex: 0 0 calc((100% - 1.5%*(6 - 1)) / 6); max-width: calc((100% - 1.5%*(6 - 1)) / 6);}
 
 @media (max-width: 1440px) {
 
-  .cols-6>* {
-    flex-basis: calc((100% - 1.5%*(5 - 1)) / 5);
-    max-width: calc((100% - 1.5%*(5 - 1)) / 5);
-  }
-
-  .cols-5>* {
-    flex-basis: calc((100% - 1.5%*(4 - 1)) / 4);
-    max-width: calc((100% - 1.5%*(4 - 1)) / 4);
-  }
-
-  .cols-4>* {
-    flex-basis: calc((100% - 1.5%*(3 - 1)) / 3);
-    max-width: calc((100% - 1.5%*(3 - 1)) / 3);
-  }
-
-  .cols-3>* {
-    flex-basis: calc((100% - 1.5%*(2 - 1)) / 2);
-    max-width: calc((100% - 1.5%*(2 - 1)) / 2);
-  }
-
-  .cols-2>* {
-    flex-basis: 100%;
-    max-width: 100%;
-  }
+  .cols-6>* {flex-basis: calc((100% - 1.5%*(5 - 1)) / 5); max-width: calc((100% - 1.5%*(5 - 1)) / 5);}
+  .cols-5>* {flex-basis: calc((100% - 1.5%*(4 - 1)) / 4); max-width: calc((100% - 1.5%*(4 - 1)) / 4);}
+  .cols-4>* {flex-basis: calc((100% - 1.5%*(3 - 1)) / 3); max-width: calc((100% - 1.5%*(3 - 1)) / 3);}
+  .cols-3>* {flex-basis: calc((100% - 1.5%*(2 - 1)) / 2); max-width: calc((100% - 1.5%*(2 - 1)) / 2);}
+  .cols-2>* {flex-basis: 100%; max-width: 100%;}
 
 }
 
 @media (max-width: 1280px) {
 
-  .cols-6>* {
-    flex-basis: calc((100% - 1.5%*(4 - 1)) / 4);
-    max-width: calc((100% - 1.5%*(4 - 1)) / 4);
-  }
-
-  .cols-5>* {
-    flex-basis: calc((100% - 1.5%*(3 - 1)) / 3);
-    max-width: calc((100% - 1.5%*(3 - 1)) / 3);
-  }
-
-  .cols-4>* {
-    flex-basis: calc((100% - 1.5%*(2 - 1)) / 2);
-    max-width: calc((100% - 1.5%*(2 - 1)) / 2);
-  }
-
+  .cols-6>* {flex-basis: calc((100% - 1.5%*(4 - 1)) / 4); max-width: calc((100% - 1.5%*(4 - 1)) / 4);}
+  .cols-5>* {flex-basis: calc((100% - 1.5%*(3 - 1)) / 3); max-width: calc((100% - 1.5%*(3 - 1)) / 3);}
+  .cols-4>* {flex-basis: calc((100% - 1.5%*(2 - 1)) / 2); max-width: calc((100% - 1.5%*(2 - 1)) / 2);}
   .cols-3>*,
-  .cols-2>* {
-    flex-basis: 100%;
-    max-width: 100%;
-  }
+  .cols-2>* {flex-basis: 100%; max-width: 100%;}
 
 }
 
 @media (max-width: 1024px) {
 
   .cols-6>*,
-  .cols-5>* {
-    flex-basis: calc((100% - 1.5%*(3 - 1)) / 3);
-    max-width: calc((100% - 1.5%*(3 - 1)) / 3);
-  }
-
-  .cols-4>* {
-    flex-basis: calc((100% - 1.5%*(2 - 1)) / 2);
-    max-width: calc((100% - 1.5%*(2 - 1)) / 2);
-  }
-
+  .cols-5>* {flex-basis: calc((100% - 1.5%*(3 - 1)) / 3); max-width: calc((100% - 1.5%*(3 - 1)) / 3);}
+  .cols-4>* {flex-basis: calc((100% - 1.5%*(2 - 1)) / 2); max-width: calc((100% - 1.5%*(2 - 1)) / 2);}
   .cols-3>*,
-  .cols-2>* {
-    flex-basis: 100%;
-    max-width: 100%;
-  }
+  .cols-2>* {flex-basis: 100%; max-width: 100%;}
 
 }
 
@@ -398,10 +257,7 @@
   .cols-5>*,
   .cols-4>*,
   .cols-3>*,
-  .cols-2>* {
-    flex-basis: 100%;
-    max-width: 100%;
-  }
+  .cols-2>* {flex-basis: 100%; max-width: 100%;}
 
 }
 

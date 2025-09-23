@@ -14,13 +14,15 @@ main{padding: 110px 0 70px;}
 #mainSlideWrap .swiper-slide { width: 375px; height: 266px; overflow: visible; }
 #mainSlideWrap .swiper-slide a{width: 375px; height: 266px; position: relative; display: block; transform-origin: center center;
   transition: all .15s}
-#mainSlideWrap .swiper-slide a .imgBox::after{content: ''; position: absolute; top:0; left:0; right: 0; bottom: 0; background-color: rgba(255,255,255, .5);}
+#mainSlideWrap .swiper-slide a:hover .imgBox::after{background-color: rgba(0,0,0,.2);}
+#mainSlideWrap .swiper-slide a .imgBox::after{content: ''; position: absolute; top:0; left:0; right: 0; bottom: 0; background-color: rgba(255,255,255, .5); transition: all 1s;}
 #mainSlideWrap .swiper-slide a .imgBox{position: relative; width: 100%; height: 100%;}
 #mainSlideWrap .swiper-slide a .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
 #mainSlideWrap .swiper-slide a .textBox{position: absolute; left:8px; bottom: 23px; z-index: 9;}
 #mainSlideWrap .swiper-slide a .textBox h2{margin-bottom: 15px; font-size: 18px; color: var(--color-white);}
 #mainSlideWrap .swiper-slide a .textBox p{font-size: 14px; color: var(--color-white);}
 #mainSlideWrap .swiper-slide-active a{z-index: 9999;}
+#mainSlideWrap .swiper-slide-active a:hover{transform: scale(1.05);}
 #mainSlideWrap .swiper-slide-active a .imgBox{transform: scale(1.6, 1.31579); border-radius: 10px; overflow: hidden;}
 #mainSlideWrap .swiper-slide-active a .imgBox::after{background-color: rgba(0,0,0,.5);}
 #mainSlideWrap .swiper-slide-active a .textBox{padding: 0 0 30px 30px; display: flex; flex-direction: column; justify-content: flex-end; width: 600px; height: 350px; left: 50%; top:50%; transform: translate(-50%, -50%);}
@@ -61,29 +63,10 @@ main{padding: 110px 0 70px;}
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #experienceWrap{padding: 0 0 85px;}
 
 /* 숏폼 영역 */
 #shortFormWrap{padding: 0 0 85px;}
-
-
-
-
-
 
 /* 올리치어 전당 영역 */
 #templeWrap{padding: 0 0 85px;}
@@ -126,24 +109,6 @@ main{padding: 110px 0 70px;}
 #templeWrap .controlBox button svg{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 14px; height: 14px;}
 #templeWrap .slick-list{margin: 0 -8px;}
 #templeWrap .slick-slide{margin: 0 8px;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* 테마별 캠페인 영역 */
 #campaignWrap{padding: 0 0 110px;}
