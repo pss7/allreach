@@ -247,10 +247,12 @@ main{flex: 1; padding: 110px 0 70px;}
 .selectBox .selectBtn::after {content: ""; position: absolute; top: 50%; transform: translateY(-50%); right: 10px;
   width: 4px; height: 4px; transform: translateY(-50%) rotate(45deg); border-right: 1px solid var(--color-gray-400);; border-bottom: 1px solid var(--color-gray-400);}
 .selectBox .selectList{opacity: 0; padding: 5px; position: absolute; top:40px; left:0; right: 0; background-color: var(--color-white); border-radius: 5px; box-shadow: 0 3px 6px rgba(0,0,0,.2); border: 1px solid var(--border); visibility: hidden; transition: all .5s; z-index: 999;}
-.selectBox .selectList .btn{display: block; width: 100%; padding: 5px 10px; font-size: 12px; text-align: left; color: #000;}
-.selectBox .selectList .btn:hover{background-color: var(--color-gray-200); border-radius: 5px;}
+.selectBox .selectList .btn{position: relative; display: block; width: 100%; padding: 5px 10px; font-size: 12px; text-align: left; color: #000;  border-radius: 5px;}
+.selectBox .selectList .btn:hover{background-color: var(--color-gray-200);}
 .selectBox .selectList.active{opacity: 1; visibility: visible;}
-
+.selectBox .selectList .btn.active{background-color: var(--color-gray-200);}
+.selectBox .selectList .btn.active::before{content: "✓"; position: absolute; right: 10px;        
+  top: 50%; transform: translateY(-50%); color: var(--color-gray-500);}
 
 @media (max-width: 1024px){
 
@@ -299,6 +301,7 @@ main{flex: 1; padding: 110px 0 70px;}
 #headerWrap .headerBottomBox {display: flex; align-items: center; gap: 0 25px;}
 #headerWrap .headerBottomBox a {display: block; padding: 15px 6px; font-size: 14px; font-weight: 700; transition: all .15s;}
 #headerWrap .headerBottomBox a:hover { color: var(--color-primary);}
+#headerWrap .headerBottomBox a.active{color: var(--color-primary);}
 
 @media (max-width: 1199px){
 
