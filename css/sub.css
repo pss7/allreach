@@ -1,2 +1,120 @@
 @charset "UTF-8";
+
 .contentBox{padding: 50px 0 100px;}
+
+/* 캠페인 상세 */
+.campaignDetailBox .layoutBox{display: flex; gap: 0 20px;}
+.campaignDetailBox .leftBox{width: 64%;}
+.campaignDetailBox .leftBox .topImgBox{margin-bottom: 20px;}
+.campaignDetailBox .leftBox .topImgBox .mainImgBox{margin-bottom: 20px; height: 600px; border-radius: 10px; overflow: hidden;}
+.campaignDetailBox .leftBox .topImgBox .mainImgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
+.campaignDetailBox .leftBox .topImgBox .subImgBox{ display: flex; gap: 0 10px;}
+.campaignDetailBox .leftBox .topImgBox .subImgBox .btn{flex-shrink: 0; width: 135px; height: 135px; border-radius: 8px; overflow: hidden;}
+.campaignDetailBox .leftBox .topImgBox .subImgBox .btn.active{border: 2px solid var(--color-primary);}
+.campaignDetailBox .leftBox .topImgBox .subImgBox .btn img{display: block; width: 100%; height: 100%; object-fit: cover;}
+.campaignDetailBox .leftBox .contentBox{margin-bottom: 20px; padding: 20px; border: 1px solid var(--border); border-radius: 10px;}
+.campaignDetailBox .leftBox .contentBox .title{display: flex; gap: 0 9px; margin-bottom: 25px; }
+.campaignDetailBox .leftBox .contentBox .title h3{font-size: 16px; color: var(--color-black);}
+.campaignDetailBox .leftBox .contentBox .title svg{margin-top: 1px; width: 18px; height: 18px;}
+.campaignDetailBox .leftBox .contentBox .title.offer svg{color: var(--color-primary);}
+.campaignDetailBox .leftBox .contentBox .title.qualification svg{color: var(--color-yellow-600);}
+.campaignDetailBox .leftBox .contentBox .title.campaign svg{color: var(--color-green-600);}
+.campaignDetailBox .leftBox .contentBox .title.event svg{color: var(--color-primary);}
+.campaignDetailBox .leftBox .contentBox .title.post svg{color: var(--color-purple-600);}
+.campaignDetailBox .leftBox .contentBox .title.hashtag span{color: var(--color-pink-600); font-weight: 700;}
+.campaignDetailBox .leftBox .contentBox .title.caution svg{color: var(--color-red-600);}
+.campaignDetailBox .leftBox .contentBox .offerContentBox{padding: 20px; border-radius: 10px; background-color: var(--color-blue-50);}
+.campaignDetailBox .leftBox .contentBox .offerContentBox strong{display: block; margin-bottom: 3px; font-size: 26px; font-weight: 800; color: var(--color-primary);}
+.campaignDetailBox .leftBox .contentBox .offerContentBox span{margin-bottom: 9px; display: block; color: var(--color-primary); font-size: 14px; font-weight: 500;}
+.campaignDetailBox .leftBox .contentBox .offerContentBox p{padding: 10px; background-color: var(--color-white); font-size: 12px; border-radius: 3px;}
+.campaignDetailBox .leftBox .contentBox .qualificationContentBox p{padding: 13px 10px 13px 15px; font-size: 14px; background-color: var(--color-yellow-50); border-left: 4px solid var(--color-yellow-400);}
+.campaignDetailBox .leftBox .contentBox .campaignContentBox01{background-color: var( --color-green-50); border: 1px solid var(--color-green-200);}
+.campaignDetailBox .leftBox .contentBox .campaignContentBox{margin-bottom: 15px; padding: 15px 20px; border-radius: 10px;}
+.campaignDetailBox .leftBox .contentBox .campaignContentBox:last-child{margin-bottom: 0;}
+.campaignDetailBox .leftBox .contentBox .campaignContentBox{font-size: 12px; line-height: 1.6;}
+.campaignDetailBox .leftBox .contentBox .campaignContentBox .tit,
+.campaignDetailBox .leftBox .contentBox .campaignContentBox h3{margin-bottom: 7px; font-size: 14px; font-weight: 700;}
+.campaignDetailBox .leftBox .contentBox .campaignContentBox .list li{margin-bottom: 6px; font-size: 12px;}
+.campaignDetailBox .leftBox .contentBox .campaignContentBox .list li:last-child{margin-bottom: 0;}
+.campaignDetailBox .leftBox .contentBox .campaignContentBox02{background-color: var( --color-gray-50); border: 1px solid var(--color-gray-200);}
+.campaignDetailBox .leftBox .contentBox .eventContentBox{padding: 20px 20px 10px; background-color: var( --color-blue-50); border: 1px solid var(--color-blue-200); border-radius: 10px;}
+.campaignDetailBox .leftBox .contentBox .eventContentBox h4{margin-bottom: 10px; font-size: 14px; color: var(--color-primary); text-align: center;}
+.campaignDetailBox .leftBox .contentBox .eventContentBox .infoBox{margin-bottom: 8px; padding-bottom: 8px; border-bottom: 1px solid var(--color-blue-200);}
+.campaignDetailBox .leftBox .contentBox .eventContentBox .infoBox .box{margin-bottom: 10px; display: flex; align-items: center;}
+.campaignDetailBox .leftBox .contentBox .eventContentBox .infoBox .box span{flex-shrink: 0; width: 70px; font-weight: 700; font-size: 14px;}
+.campaignDetailBox .leftBox .contentBox .eventContentBox .infoBox .box em{font-size: 14px;}
+.campaignDetailBox .leftBox .contentBox .eventContentBox .infoBox .box:last-child{margin-bottom: 0;}
+.campaignDetailBox .leftBox .contentBox .eventContentBox .text01{margin-bottom: 5px; padding: 10px; background-color: var(--color-white); font-size: 12px; border-radius: 3px; color: var(--color-blue-700);}
+.campaignDetailBox .leftBox .contentBox .eventContentBox .text02{font-size: 12px; color: var(--color-red-600);}
+.campaignDetailBox .leftBox .contentBox .postContentBox{padding: 15px 20px; background-color: var( --color-purple-50); border: 1px solid var(--color-purple-200); border-radius: 10px;}
+.campaignDetailBox .leftBox .contentBox .postContentBox .list li{margin-bottom: 8px; font-size: 12px;}
+.campaignDetailBox .leftBox .contentBox .postContentBox .list li:last-child{margin-bottom: 0;}
+.campaignDetailBox .leftBox .contentBox .postContentBox p{margin-top: 10px; font-size: 12px; color: var(--color-gray-500); font-weight: 300;}
+.campaignDetailBox .leftBox .contentBox .hashtagContentBox{padding: 15px; background-color: var( --color-pink-50); border: 1px solid var(--color-pink-200); border-radius: 10px;}
+.campaignDetailBox .leftBox .contentBox .hashtagContentBox p{padding: 15px; font-size: 12px; background-color: var(--color-white); font-weight: 300; line-height: 1.7; border-radius: 3px; border: 1px dashed var(--color-pink-300);}
+.campaignDetailBox .leftBox .contentBox .cautionContentBox{padding: 20px; background-color: var( --color-red-50); border: 1px solid var(--color-red-200); border-radius: 10px;}
+.campaignDetailBox .leftBox .contentBox .cautionContentBox .list li{margin-bottom: 15px; font-size: 12px;}
+.campaignDetailBox .leftBox .contentBox .cautionContentBox .list li:last-child{margin-bottom: 0;}
+.campaignDetailBox .leftBox .contentBox .cautionContentBox .list li span{font-weight: 700; color: var(--color-red-500);}
+.campaignDetailBox .rightBox{width: 350px;}
+.campaignDetailBox .rightBox .infoBox{margin-bottom: 15px; padding: 20px; border: 1px solid var(--border); border-radius: 10px;}
+.campaignDetailBox .rightBox .box01 .topBox{margin-bottom: 15px;}
+.campaignDetailBox .rightBox .box01 .topBox h3{margin-bottom: 5px; font-size: 18px;}
+.campaignDetailBox .rightBox .box01 .topBox span{display: block; margin-bottom: 12px; font-size: 12px; font-weight: 300;}
+.campaignDetailBox .rightBox .box01 .topBox .snsBox .box{width: 28px; height: 28px;}
+.campaignDetailBox .rightBox .box01 .viewInfoBox{margin-bottom: 15px; padding: 15px 0; display: flex; border: 1px solid var(--border); border-width: 1px 0;}
+.campaignDetailBox .rightBox .box01 .viewInfoBox .viewBox{flex: 1; display: flex; flex-direction: column; gap: 5px; align-items: center;}
+.campaignDetailBox .rightBox .box01 .viewInfoBox .viewBox strong{ font-size: 16px; line-height: 1;}
+.campaignDetailBox .rightBox .box01 .viewInfoBox .viewBox span{display: block; font-size: 12px; line-height: 1;}
+.campaignDetailBox .rightBox .box01 .viewInfoBox .viewBox svg{width: 14px; height: 14px; color: var(--color-gray-400);}
+.campaignDetailBox .rightBox .box01 .pointBox{margin-bottom: 15px; padding: 15px; border-radius: 10px; background-color: var(--color-blue-50);}
+.campaignDetailBox .rightBox .box01 .pointBox .iconTitleBox{margin-bottom: 5px; display: flex; align-items: center; gap: 0 5px; justify-content: center;}
+.campaignDetailBox .rightBox .box01 .pointBox .iconTitleBox svg{width: 18px; height: 18px; color: var(--color-primary);}
+.campaignDetailBox .rightBox .box01 .pointBox .iconTitleBox span{font-size: 12px;}
+.campaignDetailBox .rightBox .box01 .pointBox strong{margin-bottom: 3px; display: block; text-align: center; font-size: 21px; color: var(--color-primary); font-weight: 800;}
+.campaignDetailBox .rightBox .box01 .pointBox em{display: block; text-align: center; font-size: 11px;}
+.campaignDetailBox .rightBox .box01 .btnBox{display: flex; gap: 0 10px;}
+.campaignDetailBox .rightBox .box01 .btnBox .btn{display: block; border-radius: 5px;}
+.campaignDetailBox .rightBox .box01 .btnBox .likeBtn{flex-shrink: 0; position: relative; width: 42px; height: 42px; border: 1px solid var(--border);}
+.campaignDetailBox .rightBox .box01 .btnBox .likeBtn svg{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 14px; height: 14px;}
+.campaignDetailBox .rightBox .box01 .btnBox .applicationBtn{width: 100%; padding: 0 20px; height: 42px;line-height: 42px; background-color: var(--color-primary); color: var(--color-white); text-align: center; font-weight: 700;}
+.campaignDetailBox .rightBox .box02 .title{margin-bottom: 35px; display: flex; gap: 0 7px;}
+.campaignDetailBox .rightBox .box02 .title svg{width: 18px; height: 18px;}
+.campaignDetailBox .rightBox .box02 .title h4{font-weight: 800; font-size: 14px;}
+.campaignDetailBox .rightBox .box02 .infoListBox .listBox:last-child{margin-bottom: 0;}
+.campaignDetailBox .rightBox .box02 .infoListBox .listBox{margin-bottom: 8px; display: flex; justify-content: space-between; align-items: center;}
+.campaignDetailBox .rightBox .box02 .infoListBox .listBox span{font-size: 12px;}
+.campaignDetailBox .rightBox .box02 .infoListBox .listBox em{font-size: 12px; font-weight: 700;}
+.campaignDetailBox .rightBox .infoBox03{padding: 10px 20px;}
+.campaignDetailBox .rightBox .box03 .stateBox{margin-bottom: 30px; display: flex; align-items: center; justify-content: space-between;}
+.campaignDetailBox .rightBox .box03 .stateBox span{font-size: 12px;}
+.campaignDetailBox .rightBox .box03 .stateBox em{display: inline-block; padding: 5px 10px; font-size: 11px; border-radius: 50px; line-height: 1;}
+.campaignDetailBox .rightBox .box03 .stateBox em.state01{background-color: var(--color-green-100); color: var(--color-green-700); font-weight: 700;}
+.campaignDetailBox .rightBox .box03 P{display: flex; align-items: center; gap: 0 5px; font-size: 11px;}
+.campaignDetailBox .rightBox .box03 P svg{width: 11px; height: 11px; margin-top: -1px;}
+
+@media (max-width: 1024px){
+
+  .campaignDetailBox .layoutBox{flex-direction: column; gap: 30px 0;}
+  .campaignDetailBox .leftBox,
+  .campaignDetailBox .rightBox{width: 100%;}
+
+  .campaignDetailBox .leftBox .topImgBox .mainImgBox{height: 520px;}
+
+}
+
+@media (max-width: 767px){
+
+    .campaignDetailBox .leftBox .topImgBox .mainImgBox{height: 380px;}
+    .campaignDetailBox .leftBox .topImgBox .subImgListBox{padding-bottom: 25px; overflow-y: auto;}
+    .campaignDetailBox .leftBox .topImgBox .subImgListBox .subImgBox{width: 767px;}
+
+}
+
+@media (max-width: 480px){
+
+    .campaignDetailBox .leftBox .topImgBox .subImgListBox .subImgBox{width: 480px;}
+    .campaignDetailBox .leftBox .topImgBox .mainImgBox{margin-bottom: 15px; height: 250px;}
+    .campaignDetailBox .leftBox .topImgBox .subImgBox .btn{width: 100px; height: 100px;}
+
+}

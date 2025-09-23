@@ -42,6 +42,20 @@
   --color-green-700: #008236;
   --color-green-800: #016630;
 
+  --color-purple-50: oklch(.977 .014 308.299);
+  --color-purple-100: oklch(.946 .033 307.174);
+  --color-purple-200: oklch(.902 .063 306.703);
+  --color-purple-500: oklch(.627 .265 303.9);
+  --color-purple-600: oklch(.558 .288 302.321);
+  --color-purple-700: oklch(.496 .265 301.924);
+  --color-purple-800: oklch(.438 .218 303.724);
+  --color-pink-50: oklch(.971 .014 343.198);
+  --color-pink-200: oklch(.899 .061 343.231);
+  --color-pink-300: oklch(.823 .12 346.018);
+  --color-pink-400: oklch(.718 .202 349.761);
+  --color-pink-500: oklch(.656 .241 354.308);
+  --color-pink-600: oklch(.592 .249 .584);
+
   --color-yellow-50: #fefce8;
   --color-yellow-100: #fef9c2;
   --color-yellow-200: #fff085;
@@ -113,18 +127,20 @@ main{flex: 1; padding: 110px 0 70px;}
 .comList .box a .textBox .infoBox{display: flex; align-items: center; justify-content: space-between;}
 .comList .box a .textBox .infoBox span {font-size: 12px; color: var(--color-primary); font-weight: 700;}
 .comList .box a .textBox .infoBox em {font-size: 10px;}
-.comList .box a .snsBox{display: flex; gap: 0 10px; margin-bottom: 8px; }
-.comList .box a .snsBox .box{position: relative; width: 21px; height: 21px; border-radius: 50%;}
-.comList .box a .snsBox .box svg{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
-.comList .box a .snsBox .naver{background-color: var(--color-green-500);}
-.comList .box a .snsBox .naver svg{width: 12px; height: 12px; color: var(--color-white);}
-.comList .box a .snsBox .youtube{background-color: var(--color-red-500);}
-.comList .box a .snsBox .youtube svg{width: 14px; height: 14px; color: var(--color-white);}
-.comList .box a .snsBox .instagram{ background: linear-gradient(45deg, #fdf497 0%,
-    #fd5949 45%, #d6249f 65%, #285AEB 100% );}
 .comList .box a .snsBox .instagram svg{width: 14px; height: 14px; color: var(--color-white);}
 .comList .box a .info01 {position: absolute; top: 8px; left: 10px; padding: 3px 8px; background-color: var(--color-blue-600); color: var(--color-white); font-size: 10px; border-radius: 5px;}
 .comList .box a:hover{transform: scale(1.03); box-shadow: 0 5px 12px rgba(0, 0, 0, .1);}
+
+/* sns */
+.snsBox{display: flex; gap: 0 10px; margin-bottom: 8px; }
+.snsBox .box{position: relative; width: 21px; height: 21px; border-radius: 50%;}
+.snsBox .box svg{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.snsBox .naver{background-color: var(--color-green-500);}
+.snsBox .naver svg{width: 12px; height: 12px; color: var(--color-white);}
+.snsBox .youtube{background-color: var(--color-red-500);}
+.snsBox .youtube svg{width: 14px; height: 14px; color: var(--color-white);}
+.snsBox .instagram{ background: linear-gradient(45deg, #fdf497 0%,
+    #fd5949 45%, #d6249f 65%, #285AEB 100% );}
 
 /* 이미지형 목록 - 슬라이드 기능 */
 .comSlideList{display: block; position: relative;}
@@ -279,15 +295,15 @@ main{flex: 1; padding: 110px 0 70px;}
 #footerWrap .footerTopBox .leftBox .logoBox{margin-bottom: 10px;}
 #footerWrap .footerTopBox .leftBox .logoBox h1 {color: var(--color-primary); font-size: 21px; font-weight: 800;}
 #footerWrap .footerTopBox .leftBox p {margin-bottom: 10px; font-size: 12px;}
-#footerWrap .footerTopBox .leftBox .snsBox {display: flex; align-items: center; gap: 0 10px;}
-#footerWrap .footerTopBox .leftBox .snsBox span {font-size: 12px;}
-#footerWrap .footerTopBox .leftBox .snsBox .snsList {display: flex; gap: 0 10px;}
-#footerWrap .footerTopBox .leftBox .snsBox .snsList li a {position: relative; display: block;
+#footerWrap .footerTopBox .leftBox .footerSnsBox {display: flex; align-items: center; gap: 0 10px;}
+#footerWrap .footerTopBox .leftBox .footerSnsBox span {font-size: 12px;}
+#footerWrap .footerTopBox .leftBox .footerSnsBox .snsList {display: flex; gap: 0 10px;}
+#footerWrap .footerTopBox .leftBox .footerSnsBox .snsList li a {position: relative; display: block;
   width: 28px; height: 28px; border-radius: 50%; background: var(--color-gray-200); transition: all .5s;}
-#footerWrap .footerTopBox .leftBox .snsBox .snsList li a svg {width: 14px; height: 14px; position: absolute;
+#footerWrap .footerTopBox .leftBox .footerSnsBox .snsList li a svg {width: 14px; height: 14px; position: absolute;
   top: 50%; left: 50%; transform: translate(-50%, -50%);}
-#footerWrap .footerTopBox .leftBox .snsBox .snsList li a:hover{background: var(--color-primary);}
-#footerWrap .footerTopBox .leftBox .snsBox .snsList li a:hover svg{color: var(--color-white);}
+#footerWrap .footerTopBox .leftBox .footerSnsBox .snsList li a:hover{background: var(--color-primary);}
+#footerWrap .footerTopBox .leftBox .footerSnsBox .snsList li a:hover svg{color: var(--color-white);}
 #footerWrap .footerTopBox .rightBox {display: flex; justify-content: space-between;}
 #footerWrap .footerTopBox .rightBox .box{width: 50%;}
 #footerWrap .footerTopBox .rightBox .footerLinkList li {margin-bottom: 5px;}
@@ -304,7 +320,7 @@ main{flex: 1; padding: 110px 0 70px;}
   #footerWrap .footerTopBox .leftBox p {margin-bottom: 15px;}
   #footerWrap .footerTopBox,
   #footerWrap .footerBottomBox{flex-direction: column;}
-  #footerWrap .footerTopBox .leftBox .snsBox {margin-bottom: 30px;}
+  #footerWrap .footerTopBox .leftBox .footerSnsBox {margin-bottom: 30px;}
   #footerWrap .footerTopBox .rightBox {flex-direction: column; gap: 20px 0;}
   #footerWrap .leftBox,
   #footerWrap .rightBox {width: 100%;}
