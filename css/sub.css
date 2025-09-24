@@ -75,9 +75,11 @@
 .campaignDetailBox .rightBox .box01 .pointBox em{display: block; text-align: center; font-size: 11px;}
 .campaignDetailBox .rightBox .box01 .btnBox{display: flex; gap: 0 10px;}
 .campaignDetailBox .rightBox .box01 .btnBox .btn{display: block; border-radius: 5px;}
-.campaignDetailBox .rightBox .box01 .btnBox .likeBtn{flex-shrink: 0; position: relative; width: 42px; height: 42px; border: 1px solid var(--border);}
+.campaignDetailBox .rightBox .box01 .btnBox .likeBtn{flex-shrink: 0; position: relative; width: 42px; height: 42px; border: 1px solid var(--border); transition: all .5s;}
+.campaignDetailBox .rightBox .box01 .btnBox .likeBtn:hover{background-color: var(--color-gray-200);}
 .campaignDetailBox .rightBox .box01 .btnBox .likeBtn svg{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 14px; height: 14px;}
-.campaignDetailBox .rightBox .box01 .btnBox .applicationBtn{width: 100%; padding: 0 20px; height: 42px;line-height: 42px; background-color: var(--color-primary); color: var(--color-white); text-align: center; font-weight: 700;}
+.campaignDetailBox .rightBox .box01 .btnBox .applicationBtn{width: 100%; padding: 0 20px; height: 42px;line-height: 42px; background-color: var(--color-primary); color: var(--color-white); text-align: center; font-weight: 700; transition: all .5s;}
+.campaignDetailBox .rightBox .box01 .btnBox .applicationBtn:hover{background-color: #0b3099;}
 .campaignDetailBox .rightBox .box02 .title{margin-bottom: 35px; display: flex; gap: 0 7px;}
 .campaignDetailBox .rightBox .box02 .title svg{width: 18px; height: 18px;}
 .campaignDetailBox .rightBox .box02 .title h4{font-weight: 800; font-size: 14px;}
@@ -160,3 +162,30 @@
   .campaignApplicationBox .rightBox .imgBox{height: 270px;}
 
 }
+
+/* 로그인 */
+.siginWrap{ max-width: 390px; width: 90%; margin: 0 auto; }
+.siginBox{padding: 20px 20px 30px; border-radius: 10px; box-shadow: 5px 5px 10px rgba(0,0,0,.1); background-color: var(--color-white);}
+.siginBox .topBox h1{margin-bottom: 7px;}
+.siginBox .topBox h1 a{display: block; font-size: 32px; color: var(--color-primary); text-align: center;}
+.siginBox .topBox p{margin-bottom: 25px; text-align: center; font-size: 14px; line-height: 1.7;}
+.siginBox .kakaoLogin{gap: 0 6px; display: flex; align-items: center; height: 46px; border-radius: 8px; background-color: var(--color-yellow-300); justify-content: center; font-size:14px; line-height: 1; transition: all .5s;}
+.siginBox .kakaoLogin svg{width: 18px; height: 18px;}
+.siginBox .kakaoLogin:hover{background-color: var(--color-yellow-400); box-shadow: 5px 5px 5px rgba(0,0,0,.1);}
+.siginBox .box{margin: 30px 0; display: flex; justify-content: center; gap: 0 10px; align-items: center; font-size: 12px;}
+.siginBox .box em{flex-shrink: 0;}
+.siginBox .box .border{width: 100%; height: 1px; background-color: var(--border);}
+.siginBox .inputBox{position: relative;}
+.siginBox .inputBox input{padding-left: 40px;}
+.siginBox .inputBox svg{position: absolute; top:50%; transform: translateY(-50%); left:10px; width: 18px; height: 18px; color: var(--color-gray-400);}
+.siginBox .inputPasswordBox input{padding-right: 40px;}
+.siginBox .inputPasswordBox .passwordToggleBtn{display: flex; align-items: center; position: absolute; top: 50%; transform: translateY(-50%); right:10px;}
+.siginBox .inputPasswordBox .passwordToggleBtn svg{position: static; transform: none;}
+.siginBox .passwordFindLink{display: block; margin: 35px 0 15px;  text-align: center; font-size: 12px; color: var(--color-gray-500);}
+.siginBox .passwordFindLink:hover{color: var(--color-primary);}
+.siginBox .bottomBox{border-bottom: 1px solid var(--border);}
+.siginBox .signupLinkBox{margin-top: 15px; display: flex; justify-content: center;}
+.siginBox .signupLinkBox p{color: var(--color-gray-500); font-size: 12px;}
+.siginBox .signupLinkBox .signupLink{font-weight: 700; color: var(--color-primary); font-size: 12px;}
+.siginWrap .infoText{margin-top: 25px; text-align: center; color: var(--color-gray-500); font-size: 12px;}
+.siginWrap .infoText a{color: var(--color-primary); font-size: 14px; font-weight: 700;}
