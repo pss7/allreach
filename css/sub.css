@@ -164,7 +164,6 @@
 }
 
 /* 로그인 */
-
 .siginBox .topBox p{margin-bottom: 25px; text-align: center; font-size: 14px; line-height: 1.7;}
 .siginBox .kakaoLogin{gap: 0 6px; display: flex; align-items: center; height: 46px; border-radius: 8px; background-color: var(--color-yellow-300); justify-content: center; font-size:14px; line-height: 1; transition: all .5s;}
 .siginBox .kakaoLogin svg{width: 18px; height: 18px;}
@@ -186,10 +185,27 @@
 .siginBox .signupLinkBox .signupLink{font-weight: 700; color: var(--color-primary); font-size: 12px;}
 
 
+/* 회원가입 동의 */
+
+.signupBox .signupAgreeBox .agreeInfoBox{height: 112px; padding: 15px; width: 100%; border: 0; background-color: var(--color-gray-100); border-radius: 7px; font-size: 12px; color: var(--color-gray-500); overflow: auto;}
+.signupBox .signupAgreeBox .agreeInfoBox h1,
+.signupBox .signupAgreeBox .agreeInfoBox p,
+.signupBox .signupAgreeBox .agreeInfoBox ul li{font-size: 11px; margin-bottom: 7px; color: var(--color-gray-600);}
+.signupBox .inputCheckBox p{margin-top: 3px; padding-left: 25px; font-size: 11px; color: var(--color-gray-400);}
+.signupBox .btnBox{display: flex; gap: 0 10px}
+.signupBox .btnBox button{flex: 1; font-size: 14px;}
+
+
+
+
+
+
 /* 로그인, 회원가입 */
 .authWrap{ max-width: 390px; width: 90%; margin: 0 auto; }
-.authBox{padding: 20px 20px 30px; border-radius: 10px; box-shadow: 5px 5px 10px rgba(0,0,0,.1); background-color: var(--color-white);}
-.authBox .topBox h1{margin-bottom: 7px;}
-.authBox .topBox h1 a{display: block; font-size: 32px; color: var(--color-primary); text-align: center;}
+.authContentBox{padding: 20px 20px 30px; border-radius: 10px; box-shadow: 5px 5px 10px rgba(0,0,0,.1); background-color: var(--color-white);}
+.authContentBox .topBox h1{margin-bottom: 7px;}
+.authContentBox .topBox h1 a{display: block; font-size: 32px; color: var(--color-primary); text-align: center;}
+.signupBox .authContentBox h2{margin-bottom: 3px; font-size: 14px; text-align: center; font-weight: 500;}
+.signupBox .authContentBox h3{margin-bottom: 20px; font-size: 12px; text-align: center; font-weight: 300;}
 .authWrap .infoText{margin-top: 25px; text-align: center; color: var(--color-gray-500); font-size: 12px;}
 .authWrap .infoText a{color: var(--color-primary); font-size: 14px; font-weight: 700;}
