@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-
 /* 메인 이미지 슬라이드 영역 */
 #mainSlideWrap{padding: 125px 0;}
 #mainSlideWrap .mainSlideBox{position: relative; overflow: hidden; padding: 150px 0;  margin: -110px 0;}
@@ -12,15 +11,16 @@
 #mainSlideWrap .swiper-slide a .imgBox{position: relative; width: 100%; height: 100%;}
 #mainSlideWrap .swiper-slide a .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
 #mainSlideWrap .swiper-slide a .textBox{position: absolute; left:8px; bottom: 23px; z-index: 9;}
-#mainSlideWrap .swiper-slide a .textBox h2{margin-bottom: 15px; font-size: 18px; color: var(--color-white);}
+#mainSlideWrap .swiper-slide a .textBox h2{margin-bottom: 8px; font-size: 18px; color: var(--color-white);}
 #mainSlideWrap .swiper-slide a .textBox p{font-size: 14px; color: var(--color-white);}
 #mainSlideWrap .swiper-slide-active a{z-index: 9999;}
 #mainSlideWrap .swiper-slide-active a:hover{transform: scale(1.05);}
 #mainSlideWrap .swiper-slide-active a .imgBox{transform: scale(1.6, 1.31579); border-radius: 10px; overflow: hidden;}
 #mainSlideWrap .swiper-slide-active a .imgBox::after{background-color: rgba(0,0,0,.5);}
-#mainSlideWrap .swiper-slide-active a .textBox{padding: 0 0 30px 30px; display: flex; flex-direction: column; justify-content: flex-end; width: 600px; height: 350px; left: 50%; top:50%; transform: translate(-50%, -50%);}
+#mainSlideWrap .swiper-slide-active a .textBox{padding: 0 0 30px 30px; width: 600px; height: 350px; left: 50%; top:50%; transform: translate(-50%, -50%);}
 #mainSlideWrap .swiper-slide-active a .textBox h2{font-size: 26px;}
 #mainSlideWrap .swiper-slide-active a .textBox p{font-size: 16px;}
+#mainSlideWrap .swiper-slide-active a .textBox .textLayoutBox{left:20px; right:20px; position: absolute; bottom: 30px;;}
 #mainSlideWrap .mainSlideBox button{position: absolute; top: 50%; transform: translateY(-50%); width: 42px; height: 42px; border-radius: 50%; background-color: rgba(0,0,0,.15); z-index: 999; transition: all .5s;}
 #mainSlideWrap .mainSlideBox button svg{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff;}
 #mainSlideWrap .mainSlideBox button:hover{background-color: rgba(0,0,0,.3);}
@@ -38,7 +38,7 @@
   #mainSlideWrap .swiper-slide a .textBox p{font-size: 15px;}
   #mainSlideWrap .mainSlideBox .prev{left:20px;}
   #mainSlideWrap .mainSlideBox .next{right:20px;}
-  #mainSlideWrap .mainSlideBox button{border: 1px solid rgba(255,255,255,.2);}
+  #mainSlideWrap .mainSlideBox button{display: none; border: 1px solid rgba(255,255,255,.2);}
 
 }
 
