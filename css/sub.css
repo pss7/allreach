@@ -199,7 +199,6 @@
 .signupBox .phoneBox .inputTextBox{width: 100%;}
 .signupBox .phoneBox .certificationBtn{width: 73px; border-radius: 5px; text-align: center; font-size: 12px; background-color: var(--color-gray-100); color: var(--color-gray-00);}
 
-
 /* 로그인, 회원가입 */
 .authWrap{ max-width: 390px; width: 90%; margin: 0 auto; }
 .authContentBox{padding: 20px 20px 30px; border-radius: 10px; box-shadow: 5px 5px 10px rgba(0,0,0,.1); background-color: var(--color-white);}

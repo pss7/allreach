@@ -348,24 +348,12 @@ textarea{padding: 8px 8px 15px 12px; width: 100%; border: 0; background-color: v
 .inputRadioBox label{padding-left: 25px; position: relative; font-size: 12px;  font-weight: 500; cursor: pointer;}
 .inputRadioBox label::before{content: ''; width: 14px; height: 14px; position: absolute; top: 50%; transform: translateY(-50%); left:0; border-radius: 50%; border: 1px solid var(--border);}
 .inputRadioBox input:checked + label::after{content: ''; position: absolute; top:4px; left:5px; width: 6px; height: 6px; background-color: var(--color-primary); border-radius: 50%;} 
-
-
 .inputCheckBox label{padding-left: 25px; position: relative; font-size: 12px;  font-weight: 500; cursor: pointer;}
 .inputCheckBox label::before{content: ''; width: 14px; height: 14px; position: absolute; top: 50%; transform: translateY(-50%); left:0; border-radius: 3px; border: 1px solid var(--border); background-color: var(--color-gray-100);}
 .inputCheckBox input:checked + label::before{content: '\2713'; background-color: var(--color-primary); color: #fff; text-align: center; font-weight: 300; line-height: 15px;}
-
-
-
-
-
-
-
-
-
-
 .customSelectBox{position: relative;}
 .customSelectBox .btn{position: relative; padding: 8px 8px 8px 12px; width: 100%; background-color: var(--color-gray-100); border-radius: 7px; font-size: 12px; color: var(--color-gray-500); text-align: left;}
-.customSelectBox .selectList{opacity: 0; padding: 8px; position: absolute; top:40px; left:0; right:0; background-color: var(--color-white); border-radius: 7px; border: 1px solid var(--border); visibility: hidden; transition: all .5s;}
+.customSelectBox .selectList{opacity: 0; padding: 8px; position: absolute; top:40px; left:0; right:0; background-color: var(--color-white); border-radius: 7px; border: 1px solid var(--border); visibility: hidden; transition: all .5s; z-index: 9999999;}
 .customSelectBox .selectList.active{opacity: 1; visibility: visible;}
 .customSelectBox .selectList li .selectBtn .snsBox{margin: 0;}
 .customSelectBox .selectList li .selectBtn{display: flex; align-items: center; gap: 0 8px; width: 100%; padding: 8px; font-size: 12px; text-align: left; border-radius: 7px;}

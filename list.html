@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>작업내역</title>
+    <style>
+        #wrap {
+            padding: 10px;
+        }
+
+        h1 {
+            font-size: 26px;
+            margin: 0 0 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        thead th {
+            padding: 10px 20px;
+            border: 1px solid #ddd;
+            font-weight: 500;
+            color: #000;
+            background-color: #f7f7f7;
+        }
+
+        tbody th {
+            width: 50%;
+            padding: 10px 20px;
+            border: 1px solid #ddd;
+            font-weight: 400;
+        }
+
+        tbody td {
+            width: 50%;
+            padding: 10px 20px;
+            text-align: center;
+            border: 1px solid #ddd;
+            color: #000;
+        }
+
+        .title th {
+            background-color: #f7f7f7;
+            font-weight: 500;
+        }
+
+        @media (max-width: 480px) {
+
+            h1 {
+                font-size: 22px;
+            }
+
+            .tableBox {
+                overflow-x: auto;
+            }
+
+            .tableBox table {
+                width: 480px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        올리치 작업내역
+    </h1>
+    <div class="list_wrap">
+        <div class="list_box">
+            <table>
+                <thead>
+                    <tr>
+                        <th>내용</th>
+                        <th>파일명</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>메인</td>
+                        <td><a href="index.html" target="_blank">index.html</a></td>
+                    </tr>
+                    <tr class="title">
+                        <th colspan="2">
+                            서브
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>공통 서브페이지</td>
+                        <td><a href="sub/sub.html" target="_blank">sub.html</a></td>
+                    </tr>
+                    <tr>
+                        <td>로그인</td>
+                        <td><a href="sub/sub_signin.html" target="_blank">sub_signin.html</a></td>
+                    </tr>
+                    <tr>
+                        <td>회원가입동의</td>
+                        <td><a href="sub/sub_signup_agree.html" target="_blank">sub_signup_agree.html</a></td>
+                    </tr>
+                    <tr>
+                        <td>회원가입</td>
+                        <td><a href="sub/sub_signup.html" target="_blank">sub_signup.html</a></td>
+                    </tr>
+                    <tr>
+                        <td>캠페인-상세</td>
+                        <td><a href="sub/sub_campaign_detail.html" target="_blank">sub_campaign_detail.html</a></td>
+                    </tr>
+                    <tr>
+                        <td>캠페인-신청</td>
+                        <td><a href="sub/sub_campaign_application.html"
+                                target="_blank">sub_campaign_application.html</a></td>
+                    </tr>
+                    <tr>
+                        <td>마이페이지</td>
+                        <td><a href="sub/sub_mypage.html" target="_blank">sub_mypage.html</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <!-- //list_box -->
+
+
+    </div>
+    <!-- //list_wrap -->
+
+</body>
+
+</html>
