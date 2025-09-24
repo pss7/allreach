@@ -210,3 +210,91 @@
 .authWrap .infoText a{color: var(--color-primary); font-size: 14px; font-weight: 700;}
 .authWrap .btnBox{display: flex; gap: 0 10px}
 .authWrap .btnBox .comBtn{flex: 1; font-size: 14px;}
+
+/* 마이페이지 */
+.mypageBox .topBox{margin-bottom: 25px;}
+.mypageBox .topBox h3{margin-bottom: 10px; font-size: 21px;}
+.mypageBox .topBox p{font-size: 14px;}
+.mypageBox .mypageInfoList{margin-bottom: 25px; display: flex; gap: 15px;}
+.mypageBox .mypageInfoList li{flex: 1;}
+.mypageBox .mypageInfoList li a{padding: 25px 20px 50px; position: relative; display: block; height: 140px; border-radius: 10px; background-color: var(--color-white); border: 1px solid var(--border); z-index: 1; overflow: hidden; transition: all .15s;}
+.mypageBox .mypageInfoList li a:hover{transform: scale(1.05); box-shadow: 0 5px 10px rgba(0,0,0,.1);}
+.mypageBox .mypageInfoList li a .layoutBox{margin-bottom: 6px;}
+.mypageBox .mypageInfoList li a .icon{position: relative;}
+.mypageBox .mypageInfoList li a .icon svg{width: 21px; height: 21px;}
+.mypageBox .mypageInfoList li a .icon02{margin-top: -8px; width: 42px; height: 42px; border-radius: 50%;}
+.mypageBox .mypageInfoList li a .icon02 svg{position: absolute; top: 50%; left:50%; transform: translate(-50%, -50%);}
+.mypageBox .mypageInfoList li a h4{margin-bottom: 3px; font-size: 12px; font-weight: 300;}
+.mypageBox .mypageInfoList li a strong{font-size: 21px; font-weight: 800;}
+.mypageBox .mypageInfoList li a strong span{padding-left: 3px; font-size: 12px; font-weight: 400;}
+.mypageBox .mypageInfoList li a .layoutBox{display: flex; align-items: center; justify-content: space-between;}
+.mypageBox .mypageInfoList li a::after{content: ''; position: absolute; top:-50px; right:-30px; width: 100px; height: 100px; border-radius: 50%; z-index: -1;} 
+.mypageBox .mypageInfoList li:nth-child(1) a::after{background-color: var(--color-blue-50); }
+.mypageBox .mypageInfoList li:nth-child(1) a .icon01 svg{color: var(--color-primary);}
+.mypageBox .mypageInfoList li:nth-child(1) a .icon02{background-color: var(--color-blue-100);}
+.mypageBox .mypageInfoList li:nth-child(1) a .icon02 svg{color: var(--color-primary);}
+.mypageBox .mypageInfoList li:nth-child(1) a strong{color: var(--color-primary);}
+.mypageBox .mypageInfoList li:nth-child(2) a::after{background-color: var(--color-blue-50); }
+.mypageBox .mypageInfoList li:nth-child(2) a .icon01 svg{color: var(--color-primary);}
+.mypageBox .mypageInfoList li:nth-child(2) a .icon02{background-color: var(--color-blue-100);}
+.mypageBox .mypageInfoList li:nth-child(2) a .icon02 svg{color: var(--color-primary);}
+.mypageBox .mypageInfoList li:nth-child(2) a strong{color: var(--color-primary);}
+.mypageBox .mypageInfoList li:nth-child(3) a::after{background-color: var(--color-green-50); }
+.mypageBox .mypageInfoList li:nth-child(3) a .icon01 svg{color: var(--color-green-600);}
+.mypageBox .mypageInfoList li:nth-child(3) a .icon02{background-color: var(--color-green-100);}
+.mypageBox .mypageInfoList li:nth-child(3) a .icon02 svg{color: var(--color-green-600);}
+.mypageBox .mypageInfoList li:nth-child(3) a strong{color: var(--color-green-600);}
+.mypageBox .mypageInfoList li:nth-child(4) a::after{background-color: var(--color-purple-50); }
+.mypageBox .mypageInfoList li:nth-child(4) a .icon01 svg{color: var(--color-purple-600);}
+.mypageBox .mypageInfoList li:nth-child(4) a .icon02{background-color: var(--color-purple-100);}
+.mypageBox .mypageInfoList li:nth-child(4) a .icon02 svg{color: var(--color-purple-600);}
+.mypageBox .mypageInfoList li:nth-child(4) a strong{color: var(--color-purple-600);}
+.mypageBox .mypageInfoList li:nth-child(5) a::after{background-color: var(--color-orange-50); }
+.mypageBox .mypageInfoList li:nth-child(5) a .icon01 svg{color: var(--color-orange-600);}
+.mypageBox .mypageInfoList li:nth-child(5) a .icon02{background-color: var(--color-orange-100);}
+.mypageBox .mypageInfoList li:nth-child(5) a .icon02 svg{color: var(--color-orange-600);}
+.mypageBox .mypageInfoList li:nth-child(5) a strong{color: var(--color-orange-600);}
+.mypageBox .mypageInfoList li:nth-child(6) a::after{background-color: var(--color-red-50); }
+.mypageBox .mypageInfoList li:nth-child(6) a .icon01 svg{color: var(--color-red-600);}
+.mypageBox .mypageInfoList li:nth-child(6) a .icon02{background-color: var(--color-red-100);}
+.mypageBox .mypageInfoList li:nth-child(6) a .icon02 svg{color: var(--color-red-600);}
+.mypageBox .mypageInfoList li:nth-child(6) a strong{color: var(--color-red-600);}
+
+
+.mypageBox .tabLayoutBox{display: flex; gap: 0 30px;}
+.mypageBox aside{flex-shrink: 0; padding: 15px;  width: 251px; background-color: var(--color-white); border: 1px solid var(--border); border-radius: 10px;} 
+.mypageBox aside .depht01 li .tabBtn{padding: 11px 10px; position: relative; display: flex; gap: 0 7px; width: 100%; font-size: 12px; font-weight: 700; border-radius: 5px;}
+.mypageBox aside .depht01 li .tabBtn svg{width: 14px; height: 14px;}
+.mypageBox aside .depht01 li .tabBtn::after {content: ""; position: absolute; top: 50%; transform: translateY(-50%); right: 20px; width: 4px; height: 4px; transform: translateY(-50%) rotate(45deg); border-right: 1px solid var(--color-gray-400);; border-bottom: 1px solid var(--color-gray-400);}
+.mypageBox aside .depht01 li .tabBtn:hover{background-color: var(--color-gray-50);}
+
+
+
+
+
+
+
+.mypageBox aside .depht02{display: none;}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px){
+
+  .mypageBox .mypageInfoList{flex-wrap: wrap; gap: 10px 1%;}
+  .mypageBox .mypageInfoList li{flex: none; width: 32.66%;}
+
+}
+
+@media (max-width: 576px){
+
+  .mypageBox .mypageInfoList{flex-wrap: wrap; gap: 5px 1.5%;}
+  .mypageBox .mypageInfoList li{flex: none; width: 49.25%;}
+
+}

@@ -76,6 +76,16 @@
   --color-amber-800: #973c00;
   --color-amber-900: #7b3306;
 
+  --color-orange-50: oklch(.98 .016 73.684);
+  --color-orange-100: oklch(.954 .038 75.164);
+  --color-orange-200: oklch(.901 .076 70.697);
+  --color-orange-400: oklch(.75 .183 55.934);
+  --color-orange-500: oklch(.705 .213 47.604);
+  --color-orange-600: oklch(.646 .222 41.116);
+  --color-orange-700: oklch(.553 .195 38.402);
+  --color-orange-800: oklch(.47 .157 37.304);
+  --color-orange-900: oklch(.408 .123 38.172);
+    
   --color-white: #FFFFFf;
   --color-black: #000000;
 
@@ -263,7 +273,7 @@ main{flex: 1; padding: 110px 0 70px;}
 #headerWrap .headerTopBox .searchBox::before {content: ''; position: absolute; top: 50%; transform: translateY(-50%); left: 0;}
 #headerWrap .headerTopBox .searchBox .searchBtn{display: block; position: absolute; top: 53%; transform: translateY(-50%); left: 7px;}
 #headerWrap .headerTopBox .searchBox .searchBtn svg {width: 14px; height: 14px; color: var(--color-gray-300);}
-#headerWrap .headerTopBox .linkBox {display: flex; align-items: center; gap: 0 10px;}
+#headerWrap .headerTopBox .linkBox {display: flex; align-items: center; gap: 0 20px;}
 #headerWrap .headerTopBox .linkBox .linkList {margin-right: 8px; display: flex; gap: 0 12px;}
 #headerWrap .headerTopBox .linkBox .linkList li a {display: block; font-size: 12px; font-weight: 700; transition: all .15s;}
 #headerWrap .headerTopBox .linkBox .linkList li a:hover {color: var(--color-primary);}
@@ -276,6 +286,22 @@ main{flex: 1; padding: 110px 0 70px;}
 #headerWrap .headerBottomBox a {display: block; padding: 15px 6px; font-size: 14px; font-weight: 700; transition: all .15s;}
 #headerWrap .headerBottomBox a:hover { color: var(--color-primary);}
 #headerWrap .headerBottomBox a.active{color: var(--color-primary);}
+#headerWrap .alarmBox{position: relative;}
+#headerWrap .alarmBox .alarmBtn{display: flex; align-items: center;}
+#headerWrap .alarmBox .count{position: absolute; top:-10px; right:-12px; padding-top: 1px; display: flex; align-items: center; justify-content: center; width: 18px; height: 18px; font-size: 11px; color: #fff; font-weight: 700; background-color: var(--color-red-500); border-radius: 50%; text-align: center; line-height: 1;}
+#headerWrap .alarmBox svg{width: 18px; height: 18px;}
+#headerWrap .accountBox .accountBtn{position: relative; display: flex; align-items: center; gap: 0 13px;}
+#headerWrap .accountBox .accountBtn .img{display: block; width: 28px; height: 28px; border-radius: 50%; overflow: hidden;}
+#headerWrap .accountBox .accountBtn::after {content: ""; margin-top: 4px; width: 5px; height: 5px; transform: translateY(-50%) rotate(45deg); border-right: 1px solid var(--color-gray-600); border-bottom: 1px solid var(--color-gray-600);}
+#headerWrap .accountBox .accountBtn img{display: block; width: 100%; height: 100%; object-fit: contain;}
+#headerWrap .authBox .layoutBox{display: flex; align-items: center; gap: 0 30px;}
+
+
+
+
+
+
+
 
 @media (max-width: 1199px){
 
