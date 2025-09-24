@@ -164,10 +164,7 @@
 }
 
 /* 로그인 */
-.siginWrap{ max-width: 390px; width: 90%; margin: 0 auto; }
-.siginBox{padding: 20px 20px 30px; border-radius: 10px; box-shadow: 5px 5px 10px rgba(0,0,0,.1); background-color: var(--color-white);}
-.siginBox .topBox h1{margin-bottom: 7px;}
-.siginBox .topBox h1 a{display: block; font-size: 32px; color: var(--color-primary); text-align: center;}
+
 .siginBox .topBox p{margin-bottom: 25px; text-align: center; font-size: 14px; line-height: 1.7;}
 .siginBox .kakaoLogin{gap: 0 6px; display: flex; align-items: center; height: 46px; border-radius: 8px; background-color: var(--color-yellow-300); justify-content: center; font-size:14px; line-height: 1; transition: all .5s;}
 .siginBox .kakaoLogin svg{width: 18px; height: 18px;}
@@ -187,5 +184,12 @@
 .siginBox .signupLinkBox{margin-top: 15px; display: flex; justify-content: center;}
 .siginBox .signupLinkBox p{color: var(--color-gray-500); font-size: 12px;}
 .siginBox .signupLinkBox .signupLink{font-weight: 700; color: var(--color-primary); font-size: 12px;}
-.siginWrap .infoText{margin-top: 25px; text-align: center; color: var(--color-gray-500); font-size: 12px;}
-.siginWrap .infoText a{color: var(--color-primary); font-size: 14px; font-weight: 700;}
+
+
+/* 로그인, 회원가입 */
+.authWrap{ max-width: 390px; width: 90%; margin: 0 auto; }
+.authBox{padding: 20px 20px 30px; border-radius: 10px; box-shadow: 5px 5px 10px rgba(0,0,0,.1); background-color: var(--color-white);}
+.authBox .topBox h1{margin-bottom: 7px;}
+.authBox .topBox h1 a{display: block; font-size: 32px; color: var(--color-primary); text-align: center;}
+.authWrap .infoText{margin-top: 25px; text-align: center; color: var(--color-gray-500); font-size: 12px;}
+.authWrap .infoText a{color: var(--color-primary); font-size: 14px; font-weight: 700;}
