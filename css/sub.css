@@ -186,18 +186,18 @@
 
 
 /* 회원가입 동의 */
-
 .signupBox .signupAgreeBox .agreeInfoBox{height: 112px; padding: 15px; width: 100%; border: 0; background-color: var(--color-gray-100); border-radius: 7px; font-size: 12px; color: var(--color-gray-500); overflow: auto;}
 .signupBox .signupAgreeBox .agreeInfoBox h1,
 .signupBox .signupAgreeBox .agreeInfoBox p,
 .signupBox .signupAgreeBox .agreeInfoBox ul li{font-size: 11px; margin-bottom: 7px; color: var(--color-gray-600);}
 .signupBox .inputCheckBox p{margin-top: 3px; padding-left: 25px; font-size: 11px; color: var(--color-gray-400);}
-.signupBox .btnBox{display: flex; gap: 0 10px}
-.signupBox .btnBox button{flex: 1; font-size: 14px;}
 
 
-
-
+/* 회원가입 */
+.signupBox .text{display: block; margin: 5px 0 8px; font-size: 12px; font-weight: 500;}
+.signupBox .phoneBox{display: flex; gap: 0 10px;}
+.signupBox .phoneBox .inputTextBox{width: 100%;}
+.signupBox .phoneBox .certificationBtn{width: 73px; border-radius: 5px; text-align: center; font-size: 12px; background-color: var(--color-gray-100); color: var(--color-gray-00);}
 
 
 /* 로그인, 회원가입 */
@@ -209,3 +209,5 @@
 .signupBox .authContentBox h3{margin-bottom: 20px; font-size: 12px; text-align: center; font-weight: 300;}
 .authWrap .infoText{margin-top: 25px; text-align: center; color: var(--color-gray-500); font-size: 12px;}
 .authWrap .infoText a{color: var(--color-primary); font-size: 14px; font-weight: 700;}
+.authWrap .btnBox{display: flex; gap: 0 10px}
+.authWrap .btnBox .comBtn{flex: 1; font-size: 14px;}
