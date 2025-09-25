@@ -33,6 +33,11 @@ $(function () {
 
   })
 
+  //자주묻는질문
+  $('.mypageBox .questionBtn').click(function(){
+    $(this).next().toggle();
+  });
+
 
 });
 

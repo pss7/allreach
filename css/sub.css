@@ -259,12 +259,12 @@
 .mypageBox .mypageInfoList li:nth-child(6) a .icon02{background-color: var(--color-red-100);}
 .mypageBox .mypageInfoList li:nth-child(6) a .icon02 svg{color: var(--color-red-600);}
 .mypageBox .mypageInfoList li:nth-child(6) a strong{color: var(--color-red-600);}
-.mypageBox .tabLayoutBox{display: flex; gap: 0 30px;}
+.mypageBox .tabLayoutBox{display: flex; gap: 0 30px; min-height: calc(100vh - 200px)}
 .mypageBox .mypageContentBox{width: 100%;}
 .mypageBox aside{flex-shrink: 0; padding: 15px;  width: 251px; background-color: var(--color-white); border: 1px solid var(--border); border-radius: 10px;} 
 .mypageBox aside .depth01 li .tabBtn{padding: 11px 10px; position: relative; display: flex; gap: 0 7px; width: 100%; font-size: 12px; font-weight: 700; border-radius: 5px;}
 .mypageBox aside .depth01 li .tabBtn svg{width: 14px; height: 14px;}
-.mypageBox aside .depth01 li .tabBtn::after {content: ""; position: absolute;top: calc(50% - 1px); transform: translateY(-50%); right: 20px; width: 4px; height: 4px; transform: translateY(-50%) rotate(45deg); border-right: 1px solid var(--color-gray-400);; border-bottom: 1px solid var(--color-gray-400);}
+.mypageBox aside .depth01 li .tabBtn::after {content: ""; position: absolute;top:50%; transform: translateY(-50%); right: 20px; width: 4px; height: 4px; transform: translateY(-50%) rotate(45deg); border-right: 1px solid var(--color-gray-400);; border-bottom: 1px solid var(--color-gray-400);}
 .mypageBox aside .depth01 li .tabBtn:hover{background-color: var(--color-gray-50);}
 .mypageBox aside .depth02{display: none; padding: 8px 0;}
 .mypageBox aside .depth02.active{display: block;}
@@ -420,7 +420,6 @@ right:13px; width: 7px; height: 7px; border-radius: 50%; background-color: var(-
 .mypageBox .accountBox .accountContentBox .alarmList li a{position: relative; padding: 15px 15px 10px 15px; display: block; border: 1px solid var(--border); border-radius: 10px;}
 .mypageBox .accountBox .accountContentBox .alarmList li a .title{margin-bottom: 3px; font-size: 12px; font-weight: 600;}
 .mypageBox .accountBox .accountContentBox .alarmList li a .text{margin-bottom: 5px; font-size: 12px;}
-
 .mypageBox .accountBox .accountContentBox .alarmList li a .alarmListInfoList{display: flex; gap: 0 20px;}
 .mypageBox .accountBox .accountContentBox .alarmList li a .alarmListInfoList li{position: relative; font-size: 11px; font-weight: 300;}
 .mypageBox .accountBox .accountContentBox .alarmList li a .alarmListInfoList li::after{content: ''; position: absolute; top:6px; right:-11px; width: 2px; height: 2px; border-radius: 50%; background-color: var(--color-gray-400);}
@@ -447,11 +446,8 @@ right:13px; width: 7px; height: 7px; border-radius: 50%; background-color: var(-
 .mypageBox .serviceCenterBox .btnBox .btn{padding: 5px 10px; font-size: 12px; border-radius: 5px;}
 .mypageBox .serviceCenterBox .btnBox .btn.resetBtn{border: 1px solid var(--border);}
 .mypageBox .serviceCenterBox .btnBox .btn.addBtn{background-color: var(--color-primary); color: var(--color-white);}
-
-
 .mypageBox .serviceCenterBox .inquiryList > li{margin-bottom: 15px; padding: 10px 10px 10px 15px; border: 1px solid var(--border); border-radius: 10px;}
 .mypageBox .serviceCenterBox .inquiryList > li:last-child{margin-bottom: 0;}
-
 .mypageBox .serviceCenterBox .inquiryList li .layoutBox{margin-bottom: 10px; display: flex; align-items: center; gap: 0 10px;}
 .mypageBox .serviceCenterBox .inquiryList li h5{font-size: 14px;}
 .mypageBox .serviceCenterBox .inquiryList li .stateBox{display: flex; gap: 0 8px;}
@@ -500,13 +496,47 @@ right:13px; width: 7px; height: 7px; border-radius: 50%; background-color: var(-
 .mypageBox .serviceCenterBox .noticeDetailBox .btnBox .btn{padding: 7px 12px; display: flex; align-items: center; gap: 0 5px; font-size: 12px; font-weight: 600; transition: all .15s;}
 .mypageBox .serviceCenterBox .noticeDetailBox .btnBox .btn:hover{background-color: var(--color-gray-200);}
 .mypageBox .serviceCenterBox .noticeDetailBox .btnBox .btn svg{width: 14px; height: 14px;}
-
-
+.mypageBox .serviceCenterBox .questionList li{margin-bottom: 10px;  background-color: var(--color-white); border-radius: 10px; border: 1px solid var(--border);}
+.mypageBox .serviceCenterBox .questionList li:last-child{margin-bottom: 0;}
+.mypageBox .serviceCenterBox .questionList li .questionBtn:hover{background-color: var(--color-gray-50);}
+.mypageBox .serviceCenterBox .questionList li .questionBtn{padding: 20px 93px 20px 20px; position: relative; display: flex; align-items: center; gap: 0 10px; width: 100%;  text-align: left; transition: all .15s;}
+.mypageBox .serviceCenterBox .questionList li .questionBtn::after {content: ""; position: absolute;
+top:50%; right: 20px; transform: translateY(-50%); width: 8px; height: 8px; transform: translateY(-50%) rotate(45deg); border-right: 1px solid var(--color-gray-400); border-bottom: 1px solid var(--color-gray-400);}
+.mypageBox .serviceCenterBox .questionList li .questionBtn .icon{flex-shrink: 0; position: relative; width: 28px; height: 28px; line-height: 28px; border-radius: 50%; overflow: hidden;  background-color: var(--color-blue-100); color: var(--color-primary); text-align: center; font-size: 14px; font-weight: 800;}
+.mypageBox .serviceCenterBox .questionList li .questionBtn .textBox{width: 100%;}
+.mypageBox .serviceCenterBox .questionList li .questionBtn .textBox .title{font-size: 14px; font-weight: 600;}
+.mypageBox .serviceCenterBox .questionList li .questionBtn .textBox .badgeBox{margin-bottom: 5px; display: flex; gap: 0 5px;}
+.mypageBox .serviceCenterBox .questionList li .questionBtn .textBox .badgeBox span{padding: 3px 5px; line-height: 1; font-size: 11px;}
+.mypageBox .serviceCenterBox .questionList li .questionBtn .textBox .badgeBox .badge01{border: 1px solid var(--border);}
+.mypageBox .serviceCenterBox .questionList li .questionBtn .textBox .badgeBox .badge02{background-color: var(--color-green-100); color: var(--color-green-700);}
+.mypageBox .serviceCenterBox .questionList li .questionBtn .view{position: absolute; top:50%; right:45px; transform: translateY(-50%); display: flex; align-items: center; gap: 0 5px; font-size: 11px; font-weight: 300;}
+.mypageBox .serviceCenterBox .questionList li .questionBtn .view svg{margin-top: -2px; width: 11px; height: 11px;}
+.mypageBox .serviceCenterBox .questionList li .answerBox{display: none; padding: 20px; border-top: 1px solid var(--border);}
+.mypageBox .serviceCenterBox .questionList li .answerBox .layoutBox{display: flex; gap: 0 10px;}
+.mypageBox .serviceCenterBox .questionList li .answerBox .icon{flex-shrink: 0; position: relative; width: 28px; height: 28px; line-height: 28px; border-radius: 50%; overflow: hidden; background-color: var(--color-green-100); color: var(--color-green-700); text-align: center; font-size: 14px; font-weight: 800;}
+.mypageBox .serviceCenterBox .questionList li .answerBox .textBox p{font-size: 12px;}
+.mypageBox .serviceCenterBox .questionList li .creationDateBox{margin-top: 15px; display: flex; align-items: center; justify-content: space-between;}
+.mypageBox .serviceCenterBox .questionList li .creationDateBox .date{font-size: 12px;}
+.mypageBox .serviceCenterBox .questionList li .creationDateBox .btnBox{display: flex; gap: 0 20px;}
+.mypageBox .serviceCenterBox .questionList li .creationDateBox .btnBox .btn{padding: 0 5px; display: flex; gap: 0 5px;}
+.mypageBox .serviceCenterBox .questionList li .creationDateBox .btnBox .btn svg{width: 14px; height: 14px;}
+.mypageBox .serviceCenterBox .questionList li .creationDateBox .btnBox .btn.helpfulBtn{color: var(--color-green-600);}
+.mypageBox .tab{margin-bottom: 20px; display: flex; flex-wrap: wrap; gap: 8px;}
+.mypageBox .tab li .tabBtn{padding: 5px 9px; border: 1px solid var(--border); text-align: center; background-color: var(--color-white); font-size: 12px; font-weight: 700; border-radius: 5px;}
+.mypageBox .tab li .tabBtn:hover{background-color: var(--color-gray-50);}
 
 @media (max-width: 1024px){
 
   .mypageBox .mypageInfoList{flex-wrap: wrap; gap: 10px 1%;}
   .mypageBox .mypageInfoList li{flex: none; width: 32.66%;}
+  .mypageBox .tab{gap: 5px;}
+
+}
+
+@media (max-width: 767px){
+
+  .mypageBox .tabLayoutBox{flex-direction: column; gap: 30px;}
+  .mypageBox aside{width: 100%;}
 
 }
 

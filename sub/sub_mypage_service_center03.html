@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="Keywords" content="" />
+    <meta name="Description" content="" />
+    <meta name="Author" content="" />
+    <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+    <title>서브</title>
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/sub.css">
+    <link rel="stylesheet" href="../css/aos.css">
+    <link rel="stylesheet" href="../css/swiper.css">
+    <link rel="stylesheet" href="../css/slick.css">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/aos.js"></script>
+    <script src="../js/sub.js"></script>
+    <script src="../js/swiper.js"></script>
+    <script src="../js/script.js"></script>
+
+</head>
+
+<body>
+
+    <div id="wrap">
+
+        <header id="headerWrap">
+
+            <div class="headerTopWrap">
+                <div class="container">
+                    <div class="headerTopBox">
+
+                        <div class="logoBox">
+                            <h1>
+                                <a href="../index.html">
+                                    ALLREACH
+                                </a>
+                            </h1>
+                        </div>
+
+                        <div class="searchBox">
+                            <button class="searchBtn">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-search w-3.5 h-3.5 md:w-4 md:h-4"
+                                    aria-hidden="true">
+                                    <path d="m21 21-4.34-4.34"></path>
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                </svg>
+                            </button>
+                            <input id="search" type="text" placeholder="검색">
+                            <label for="search" class="blind">
+                                검색어 입력
+                            </label>
+                        </div>
+
+                        <div class="linkBox">
+                            <ul class="linkList">
+                                <li>
+                                    <a href="#">
+                                        비즈니스 센터
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        파트너스 센터
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        브랜드페이지
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="authBox">
+                                <div class="layoutBox">
+                                    <div class="alarmBox">
+                                        <button class="alarmBtn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" aria-hidden="true">
+                                                <path d="M10.268 21a2 2 0 0 0 3.464 0"></path>
+                                                <path
+                                                    d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                        <span class="count">
+                                            2
+                                        </span>
+                                    </div>
+                                    <div class="accountBox">
+                                        <button class="accountBtn">
+                                            <span class="img">
+                                                <img src="../images/common/profile_img01.jpg" alt="">
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mobileAuthBox">
+                            <a href="#" class="login">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-user md:hidden w-4 h-4"
+                                    aria-hidden="true">
+                                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- //headerTopWrap -->
+
+            <div class="headerBottomWrap">
+                <div class="container">
+                    <div class="headerBottomBox">
+                        <a href="../sub/sub.html" class="active">
+                            숏폼
+                        </a>
+                        <a href="../sub/sub.html">
+                            제품체험
+                        </a>
+                        <a href="../sub/sub.html">
+                            방문체험
+                        </a>
+                        <a href="../sub/sub.html">
+                            구매평
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- //headerBottomWrap -->
+
+        </header>
+        <!-- //headerWrap -->
+
+        <main id="subWrap" class="grayColor"> <!-- grayColor > 바탕색 회색일경우 적용 -->
+            <div class="contentBox">
+
+                <div class="mypageBox">
+                    <div class="container">
+
+                        <div class="topBox">
+                            <h3>
+                                마이페이지
+                            </h3>
+                            <p>
+                                나의 활동 현황을 한눈에 확인하고 관리하세요
+                            </p>
+                        </div>
+
+                        <ul class="mypageInfoList">
+                            <li>
+                                <a href="#">
+                                    <div class="layoutBox">
+                                        <div class="icon icon01">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" aria-hidden="true">
+                                                <circle cx="8" cy="8" r="6"></circle>
+                                                <path d="M18.09 10.37A6 6 0 1 1 10.34 18"></path>
+                                                <path d="M7 6h1v4"></path>
+                                                <path d="m16.71 13.88.7.71-2.82 2.82"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="icon icon02">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" aria-hidden="true">
+                                                <circle cx="8" cy="8" r="6"></circle>
+                                                <path d="M18.09 10.37A6 6 0 1 1 10.34 18"></path>
+                                                <path d="M7 6h1v4"></path>
+                                                <path d="m16.71 13.88.7.71-2.82 2.82"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <h4>포인트</h4>
+                                    <strong>45,000<span>P</span></strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="layoutBox">
+                                        <div class="icon icon01">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" aria-hidden="true">
+                                                <path
+                                                    d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z">
+                                                </path>
+                                                <path d="m21.854 2.147-10.94 10.939"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="icon icon02">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" aria-hidden="true">
+                                                <path
+                                                    d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z">
+                                                </path>
+                                                <path d="m21.854 2.147-10.94 10.939"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <h4>신청캠페인</h4>
+                                    <strong>4<span>건</span></strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="layoutBox">
+                                        <div class="icon icon01">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" aria-hidden="true">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <circle cx="12" cy="12" r="6"></circle>
+                                                <circle cx="12" cy="12" r="2"></circle>
+                                            </svg>
+                                        </div>
+                                        <div class="icon icon02">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" aria-hidden="true">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <circle cx="12" cy="12" r="6"></circle>
+                                                <circle cx="12" cy="12" r="2"></circle>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <h4>선정캠페인</h4>
+                                    <strong>2<span>건</span></strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="layoutBox">
+                                        <div class="icon icon01">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" aria-hidden="true">
+                                                <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                                <path d="m9 11 3 3L22 4"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="icon icon02">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" aria-hidden="true">
+                                                <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                                <path d="m9 11 3 3L22 4"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <h4>이달의 완료</h4>
+                                    <strong>5<span>건</span></strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="layoutBox">
+                                        <div class="icon icon01">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" aria-hidden="true">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <line x1="12" x2="12" y1="8" y2="12"></line>
+                                                <line x1="12" x2="12.01" y1="16" y2="16"></line>
+                                            </svg>
+                                        </div>
+                                        <div class="icon icon02">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" aria-hidden="true">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <line x1="12" x2="12" y1="8" y2="12"></line>
+                                                <line x1="12" x2="12.01" y1="16" y2="16"></line>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <h4>미등록캠페인</h4>
+                                    <strong>1<span>건</span></strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="layoutBox">
+                                        <div class="icon icon01">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" aria-hidden="true">
+                                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                                <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
+                                                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                                <circle cx="9" cy="7" r="4"></circle>
+                                            </svg>
+                                        </div>
+                                        <div class="icon icon02">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" aria-hidden="true">
+                                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                                <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
+                                                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                                <circle cx="9" cy="7" r="4"></circle>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <h4>SNS연결</h4>
+                                    <strong>7<span>건</span></strong>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="tabLayoutBox">
+                            <aside>
+                                <ul class="depth01">
+                                    <li>
+                                        <button class="tabBtn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" aria-hidden="true">
+                                                <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z">
+                                                </path>
+                                                <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                                                <path d="M10 9H8"></path>
+                                                <path d="M16 13H8"></path>
+                                                <path d="M16 17H8"></path>
+                                            </svg>
+                                            캠페인관리
+                                        </button>
+                                        <ul class="depth02">
+                                            <li>
+                                                <a href="../sub/sub_mypage_campaign01.html" class="btn">
+                                                    나의캠페인
+                                                    <span class="count">
+                                                        21
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="../sub/sub_mypage_campaign02.html" class="btn">
+                                                    찜한 캠페인
+                                                    <span class="count">
+                                                        5
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="../sub/sub_mypage_campaign03.html" class="btn">
+                                                    최근 본 캠페인
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <button class="tabBtn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" aria-hidden="true">
+                                                <rect width="20" height="14" x="2" y="5" rx="2"></rect>
+                                                <line x1="2" x2="22" y1="10" y2="10"></line>
+                                            </svg>
+                                            결제관리
+                                        </button>
+                                        <ul class="depth02">
+                                            <li>
+                                                <a href="../sub/sub_mypage_payment01.html" class="btn">
+                                                    포인트내역
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="../sub/sub_mypage_payment02.html" class="btn">
+                                                    출금내역
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <button class="tabBtn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" aria-hidden="true">
+                                                <path
+                                                    d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915">
+                                                </path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                            계정관리
+                                        </button>
+                                        <ul class="depth02">
+                                            <li>
+                                                <a href="../sub/sub_mypage_account01.html" class="btn">
+                                                    기본정보
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="../sub/sub_mypage_account02.html" class="btn">
+                                                    내 알림
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <button class="tabBtn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" aria-hidden="true">
+                                                <path
+                                                    d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719">
+                                                </path>
+                                            </svg>
+                                            고객센터
+                                        </button>
+                                        <ul class="depth02 active">
+                                            <li>
+                                                <a href="../sub/sub_mypage_service_center01.html" class="btn">
+                                                    문의내역
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="../sub/sub_mypage_service_center02.html" class="btn">
+                                                    공지사항
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="../sub/sub_mypage_service_center03.html" class="btn active">
+                                                    FAQ
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </aside>
+
+                            <div class="mypageContentBox">
+                                <div class="topBox">
+                                    <h3>
+                                        자주 묻는 질문 (FAQ)
+                                    </h3>
+                                    <p>
+                                        자주 묻는 질문들을 확인하고 빠른 답변을 얻으세요
+                                    </p>
+                                </div>
+
+                                <div class="serviceCenterBox">
+
+                                    <ul class="tab">
+                                        <li>
+                                            <button class="tabBtn">
+                                                전체
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="tabBtn">
+                                                캠페인
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="tabBtn">
+                                                포인트
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="tabBtn">
+                                                계정
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="tabBtn">
+                                                등급
+                                            </button>
+                                        </li>
+                                    </ul>
+
+                                    <ul class="questionList">
+                                        <li>
+                                            <button class="questionBtn">
+                                                <span class="icon">
+                                                    Q
+                                                </span>
+                                                <div class="textBox">
+                                                    <div class="badgeBox">
+                                                        <span class="badge01">캠페인</span>
+                                                        <span class="badge02">도움됨</span>
+                                                    </div>
+                                                    <p class="title">
+                                                        캠페인 신청은 어떻게 하나요?
+                                                    </p>
+                                                </div>
+                                                <span class="view">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="none" stroke="currentColor" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round"
+                                                        aria-hidden="true">
+                                                        <path
+                                                            d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
+                                                        </path>
+                                                        <circle cx="12" cy="12" r="3"></circle>
+                                                    </svg>
+                                                    1842
+                                                </span>
+                                            </button>
+                                            <div class="answerBox">
+                                                <div class="layoutBox">
+                                                    <span class="icon">
+                                                        A
+                                                    </span>
+                                                    <div class="textBox">
+                                                        <p>
+                                                            메인 페이지에서 원하는 캠페인을 선택하고 '신청하기' 버튼을 클릭하세요. 신청 시 요구되는 SNS 채널을
+                                                            선택하고
+                                                            간단한 지원 메시지를 작성하시면 됩니다. 신청 완료 후 브랜드에서 검토하여 선정 결과를 알려드립니다.
+                                                        </p>
+                                                        <div class="creationDateBox">
+                                                            <span class="date">작성일: 2024.01.15</span>
+                                                            <div class="btnBox">
+                                                                <button class="btn helpfulBtn">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 24 24" fill="none"
+                                                                        stroke="currentColor" stroke-width="2"
+                                                                        stroke-linecap="round" stroke-linejoin="round"
+                                                                        aria-hidden="true">
+                                                                        <path
+                                                                            d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5">
+                                                                        </path>
+                                                                    </svg>
+                                                                    도움됨
+                                                                </button>
+                                                                <button class="btn">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 24 24" fill="none"
+                                                                        stroke="currentColor" stroke-width="2"
+                                                                        stroke-linecap="round" stroke-linejoin="round"
+                                                                        aria-hidden="true">
+                                                                        <path
+                                                                            d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719">
+                                                                        </path>
+                                                                    </svg>
+                                                                    문의하기
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <button class="questionBtn">
+                                                <span class="icon">
+                                                    Q
+                                                </span>
+                                                <div class="textBox">
+                                                    <div class="badgeBox">
+                                                        <span class="badge01">포인트</span>
+                                                        <span class="badge02">도움됨</span>
+                                                    </div>
+                                                    <p class="title">
+                                                        포인트는 언제 지급되나요?
+                                                    </p>
+                                                </div>
+                                                <span class="view">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="none" stroke="currentColor" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round"
+                                                        aria-hidden="true">
+                                                        <path
+                                                            d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0">
+                                                        </path>
+                                                        <circle cx="12" cy="12" r="3"></circle>
+                                                    </svg>
+                                                    1563
+                                                </span>
+                                            </button>
+                                            <div class="answerBox">
+                                                <div class="layoutBox">
+                                                    <span class="icon">
+                                                        A
+                                                    </span>
+                                                    <div class="textBox">
+                                                        <p>
+                                                            캠페인 완료 후 브랜드에서 최종 승인하면 즉시 포인트가 지급됩니다. 일반적으로 콘텐츠 제출 후 1-3일 내에
+                                                            검토가 완료되며, 승인되면 자동으로 포인트가 적립됩니다.
+                                                        </p>
+                                                        <div class="creationDateBox">
+                                                            <span class="date">작성일: 2024.01.15</span>
+                                                            <div class="btnBox">
+                                                                <button class="btn helpfulBtn">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 24 24" fill="none"
+                                                                        stroke="currentColor" stroke-width="2"
+                                                                        stroke-linecap="round" stroke-linejoin="round"
+                                                                        aria-hidden="true">
+                                                                        <path
+                                                                            d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5">
+                                                                        </path>
+                                                                    </svg>
+                                                                    도움됨
+                                                                </button>
+                                                                <button class="btn">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 24 24" fill="none"
+                                                                        stroke="currentColor" stroke-width="2"
+                                                                        stroke-linecap="round" stroke-linejoin="round"
+                                                                        aria-hidden="true">
+                                                                        <path
+                                                                            d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719">
+                                                                        </path>
+                                                                    </svg>
+                                                                    문의하기
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <!-- //serviceCenterBox -->
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- //mypageBox -->
+
+            </div>
+            <!-- //contentBox -->
+
+        </main>
+        <!-- //subWrap -->
+
+        <footer id="footerWrap">
+            <div class="container">
+                <div class="footerBox">
+                    <div class="footerTopBox">
+                        <div class="leftBox">
+                            <div class="logoBox">
+                                <h1>
+                                    ALLREACH
+                                </h1>
+                            </div>
+                            <p>
+                                인플루언서와 브랜드를 연결하는 대한민국 대표 바이럴 마케팅 플랫폼 <br>
+                                모든 브랜드가 도달할 수 있는 마케팅의 새로운 경험을 제공합니다.
+                            </p>
+                            <div class="footerSnsBox">
+                                <span>
+                                    Follow us
+                                </span>
+                                <ul class="snsList">
+                                    <li>
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-instagram w-4 h-4" aria-hidden="true">
+                                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-youtube w-4 h-4" aria-hidden="true">
+                                                <path
+                                                    d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17">
+                                                </path>
+                                                <path d="m10 15 5-3-5-3z"></path>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-facebook w-4 h-4" aria-hidden="true">
+                                                <path
+                                                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-twitter w-4 h-4" aria-hidden="true">
+                                                <path
+                                                    d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="rightBox">
+                            <div class="box">
+                                <h3>서비스</h3>
+                                <ul class="footerLinkList">
+                                    <li>
+                                        <a href="#">
+                                            숏폼 캠페인
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            제품체험
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            방문체험
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            구매평캠페인
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            브랜드관
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="box">
+                                <h3>고객지원</h3>
+                                <ul class="footerLinkList">
+                                    <li>
+                                        <a href="#">
+                                            공지사항
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            FAQ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            1:1 문의
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            이용약관
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            개인정보처리방침
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footerBottomBox">
+                        <div class="leftBox">
+                            <h3>
+                                지아이오엠
+                            </h3>
+                            <address>
+                                <strong>본사:</strong> 경기도 화성시 능동 1162-5 (남여울2길 17-14) <br>
+
+                                <strong>서울사무소:</strong> 서울특별시 금천구 가산디지털1로 168 우림라이온스밸리 B동 1309-1310호 <br>
+
+                                <strong>부산지사:</strong> 부산시 부산진구 서면문화로 27 유원골든타워 603-1호
+                            </address>
+                        </div>
+                        <div class="rightBox">
+                            <h3>
+                                사업자 정보
+                            </h3>
+                            <ul class="footerInfoList">
+                                <li><strong>사업자등록번호:</strong> 204-81-84372</li>
+
+                                <li><strong>대표자:</strong> 안진석</li>
+
+                                <li><strong>개인정보관리책임자:</strong> 강희정</li>
+
+                                <li><strong>고객센터:</strong> 1588-0000 (평일 09:00~18:00)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <span class="copyright">
+                        © 2024 ALLREACH. All rights reserved. 본 사이트의 컨텐츠는 저작권법의 보호를 받는 바 무단 전재, 복사, 배포 등을 금합니다.
+                    </span>
+
+                </div>
+            </div>
+        </footer>
+        <!-- //footerWrap -->
+
+    </div>
+    <!-- //wrap -->
+
+</body>
+
+</html>
