@@ -377,12 +377,12 @@
                                         </button>
                                         <ul class="depth02 active">
                                             <li>
-                                                <a href="../sub/sub_mypage_payment01.html" class="btn active">
+                                                <a href="../sub/sub_mypage_payment01.html" class="btn">
                                                     포인트내역
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="../sub/sub_mypage_payment02.html" class="btn">
+                                                <a href="../sub/sub_mypage_payment02.html" class="btn active">
                                                     출금내역
                                                 </a>
                                             </li>
@@ -448,163 +448,103 @@
                             <div class="mypageContentBox">
                                 <div class="topBox">
                                     <h3>
-                                        포인트 내역
+                                        출금 내역
                                     </h3>
                                     <p>
-                                        캠페인 완료로 적립된 포인트 내역을 확인하세요
+                                        포인트 출금 신청 내역을 확인하세요
                                     </p>
                                 </div>
 
                                 <div class="paymentBox">
-                                    <div class="topPointBox">
-                                        <div class="box box01">
-                                            <div class="icon">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round" aria-hidden="true">
-                                                    <circle cx="8" cy="8" r="6"></circle>
-                                                    <path d="M18.09 10.37A6 6 0 1 1 10.34 18"></path>
-                                                    <path d="M7 6h1v4"></path>
-                                                    <path d="m16.71 13.88.7.71-2.82 2.82"></path>
-                                                </svg>
-                                            </div>
-                                            <h4>
-                                                총 보유 포인트
-                                            </h4>
-                                            <strong>
-                                                45,000<span>P</span>
-                                            </strong>
-                                            <button class="comBtn">
-                                                출금하기
-                                            </button>
-                                        </div>
-                                        <div class="box box02">
-                                            <div class="icon">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round" aria-hidden="true">
-                                                    <path d="M16 7h6v6"></path>
-                                                    <path d="m22 7-8.5 8.5-5-5L2 17"></path>
-                                                </svg>
-                                            </div>
-                                            <h4>
-                                                이번 달 적립
-                                            </h4>
-                                            <strong>
-                                                35,000<span>P</span>
-                                            </strong>
-                                        </div>
-                                    </div>
 
                                     <div class="paymentHistoryBox">
+
                                         <h5>
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                                                 stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                                 stroke-linejoin="round" aria-hidden="true">
-                                                <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z">
-                                                </path>
-                                                <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
-                                                <path d="M10 9H8"></path>
-                                                <path d="M16 13H8"></path>
-                                                <path d="M16 17H8"></path>
+                                                <rect width="20" height="14" x="2" y="5" rx="2"></rect>
+                                                <line x1="2" x2="22" y1="10" y2="10"></line>
                                             </svg>
-                                            포인트 적립 내역
+                                            출금 내역
                                         </h5>
 
-
-                                        <ul class="pointsHistoryList">
-                                            <li>
-                                                <a href="#">
-                                                    <div class="imgBox">
-                                                        <img src="../images/sub/img01.jpg" alt="">
+                                        <!-- 
+                                        클래스 적용
+                                         paymentCompleted > 출금완료 시 적용
+                                         withdrawalPending > 출금보류 시 적용
+                                        withdrawalRequest > 출금신청 시 적용
+                                         -->
+                                        <ul class="withdrawalList">
+                                            <li class="paymentCompleted">
+                                                <div class="textBox">
+                                                    <div class="stateBox">
+                                                        <span>출금신청</span>
+                                                        <em>출금완료</em>
                                                     </div>
-                                                    <div class="textBox">
-                                                        <div class="infoList01">
-                                                            <span class="shortForm">숏폼</span>
-                                                            <span>게임/엔터테인먼트</span>
-                                                        </div>
-                                                        <h6>
-                                                            신작 게임 체험 후기 영상 제작
-                                                        </h6>
-                                                        <ul class="infoList">
-                                                            <li>
-                                                                신청일: 2024.10.20
-                                                            </li>
-                                                            <li>
-                                                                마감일: 2024.11.15
-                                                            </li>
-                                                            <li>
-                                                                적립일: 2024.11.10
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="pointBox">
-                                                        <strong>+30,000P</strong>
-                                                        <span>적립완료</span>
-                                                    </div>
-                                                </a>
+                                                    <ul class="infoList">
+                                                        <li>
+                                                            신청일: 2024.01.20
+                                                        </li>
+                                                        <li>
+                                                            출금일: 2024.01.22
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="amountBox">
+                                                    <strong>100,000원</strong>
+                                                    <em>
+                                                        지급 완료
+                                                    </em>
+                                                </div>
                                             </li>
-                                            <li>
-                                                <a href="#">
-                                                    <div class="imgBox">
-                                                        <img src="../images/sub/img02.jpg" alt="">
+                                            <li class="withdrawalPending">
+                                                <div class="textBox">
+                                                    <div class="stateBox">
+                                                        <span>출금신청</span>
+                                                        <em>
+                                                            출금보류
+                                                            ⓘ
+                                                        </em>
+                                                        <span class="check">사유확인</span>
                                                     </div>
-                                                    <div class="textBox">
-                                                        <div class="infoList01">
-                                                            <span class="experience02">방문체험</span>
-                                                            <span>음식/맛집</span>
-                                                        </div>
-                                                        <h6>
-                                                            신메뉴 햄버거 방문 체험 후기
-                                                        </h6>
-                                                        <ul class="infoList">
-                                                            <li>
-                                                                신청일: 2024.10.20
-                                                            </li>
-                                                            <li>
-                                                                마감일: 2024.11.15
-                                                            </li>
-                                                            <li>
-                                                                적립일: 2024.11.10
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="pointBox">
-                                                        <strong>+30,000P</strong>
-                                                        <span>적립완료</span>
-                                                    </div>
-                                                </a>
+                                                    <ul class="infoList">
+                                                        <li>
+                                                            신청일: 2024.01.20
+                                                        </li>
+                                                        <li>
+                                                            출금일: 2024.01.22
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="amountBox">
+                                                    <strong>100,000원</strong>
+                                                    <em>
+                                                        보류중
+                                                    </em>
+                                                </div>
                                             </li>
-                                            <li>
-                                                <a href="#">
-                                                    <div class="imgBox">
-                                                        <img src="../images/sub/img03.jpg" alt="">
+                                            <li class="withdrawalRequest">
+                                                <div class="textBox">
+                                                    <div class="stateBox">
+                                                        <span>출금신청</span>
+                                                        <em>출금신청</em>
                                                     </div>
-                                                    <div class="textBox">
-                                                        <div class="infoList01">
-                                                            <span class="review">구매평</span>
-                                                            <span>전자기기</span>
-                                                        </div>
-                                                        <h6>
-                                                            최신 스마트워치 리뷰 영상
-                                                        </h6>
-                                                        <ul class="infoList">
-                                                            <li>
-                                                                신청일: 2024.10.20
-                                                            </li>
-                                                            <li>
-                                                                마감일: 2024.11.15
-                                                            </li>
-                                                            <li>
-                                                                적립일: 2024.11.10
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="pointBox">
-                                                        <strong>+10,000P</strong>
-                                                        <span>적립완료</span>
-                                                    </div>
-                                                </a>
+                                                    <ul class="infoList">
+                                                        <li>
+                                                            신청일: 2024.01.20
+                                                        </li>
+                                                        <li>
+                                                            출금일: 2024.01.22
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="amountBox">
+                                                    <strong>100,000원</strong>
+                                                    <em>
+                                                        보류중
+                                                    </em>
+                                                </div>
                                             </li>
                                         </ul>
                                     </div>
