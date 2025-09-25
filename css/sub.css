@@ -427,17 +427,79 @@ right:13px; width: 7px; height: 7px; border-radius: 50%; background-color: var(-
 .mypageBox .accountBox .accountContentBox .alarmList li a .alarmListInfoList li:last-child:after{display: none;}
 .mypageBox .accountBox .accountContentBox .alarmList li a.new{background-color: var(--color-blue-50); border: 1px solid var(--color-blue-100);}
 .mypageBox .accountBox .accountContentBox .alarmList li a .layoutBox{display: flex; gap: 0 9px;}
-
-
 .mypageBox .accountBox .accountContentBox .alarmList li a.approval svg{color: var(--color-green-600);}
 .mypageBox .accountBox .accountContentBox .alarmList li a.deadline svg{color: var(--color-orange-600);}
 .mypageBox .accountBox .accountContentBox .alarmList li a.registration svg{color: var(--color-blue-600)}
 .mypageBox .accountBox .accountContentBox .alarmList li a.payment svg{color: var(--color-red-600);}
 .mypageBox .accountBox .accountContentBox .alarmList li a.update svg{color: var(--color-gray-600);}
+.mypageBox .serviceCenterBox .box:last-child{margin-bottom: 0;}
+.mypageBox .serviceCenterBox .box{margin-bottom: 15px; padding: 20px; border-radius: 10px; border: 1px solid var(--border); background-color: var(--color-white);}
+.mypageBox .serviceCenterBox .box .topBox{margin-bottom: 10px;}
+.mypageBox .serviceCenterBox .box .topBox h4{ margin-bottom: 5px; display: flex; align-items: center; gap: 0 10px; font-size: 14px;}
+.mypageBox .serviceCenterBox .box .topBox h4 svg{margin-top: -2px; width: 18px; height: 18px;}
+.mypageBox .serviceCenterBox .box .topBox p{font-size: 14px; font-weight: 300;}
+.mypageBox .serviceCenterBox .formLayoutBox{display: flex; gap: 0 20px;}
+.mypageBox .serviceCenterBox .formLayoutBox .formBox{flex: 1;}
+.mypageBox .serviceCenterBox .formBox .label{font-size: 12px; font-weight: 700;}
+.mypageBox .serviceCenterBox .formBox .textareaBox textarea{height: 128px; background-color: var(--color-white); border: 1px solid var(--border);}
+.mypageBox .serviceCenterBox .formBox .textareaBox textarea::placeholder{font-size: 14px;}
+.mypageBox .serviceCenterBox .btnBox{display: flex; justify-content: flex-end; gap: 0 5px;}
+.mypageBox .serviceCenterBox .btnBox .btn{padding: 5px 10px; font-size: 12px; border-radius: 5px;}
+.mypageBox .serviceCenterBox .btnBox .btn.resetBtn{border: 1px solid var(--border);}
+.mypageBox .serviceCenterBox .btnBox .btn.addBtn{background-color: var(--color-primary); color: var(--color-white);}
 
 
+.mypageBox .serviceCenterBox .inquiryList > li{margin-bottom: 15px; padding: 10px 10px 10px 15px; border: 1px solid var(--border); border-radius: 10px;}
+.mypageBox .serviceCenterBox .inquiryList > li:last-child{margin-bottom: 0;}
 
-
+.mypageBox .serviceCenterBox .inquiryList li .layoutBox{margin-bottom: 10px; display: flex; align-items: center; gap: 0 10px;}
+.mypageBox .serviceCenterBox .inquiryList li h5{font-size: 14px;}
+.mypageBox .serviceCenterBox .inquiryList li .stateBox{display: flex; gap: 0 8px;}
+.mypageBox .serviceCenterBox .inquiryList li .stateBox span{font-weight: 500;}
+.mypageBox .serviceCenterBox .inquiryList li .stateBox span,
+.mypageBox .serviceCenterBox .inquiryList li .stateBox em{ padding: 3px 5px; font-size: 11px; border-radius: 3px; line-height: 1;}
+.mypageBox .serviceCenterBox .inquiryList li .stateBox .answerComplete{background-color: var(--color-green-100); color: var(--color-green-700);}
+.mypageBox .serviceCenterBox .inquiryList li .stateBox .waiting{background-color: var(--color-orange-100); color: var(--color-orange-700);}
+.mypageBox .serviceCenterBox .inquiryList li .stateBox em{border: 1px solid var(--border); font-weight: 700;}
+.mypageBox .serviceCenterBox .inquiryList li p{margin-bottom: 8px; font-size: 12px;}
+.mypageBox .serviceCenterBox .inquiryList li .infoList{display: flex; gap: 0 25px; margin-bottom: 12px;}
+.mypageBox .serviceCenterBox .inquiryList li .infoList li{position: relative; font-size: 11px; font-weight: 300;}
+.mypageBox .serviceCenterBox .inquiryList li .infoList li::after{content: ''; position: absolute; top:6px; right:-15px; width: 3px; height: 3px; border-radius: 50%; background-color: var(--color-gray-500);}
+.mypageBox .serviceCenterBox .inquiryList li .infoList li:last-child:after{display: none;}
+.mypageBox .serviceCenterBox .inquiryList li .answerBox{padding: 10px 10px 5px; border: 1px solid var(--color-blue-100); background-color: var(--color-blue-50); border-radius: 10px;}
+.mypageBox .serviceCenterBox .inquiryList li .answerBox svg{width: 14px; height: 14px;}
+.mypageBox .serviceCenterBox .inquiryList li .answerBox span{margin-bottom: 5px; display: flex; align-items: center; gap: 0 6px; font-size: 12px; color: var(--color-blue-900);}
+.mypageBox .serviceCenterBox .inquiryList li .answerBox P{color: var(--color-blue-800); font-size: 12px;}
+.mypageBox .serviceCenterBox .noticeBox .list{display: block; padding: 20px; position: relative; transition: all .15s;}
+.mypageBox .serviceCenterBox .noticeInfoBox{margin-bottom: 10px; display: flex; gap: 0 8px;}
+.mypageBox .serviceCenterBox .noticeInfoBox span{padding: 3px 5px; border-radius: 3px; line-height: 1; font-size: 12px; border-radius: 5px;}
+.mypageBox .serviceCenterBox .noticeInfoBox span.info01{border: 1px solid var(--border); font-weight: 700; font-size: 12px;}
+.mypageBox .serviceCenterBox .noticeInfoBox span.importance{background-color: var(--color-red-100); color: var(--color-red-700);}
+.mypageBox .serviceCenterBox .noticeBox .list .layoutBox{display: flex; gap:0 15px;}
+.mypageBox .serviceCenterBox .noticeBox .list .imgBox{flex-shrink: 0; width: 70px; height: 70px; border-radius: 5px; overflow: hidden;}
+.mypageBox .serviceCenterBox .noticeBox .list .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
+.mypageBox .serviceCenterBox .noticeBox .list .textBox h4{margin-bottom: 5px; font-size: 14px;}
+.mypageBox .serviceCenterBox .noticeBox .list .textBox p{font-size: 12px;}
+.mypageBox .serviceCenterBox .noticeBox .list .bottomBox .date{font-size: 12px; font-weight: 300;}
+.mypageBox .serviceCenterBox .noticeBox .list .bottomBox .readMore{font-size: 14px; color: var(--color-primary); font-weight: 700;}
+.mypageBox .serviceCenterBox .noticeBox .list .bottomBox{margin:20px 0 0 85px; display: flex; justify-content: space-between;}
+.mypageBox .serviceCenterBox .noticeBox .list .view{display: flex; align-items: center; gap: 0 5px; position: absolute; top:20px; right:20px; font-size: 11px;}
+.mypageBox .serviceCenterBox .noticeBox .list .view svg{width: 11px; height: 11px;}
+.mypageBox .serviceCenterBox .noticeBox .list:hover{box-shadow: 0 5px 7px rgba(0,0,0,.1);}
+.mypageBox .serviceCenterBox .noticeBox{padding: 0;}
+.mypageBox .serviceCenterBox .noticeDetailBox{background-color: var(--color-white); border-radius: 10px; border: 1px solid var(--border); overflow: hidden;}
+.mypageBox .serviceCenterBox .noticeDetailBox .imgBox{height: 280px; overflow: hidden;}
+.mypageBox .serviceCenterBox .noticeDetailBox .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
+.mypageBox .serviceCenterBox .noticeDetailBox .textBox{padding: 35px 20px 20px;}
+.mypageBox .serviceCenterBox .noticeDetailBox .topBox h4{color: var(--color-gray-900); font-size: 26px;}
+.mypageBox .serviceCenterBox .noticeDetailBox .noticeViewBox{ padding: 9px 0; display: flex; gap: 0 20px; border: 1px solid var(--border); border-width: 1px 0;}
+.mypageBox .serviceCenterBox .noticeDetailBox .noticeViewBox span{font-size: 12px; font-weight: 300;}
+.mypageBox .serviceCenterBox .noticeDetailBox p{padding: 25px 0 30px; border-bottom: 1px solid var(--border); font-size: 14px;}
+.mypageBox .serviceCenterBox .noticeDetailBox .btnBox{padding: 15px 0; display: flex; justify-content: space-between;}
+.mypageBox .serviceCenterBox .noticeDetailBox .btnBox .layoutBox{display: flex; gap: 0 10px;}
+.mypageBox .serviceCenterBox .noticeDetailBox .btnBox .btn{padding: 7px 12px; display: flex; align-items: center; gap: 0 5px; font-size: 12px; font-weight: 600; transition: all .15s;}
+.mypageBox .serviceCenterBox .noticeDetailBox .btnBox .btn:hover{background-color: var(--color-gray-200);}
+.mypageBox .serviceCenterBox .noticeDetailBox .btnBox .btn svg{width: 14px; height: 14px;}
 
 
 

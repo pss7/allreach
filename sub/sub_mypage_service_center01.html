@@ -400,14 +400,14 @@
                                             </svg>
                                             계정관리
                                         </button>
-                                        <ul class="depth02 active">
+                                        <ul class="depth02">
                                             <li>
                                                 <a href="../sub/sub_mypage_account01.html" class="btn">
                                                     기본정보
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="../sub/sub_mypage_account02.html" class="btn active">
+                                                <a href="../sub/sub_mypage_account02.html" class="btn">
                                                     내 알림
                                                 </a>
                                             </li>
@@ -424,9 +424,9 @@
                                             </svg>
                                             고객센터
                                         </button>
-                                        <ul class="depth02">
+                                        <ul class="depth02 active">
                                             <li>
-                                                <a href="../sub/sub_mypage_service_center01.html" class="btn">
+                                                <a href="../sub/sub_mypage_service_center01.html" class="btn active">
                                                     문의내역
                                                 </a>
                                             </li>
@@ -448,40 +448,150 @@
                             <div class="mypageContentBox">
                                 <div class="topBox">
                                     <h3>
-                                        기본 정보
+                                        문의내역
                                     </h3>
                                     <p>
-                                        프로필 정보를 확인하고 수정하세요
+                                        궁금한 사항을 문의해주세요. 빠르게 답변드리겠습니다.
                                     </p>
                                 </div>
 
-                                <div class="accountBox">
-                                    <div class="accountContentBox">
-                                        <h4>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" aria-hidden="true">
-                                                <path d="M10.268 21a2 2 0 0 0 3.464 0"></path>
-                                                <path
-                                                    d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326">
-                                                </path>
-                                            </svg>
-                                            알림 목록
-                                        </h4>
+                                <div class="serviceCenterBox">
+                                    <div class="box">
+                                        <div class="topBox">
+                                            <h4>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" aria-hidden="true">
+                                                    <path
+                                                        d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719">
+                                                    </path>
+                                                </svg>
+                                                새 문의 작성
+                                            </h4>
+                                            <p>
+                                                캠페인, 결제, 기술적 문제 등 모든 문의사항을 남겨주세요.
+                                            </p>
+                                        </div>
 
-                                        <!-- 
-                                    클래스별 아이콘 색상 변경
-                                        승인 > approval 
-                                        마감일 > deadline
-                                        새로운캠페인 등록 > registration
-                                        리워드 등록 > payment
-                                        올리치 서비스 업데이트 > update
-                                        읽지 않은 알림 > new
-                                    -->
-                                        <ul class="alarmList">
+                                        <div class="formLayoutBox mb-10">
+                                            <div class="formBox">
+                                                <span class="label">제목</span>
+                                                <div class="inputTextBox">
+                                                    <input id="title" type="text" placeholder="문의 제목을 입력해주세요">
+                                                    <label for="title" class="blind">문의제목 입력</label>
+                                                </div>
+                                            </div>
+                                            <div class="formBox">
+                                                <span class="label">카테고리</span>
+                                                <div class="customSelectBox">
+                                                    <button class="btn">
+                                                        문의 유형을 선택해주세요.
+                                                    </button>
+                                                    <ul class="selectList">
+                                                        <li>
+                                                            <button class="selectBtn">
+                                                                캠페인
+                                                            </button>
+                                                        </li>
+                                                        <li>
+                                                            <button class="selectBtn">
+                                                                결제/출금
+                                                            </button>
+                                                        </li>
+                                                        <li>
+                                                            <button class="selectBtn">
+                                                                계정/인증
+                                                            </button>
+                                                        </li>
+                                                        <li>
+                                                            <button class="selectBtn">
+                                                                기술적문제
+                                                            </button>
+                                                        </li>
+                                                        <li>
+                                                            <button class="selectBtn">
+                                                                서비스이용
+                                                            </button>
+                                                        </li>
+                                                        <li>
+                                                            <button class="selectBtn">
+                                                                기타
+                                                            </button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="formBox mb-10">
+                                            <span class="label">문의내용</span>
+                                            <div class="textareaBox">
+                                                <textarea placeholder="문의하실 내용을 자세히 작성해주세요
+
+• 문제가 발생한 상황을 구체적으로 설명해주세요
+• 오류 메시지가 있다면 함께 알려주세요
+• 스크린샷이 필요한 경우 파일 첨부를 이용해주세요">
+</textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="btnBox">
+                                            <button class="btn resetBtn">
+                                                초기화
+                                            </button>
+                                            <button class="btn addBtn">
+                                                문의등록
+                                            </button>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="box">
+                                        <div class="topBox">
+                                            <h4>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" aria-hidden="true">
+                                                    <path
+                                                        d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z">
+                                                    </path>
+                                                    <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                                                    <path d="M10 9H8"></path>
+                                                    <path d="M16 13H8"></path>
+                                                    <path d="M16 17H8"></path>
+                                                </svg>
+                                                나의 문의 내역
+                                            </h4>
+                                        </div>
+
+                                        <!--
+                                        클래스 적용
+                                        답변완료 > answerComplete
+                                        답변대기 > waiting
+                                        -->
+
+                                        <ul class="inquiryList">
                                             <li>
-                                                <a href="#" class="new approval">
-                                                    <div class="layoutBox">
+                                                <div class="layoutBox">
+                                                    <h5>
+                                                        캠페인 신청 관련 문의
+                                                    </h5>
+                                                    <div class="stateBox">
+                                                        <span class="answerComplete">답변완료</span>
+                                                        <em>
+                                                            캠페인
+                                                        </em>
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    캠페인 신청 후 선정 결과를 언제 알 수 있나요?
+                                                </p>
+                                                <ul class="infoList">
+                                                    <li>작성일: 2024.01.15</li>
+                                                    <li>답변일: 2024.01.16</li>
+                                                </ul>
+                                                <div class="answerBox">
+                                                    <span>
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                                             fill="none" stroke="currentColor" stroke-width="2"
                                                             stroke-linecap="round" stroke-linejoin="round"
@@ -489,149 +599,80 @@
                                                             <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
                                                             <path d="m9 11 3 3L22 4"></path>
                                                         </svg>
-                                                        <div class="box">
-                                                            <p class="title">
-                                                                캠페인 신청이 승인되었습니다
-                                                            </p>
-                                                            <p class="text">
-                                                                넷플릭스 오리지널 시리즈 후기 영상 캠페인 신청이 승인되었습니다.
-                                                            </p>
-                                                            <ul class="alarmListInfoList">
-                                                                <li>2024.01.15</li>
-                                                                <li>14:30</li>
-                                                                <li>2024.01.15 14:30</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </a>
+                                                        관리자 답변
+                                                    </span>
+                                                    <p>
+                                                        캠페인 신청 마감 후 3-5일 이내에 선정 결과를 개별 알림으로 안내드리고 있습니다. 결과는 마이페이지 > 내
+                                                        알림에서도
+                                                        확인하실 수 있습니다.
+                                                    </p>
+                                                </div>
                                             </li>
                                             <li>
-                                                <a href="#" class="new deadline">
-                                                    <div class="layoutBox">
+                                                <div class="layoutBox">
+                                                    <h5>
+                                                        포인트 출금 관련 문의
+                                                    </h5>
+                                                    <div class="stateBox">
+                                                        <span class="answerComplete">답변완료</span>
+                                                        <em>
+                                                            결제/출금
+                                                        </em>
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    포인트 출금 신청을 했는데 언제 입금되나요?
+                                                </p>
+                                                <ul class="infoList">
+                                                    <li>작성일: 2024.01.15</li>
+                                                    <li>답변일: 2024.01.16</li>
+                                                </ul>
+                                                <div class="answerBox">
+                                                    <span>
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                                             fill="none" stroke="currentColor" stroke-width="2"
                                                             stroke-linecap="round" stroke-linejoin="round"
                                                             aria-hidden="true">
-                                                            <path d="M12 6v6l4 2"></path>
-                                                            <circle cx="12" cy="12" r="10"></circle>
+                                                            <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                                            <path d="m9 11 3 3L22 4"></path>
                                                         </svg>
-                                                        <div class="box">
-                                                            <p class="title">
-                                                                캠페인 마감일이 다가옵니다
-                                                            </p>
-                                                            <p class="text">
-                                                                신상 립스틱 체험 리뷰 캠페인의 제출 마감일이 3일 남았습니다.
-                                                            </p>
-                                                            <ul class="alarmListInfoList">
-                                                                <li>2024.01.15</li>
-                                                                <li>10:15</li>
-                                                                <li>2024.01.15 10:15</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </a>
+                                                        관리자 답변
+                                                    </span>
+                                                    <p>
+                                                        포인트 출금은 매주 금요일에 일괄 처리됩니다. 출금 신청일에 따라 최대 1주일 정도 소요될 수 있으며, 처리 완료
+                                                        시 별도 알림을 드립니다.
+                                                    </p>
+                                                </div>
                                             </li>
                                             <li>
-                                                <a href="#" class="registration">
-                                                    <div class="layoutBox">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                                            fill="none" stroke="currentColor" stroke-width="2"
-                                                            stroke-linecap="round" stroke-linejoin="round"
-                                                            aria-hidden="true">
-                                                            <path d="M10.268 21a2 2 0 0 0 3.464 0"></path>
-                                                            <path
-                                                                d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326">
-                                                            </path>
-                                                        </svg>
-                                                        <div class="box">
-                                                            <p class="title">
-                                                                새로운 캠페인이 등록되었습니다
-                                                            </p>
-                                                            <p class="text">
-                                                                뷰티 브랜드에서 신제품 체험 캠페인을 등록했습니다.
-                                                            </p>
-                                                            <ul class="alarmListInfoList">
-                                                                <li>2024.01.14</li>
-                                                                <li>16:45</li>
-                                                                <li>
-                                                                    2024.01.14 16:45</li>
-                                                            </ul>
-                                                        </div>
+                                                <div class="layoutBox">
+                                                    <h5>
+                                                        계정 인증 문제
+                                                    </h5>
+                                                    <div class="stateBox">
+                                                        <span class="waiting">답변대기</span>
+                                                        <em>
+                                                            계정/인증
+                                                        </em>
                                                     </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="payment">
-                                                    <div class="layoutBox">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                                            fill="none" stroke="currentColor" stroke-width="2"
-                                                            stroke-linecap="round" stroke-linejoin="round"
-                                                            aria-hidden="true">
-                                                            <path
-                                                                d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5">
-                                                            </path>
-                                                        </svg>
-                                                        <div class="box">
-                                                            <p class="title">
-                                                                캠페인 리워드가 지급되었습니다
-                                                            </p>
-                                                            <p class="text">
-                                                                카페 방문 체험기 캠페인의 리워드 50,000원이 지급되었습니다.
-                                                            </p>
-                                                            <ul class="alarmListInfoList">
-                                                                <li>2024.01.12</li>
-                                                                <li>09:20</li>
-                                                                <li>
-                                                                    2024.01.12 09:20
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="update">
-                                                    <div class="layoutBox">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                                            fill="none" stroke="currentColor" stroke-width="2"
-                                                            stroke-linecap="round" stroke-linejoin="round"
-                                                            aria-hidden="true">
-                                                            <path d="M10.268 21a2 2 0 0 0 3.464 0"></path>
-                                                            <path
-                                                                d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326">
-                                                            </path>
-                                                        </svg>
-                                                        <div class="box">
-                                                            <p class="title">
-                                                                올리치 서비스 업데이트 안내
-                                                            </p>
-                                                            <p class="text">
-                                                                더욱 향상된 서비스를 위해 시스템 업데이트를 진행합니다.
-                                                            </p>
-                                                            <ul class="alarmListInfoList">
-                                                                <li>2024.01.10</li>
-                                                                <li>18:00</li>
-                                                                <li>2024.01.10 18:00</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </a>
+                                                </div>
+                                                <p>
+                                                    인스타그램 계정 연동이 안 되고 있어요. 어떻게 해야 하나요?
+                                                </p>
+                                                <ul class="infoList">
+                                                    <li>작성일: 2024.01.15</li>
+                                                </ul>
                                             </li>
                                         </ul>
-
-
-
-
-
-
                                     </div>
+
                                 </div>
+                                <!-- //serviceCenterBox -->
 
                             </div>
-                            <!-- //accountBox -->
-
                         </div>
                     </div>
+
                 </div>
                 <!-- //mypageBox -->
 
