@@ -371,16 +371,8 @@
 .mypageBox .paymentBox .withdrawalList li.withdrawalPending .textBox .stateBox .check{font-size: 11px; color: var(--color-gray-500);}
 .mypageBox .paymentBox .withdrawalList li.withdrawalRequest .textBox .stateBox em{padding:5px; background-color: var(--color-gray-200); color: var(--color-gray-600); border-radius: 5px; line-height: 1;}
 .mypageBox .paymentBox .withdrawalList li.withdrawalRequest .amountBox strong{    color: var(--color-orange-600);}
-
-
-
-
-
-
-
-
 .mypageBox .accountBox .accountContentBox{margin-bottom: 20px; position: relative; padding: 20px; background-color: var(--color-white); border-radius: 10px; border: 1px solid var(--border); }
-.mypageBox .accountBox .accountContentBox h4{margin-bottom: 30px; font-size: 14px; font-weight: 400;}
+.mypageBox .accountBox .accountContentBox h4{display: flex; align-items: center; gap: 0 10px; margin-bottom: 30px; font-size: 14px; font-weight: 400;}
 .mypageBox .accountBox .accountContentBox .layoutBox{display: flex; gap: 0 20px;}
 .mypageBox .accountBox .accountContentBox .layoutBox .infoList{width: 100%;}
 .mypageBox .accountBox .accountContentBox .infoList{margin-bottom: 15px;}
@@ -411,8 +403,6 @@
 .mypageBox .accountBox .accountContentBox .snsList li a .imgBox.tiktok svg{width: 18px; height: 18px; color: var(--color-white);}
 .mypageBox .accountBox .accountContentBox .addBtn{padding: 7px 10px; display: flex; align-items: center; gap: 0 10px; position: absolute; top:20px; right:20px; font-size: 12px; border-radius: 5px; background-color: var(--color-primary); color: var(--color-white);}
 .mypageBox .accountBox .accountContentBox .addBtn svg{width: 15px; height: 15px;}
-
-
 .mypageBox .accountBox .accountContentBox .snsList li a .textBox h5{font-size: 14px;}
 .mypageBox .accountBox .accountContentBox .snsList li a .textBox .snsInfoList{display: flex; align-items: center; gap: 0 20px;}
 .mypageBox .accountBox .accountContentBox .snsList li a .textBox .snsInfoList li{position: relative; font-size: 12px; font-weight: 300;}
@@ -421,6 +411,31 @@
 .mypageBox .accountBox .accountContentBox .snsList li a .textBox .snsInfoList li.followers svg{margin-left: 5px; width: 11px; height: 11px;}
 .mypageBox .accountBox .accountContentBox .snsList li a .delBtn{width: 34px; height: 28px; position: absolute; top: 50%; transform: translateY(-50%); right:20px; border: 1px solid var(--border); border-radius: 3px; background-color: var(--color-white);}
 .mypageBox .accountBox .accountContentBox .snsList li a .delBtn svg{width: 14px; height: 14px; color: var(--color-red-500);}
+.mypageBox .accountBox .accountContentBox svg{margin-top: -2px; width: 18px; height: 18px;}
+.mypageBox .accountBox .accountContentBox .alarmList > li{margin-bottom: 15px;}
+.mypageBox .accountBox .accountContentBox .alarmList > li:last-child{margin-bottom: 15px;}
+.mypageBox .accountBox .accountContentBox .alarmList li a.new::after{content:''; position: absolute; top:13px;
+right:13px; width: 7px; height: 7px; border-radius: 50%; background-color: var(--color-primary);}
+.mypageBox .accountBox .accountContentBox .alarmList li a svg{width: 18px; height: 18px; margin-top: 1px;}
+.mypageBox .accountBox .accountContentBox .alarmList li a{position: relative; padding: 15px 15px 10px 15px; display: block; border: 1px solid var(--border); border-radius: 10px;}
+.mypageBox .accountBox .accountContentBox .alarmList li a .title{margin-bottom: 3px; font-size: 12px; font-weight: 600;}
+.mypageBox .accountBox .accountContentBox .alarmList li a .text{margin-bottom: 5px; font-size: 12px;}
+
+.mypageBox .accountBox .accountContentBox .alarmList li a .alarmListInfoList{display: flex; gap: 0 20px;}
+.mypageBox .accountBox .accountContentBox .alarmList li a .alarmListInfoList li{position: relative; font-size: 11px; font-weight: 300;}
+.mypageBox .accountBox .accountContentBox .alarmList li a .alarmListInfoList li::after{content: ''; position: absolute; top:6px; right:-11px; width: 2px; height: 2px; border-radius: 50%; background-color: var(--color-gray-400);}
+.mypageBox .accountBox .accountContentBox .alarmList li a .alarmListInfoList li:last-child:after{display: none;}
+.mypageBox .accountBox .accountContentBox .alarmList li a.new{background-color: var(--color-blue-50); border: 1px solid var(--color-blue-100);}
+.mypageBox .accountBox .accountContentBox .alarmList li a .layoutBox{display: flex; gap: 0 9px;}
+
+
+.mypageBox .accountBox .accountContentBox .alarmList li a.approval svg{color: var(--color-green-600);}
+.mypageBox .accountBox .accountContentBox .alarmList li a.deadline svg{color: var(--color-orange-600);}
+.mypageBox .accountBox .accountContentBox .alarmList li a.registration svg{color: var(--color-blue-600)}
+.mypageBox .accountBox .accountContentBox .alarmList li a.payment svg{color: var(--color-red-600);}
+.mypageBox .accountBox .accountContentBox .alarmList li a.update svg{color: var(--color-gray-600);}
+
+
 
 
 
