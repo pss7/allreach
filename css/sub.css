@@ -260,6 +260,7 @@
 .mypageBox .mypageInfoList li:nth-child(6) a .icon02 svg{color: var(--color-red-600);}
 .mypageBox .mypageInfoList li:nth-child(6) a strong{color: var(--color-red-600);}
 .mypageBox .tabLayoutBox{display: flex; gap: 0 30px;}
+.mypageBox .mypageContentBox{width: 100%;}
 .mypageBox aside{flex-shrink: 0; padding: 15px;  width: 251px; background-color: var(--color-white); border: 1px solid var(--border); border-radius: 10px;} 
 .mypageBox aside .depth01 li .tabBtn{padding: 11px 10px; position: relative; display: flex; gap: 0 7px; width: 100%; font-size: 12px; font-weight: 700; border-radius: 5px;}
 .mypageBox aside .depth01 li .tabBtn svg{width: 14px; height: 14px;}
@@ -296,12 +297,12 @@
 .mypageBox .campaignBox .campaignList li a .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
 .mypageBox .campaignBox .campaignList li a .textBox{padding: 15px 15px 35px; background-color: var(--color-white);}
 .mypageBox .campaignBox .campaignList li a .textBox h4{margin-bottom: 6px; font-size: 14px;}
-.mypageBox .campaignBox .campaignList li a .textBox .infoList01{margin-bottom: 7px; display: flex; flex-wrap: wrap; gap: 0 6px;}
-.mypageBox .campaignBox .campaignList li a .textBox .infoList01 span{padding: 5px; border-radius: 5px; font-size: 11px; font-weight: 500; border: 1px solid var(--border); line-height: 1;}
-.mypageBox .campaignBox .campaignList li a .textBox .infoList01 span.experience01{color: var(--color-green-700); background-color: var(--color-green-100); border-color: var(--color-green-200);}
-.mypageBox .campaignBox .campaignList li a .textBox .infoList01 span.experience02{color: var(--color-blue-700); background-color: var(--color-blue-100); border-color: var(--color-blue-200);}
-.mypageBox .campaignBox .campaignList li a .textBox .infoList01 span.review{color: var(--color-orange-700); background-color: var(--color-orange-100); border-color: var(--color-orange-200);}
-.mypageBox .campaignBox .campaignList li a .textBox .infoList01 .shortForm{color: var(--color-purple-700); background-color: var(--color-purple-100); border-color: var(--color-purple-200);}
+.mypageBox .infoList01{margin-bottom: 7px; display: flex; flex-wrap: wrap; gap: 0 6px;}
+.mypageBox .infoList01 span{padding: 5px; border-radius: 5px; font-size: 11px; font-weight: 500; border: 1px solid var(--border); line-height: 1;}
+.mypageBox .infoList01 span.experience01{color: var(--color-green-700); background-color: var(--color-green-100); border-color: var(--color-green-200);}
+.mypageBox .infoList01 span.experience02{color: var(--color-blue-700); background-color: var(--color-blue-100); border-color: var(--color-blue-200);}
+.mypageBox .infoList01 span.review{color: var(--color-orange-700); background-color: var(--color-orange-100); border-color: var(--color-orange-200);}
+.mypageBox .infoList01 .shortForm{color: var(--color-purple-700); background-color: var(--color-purple-100); border-color: var(--color-purple-200);}
 .mypageBox .campaignBox .campaignList li a .btn{margin-bottom: 6px; display: flex; align-items: center; justify-content: center; gap: 0 10px; padding: 5px 10px; width: 100%; font-size: 12px;text-align: center; border-radius: 5px; }
 .mypageBox .campaignBox .campaignList li a .btn:last-child{margin-bottom: 0;}
 .mypageBox .campaignBox .campaignList li a .btn.downloadBtn{border: 1px solid var(--color-blue-500);  color: var(--color-blue-600); background-color: var(--color-white);}
@@ -325,6 +326,42 @@
 .mypageBox .campaignBox .campaignList li a .modificationBox h4{display: flex; align-items: center; gap: 0 5px; color: var(--color-red-800); font-size: 12px; }     
 .mypageBox .campaignBox .campaignList li a .modificationBox h4 svg{width: 14px; height: 14px;}
 .mypageBox .campaignBox .campaignList li a .modificationBox p{padding-left: 20px; font-size: 12px; color: var(--color-red-700);}
+.mypageBox .paymentBox .topPointBox{margin-bottom: 20px; display: flex; gap: 0 20px;}
+.mypageBox .paymentBox .topPointBox .box01{background-color: var(--color-blue-100); border: 2px solid var(--color-blue-200);}
+.mypageBox .paymentBox .topPointBox .box01 strong{color: var(--color-primary);}
+.mypageBox .paymentBox .topPointBox .box02{background-color: var(--color-green-100); border: 2px solid var(--color-green-200)}
+.mypageBox .paymentBox .topPointBox .box02 strong{color: var(--color-green-500);}
+.mypageBox .paymentBox .topPointBox .box{position: relative; min-height: 197px; padding: 20px; flex: 1; border-radius: 10px;  overflow: hidden;}
+.mypageBox .paymentBox .topPointBox .box::after{content: ''; position: absolute; top:0; right:0; width: 100px; height: 100px; border-radius: 50%;}
+
+.mypageBox .paymentBox .topPointBox .box01::after{content: ''; position: absolute; top:-30px; right:-30px; width: 100px; height: 100px; border-radius: 50%; background-color: var(--color-blue-200);}
+.mypageBox .paymentBox .topPointBox .box02::after{content: ''; position: absolute; top:-30px; right:-30px; width: 100px; height: 100px; border-radius: 50%; background-color: var(--color-green-200);}
+.mypageBox .paymentBox .topPointBox .box .comBtn{height: 28px; line-height: 28px; font-size: 12px;}
+.mypageBox .paymentBox .topPointBox .box h4{margin-bottom: 5px; font-size: 12px; text-align: center; font-weight: 500;}
+.mypageBox .paymentBox .topPointBox .box strong{display: block; margin-bottom: 10px; font-size: 21px;  text-align: center;}
+.mypageBox .paymentBox .topPointBox .box strong span{font-size: 16px; font-weight: 500;}
+.mypageBox .paymentBox .topPointBox .box .icon{position: relative; margin: 0 auto 15px; width: 42px; height: 42px; border-radius: 50%; overflow: hidden;}
+.mypageBox .paymentBox .topPointBox .box .icon svg{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 21px; height: 21px; color: var(--color-white);}
+.mypageBox .paymentBox .topPointBox .box01 .icon{background-color: var(--color-primary);}
+.mypageBox .paymentBox .topPointBox .box02 .icon{background-color: var(--color-green-500);}
+
+
+
+.mypageBox .paymentBox .pointsHistoryBox{padding: 20px; background-color: var(--color-white); border: 1px solid var(--border); border-radius: 10px;}
+.mypageBox .paymentBox .pointsHistoryBox h5{display: flex; align-items: center; gap: 0 7px; margin-bottom: 30px; font-weight: 400;}
+.mypageBox .paymentBox .pointsHistoryBox h5 svg{width: 18px; height: 18px;}
+.mypageBox .paymentBox .pointsHistoryList li a{padding: 15px 5px; position: relative; display: flex; align-items: center; border-bottom: 1px solid var(--border); border-radius: 8px; transition: all .15s;}
+.mypageBox .paymentBox .pointsHistoryList li a .imgBox{margin-right: 20px; width: 56px; height: 56px; border-radius: 5px; overflow: hidden;}
+.mypageBox .paymentBox .pointsHistoryList li a .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
+.mypageBox .paymentBox .pointsHistoryList li a .textBox h6{font-size: 14px;}
+.mypageBox .paymentBox .pointsHistoryList li a .textBox .infoList{display: flex; gap: 0 30px;}
+.mypageBox .paymentBox .pointsHistoryList li a .textBox .infoList li{font-size: 11px; color: var(--color-gray-400);}
+.mypageBox .paymentBox .pointsHistoryList li a .pointBox{display: flex; flex-direction: column; gap: 3px 0; position: absolute; top: 50%; transform: translateY(-50%); right:5px; text-align: right;}
+.mypageBox .paymentBox .pointsHistoryList li a .pointBox strong{color: var(--color-green-600); font-size: 14px;}
+.mypageBox .paymentBox .pointsHistoryList li a .pointBox span{font-size: 11px; font-weight: 300;}
+.mypageBox .paymentBox .pointsHistoryList li a:hover{background-color: var(--color-gray-100);}
+
+
 
 @media (max-width: 1024px){
 
