@@ -20,6 +20,19 @@ $(function () {
     }
   });
 
+  //마이페이지
+  $('.mypageBox aside .depth01 li .tabBtn').click(function () {
+
+    if ($(this).hasClass('active')) {
+      $(this).removeClass('active');
+      $(this).next('.depth02').slideUp();
+    } else {
+      $(this).addClass('active');
+      $(this).next('.depth02').slideDown();
+    }
+
+  })
+
 
 });
 

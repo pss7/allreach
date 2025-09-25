@@ -212,7 +212,7 @@
 .authWrap .btnBox .comBtn{flex: 1; font-size: 14px;}
 
 /* 마이페이지 */
-.mypageBox .topBox{margin-bottom: 25px;}
+.mypageBox .topBox{margin-bottom: 20px;}
 .mypageBox .topBox h3{margin-bottom: 10px; font-size: 21px;}
 .mypageBox .topBox p{font-size: 14px;}
 .mypageBox .mypageInfoList{margin-bottom: 25px; display: flex; gap: 15px;}
@@ -259,31 +259,72 @@
 .mypageBox .mypageInfoList li:nth-child(6) a .icon02{background-color: var(--color-red-100);}
 .mypageBox .mypageInfoList li:nth-child(6) a .icon02 svg{color: var(--color-red-600);}
 .mypageBox .mypageInfoList li:nth-child(6) a strong{color: var(--color-red-600);}
-
-
 .mypageBox .tabLayoutBox{display: flex; gap: 0 30px;}
 .mypageBox aside{flex-shrink: 0; padding: 15px;  width: 251px; background-color: var(--color-white); border: 1px solid var(--border); border-radius: 10px;} 
-.mypageBox aside .depht01 li .tabBtn{padding: 11px 10px; position: relative; display: flex; gap: 0 7px; width: 100%; font-size: 12px; font-weight: 700; border-radius: 5px;}
-.mypageBox aside .depht01 li .tabBtn svg{width: 14px; height: 14px;}
-.mypageBox aside .depht01 li .tabBtn::after {content: ""; position: absolute; top: 50%; transform: translateY(-50%); right: 20px; width: 4px; height: 4px; transform: translateY(-50%) rotate(45deg); border-right: 1px solid var(--color-gray-400);; border-bottom: 1px solid var(--color-gray-400);}
-.mypageBox aside .depht01 li .tabBtn:hover{background-color: var(--color-gray-50);}
-
-
-
-
-
-
-
-.mypageBox aside .depht02{display: none;}
-
-
-
-
-
-
-
-
-
+.mypageBox aside .depth01 li .tabBtn{padding: 11px 10px; position: relative; display: flex; gap: 0 7px; width: 100%; font-size: 12px; font-weight: 700; border-radius: 5px;}
+.mypageBox aside .depth01 li .tabBtn svg{width: 14px; height: 14px;}
+.mypageBox aside .depth01 li .tabBtn::after {content: ""; position: absolute;top: calc(50% - 1px); transform: translateY(-50%); right: 20px; width: 4px; height: 4px; transform: translateY(-50%) rotate(45deg); border-right: 1px solid var(--color-gray-400);; border-bottom: 1px solid var(--color-gray-400);}
+.mypageBox aside .depth01 li .tabBtn.active::after{}
+.mypageBox aside .depth01 li .tabBtn:hover{background-color: var(--color-gray-50);}
+.mypageBox aside .depth02{display: none; padding: 8px 0;}
+.mypageBox aside .depth02 li{padding-left:27px;}
+.mypageBox aside .depth02 li .btn{display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 7px  7px  7px 10px; font-size: 12px; font-weight: 500; text-align: left; border-radius: 5px;}
+.mypageBox aside .depth02 li .btn .count{width: 19px; height: 19px; line-height: 19px; background-color: var(--color-gray-100); border-radius: 50%; text-align: center; border-radius: 50%; font-size: 11px; font-weight: 300; color: var(--color-gray-600);}
+.mypageBox aside .depth02 li .btn:hover{background-color: var(--color-gray-50); color: var(--color-primary);}
+.mypageBox aside .depth02 li .btn.active{background-color: var(--color-primary); color: #fff;}
+.mypageBox .campaignBox .tabList{margin-bottom: 35px; display: flex; gap: 7px;}
+.mypageBox .campaignBox .tabList li .btn{position: relative; padding: 8px 20px; font-size: 12px; border-radius: 8px; background-color: var(--color-white); border: 1px solid var(--border); transition: all .15s;}
+.mypageBox .campaignBox .tabList li .btn:hover{background-color: var(--color-orange-400); color: #fff; box-shadow: 3px 3px 5px rgba(0,0,0,.1);}
+.mypageBox .campaignBox .tabList li .btn.active{background-color: var(--color-orange-400); color: #fff; border: 0; box-shadow: 3px 3px 5px rgba(0,0,0,.1);}
+.mypageBox .campaignBox .tabList li .btn.active::after{border-color: #fff;}
+.mypageBox .campaignBox .campaignList{display: flex; flex-wrap: wrap; gap: 20px 1.5%}
+.mypageBox .campaignBox .campaignList li a{height: 100%; display: block; border-radius: 10px; overflow: hidden; border: 1px solid var(--border); background-color: var(--color-white); transition: all .15s;}
+.mypageBox .campaignBox .campaignList li a:hover{transform: scale(1.05); box-shadow: 0 5px 10px rgba(0,0,0,.1);}
+.mypageBox .campaignBox .campaignList li a .imgBox{position: relative; height: 154px;}
+.mypageBox .campaignBox .campaignList li a .imgBox.noImg{background-color: var(--color-gray-100);}
+.mypageBox .campaignBox .campaignList li a .imgBox.noImg::after{width: 88px; height: 88px; content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: url(../images/sub/noimg.svg)no-repeat center;}
+.mypageBox .campaignBox .campaignList li a .imgBox .day{ padding: 4px 9px;  position: absolute; top:10px; left:10px; line-height: 1; border-radius: 5px; background-color: var(--color-black); color: var(--color-white); font-size: 11px;}
+.mypageBox .campaignBox .campaignList li a .imgBox .day.deadline{background-color: var(--color-red-500);}
+.mypageBox .campaignBox .campaignList li a .imgBox .state{padding: 4px 9px;  position: absolute; top:10px; right:10px; line-height: 1; border-radius: 5px; font-size: 11px;} 
+.mypageBox .campaignBox .campaignList li a .imgBox .state.applying{color: var(--color-yellow-700); background-color: var(--color-yellow-100); border: 1px solid var(--color-yellow-200);}
+.mypageBox .campaignBox .campaignList li a .imgBox .state.waiting{color: var(--color-blue-700);
+    background-color: var(--color-blue-100); border: 1px solid var(--color-blue-200);}
+.mypageBox .campaignBox .campaignList li a .imgBox .state.notReg{color: var(--color-orange-700); background-color: var(--color-orange-100); border-color: var(--color-orange-200);}
+.mypageBox .campaignBox .campaignList li a .imgBox .state.reg{color: var(--color-green-700); background-color: var(--color-green-100); border-color: var(--color-green-200);}
+.mypageBox .campaignBox .campaignList li a .imgBox .state.modification{color: var(--color-red-700); border-color: var(--color-red-200); background-color: var(--color-red-100);}
+.mypageBox .campaignBox .campaignList li a .imgBox .state.complete{color: var(--color-gray-700); border-color: var(--color-gray-200); background-color: var(--color-gray-100);}
+.mypageBox .campaignBox .campaignList li a .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
+.mypageBox .campaignBox .campaignList li a .textBox{padding: 15px 15px 35px; background-color: var(--color-white);}
+.mypageBox .campaignBox .campaignList li a .textBox h4{margin-bottom: 6px; font-size: 14px;}
+.mypageBox .campaignBox .campaignList li a .textBox .infoList01{margin-bottom: 7px; display: flex; flex-wrap: wrap; gap: 0 6px;}
+.mypageBox .campaignBox .campaignList li a .textBox .infoList01 span{padding: 5px; border-radius: 5px; font-size: 11px; font-weight: 500; border: 1px solid var(--border); line-height: 1;}
+.mypageBox .campaignBox .campaignList li a .textBox .infoList01 span.experience01{color: var(--color-green-700); background-color: var(--color-green-100); border-color: var(--color-green-200);}
+.mypageBox .campaignBox .campaignList li a .textBox .infoList01 span.experience02{color: var(--color-blue-700); background-color: var(--color-blue-100); border-color: var(--color-blue-200);}
+.mypageBox .campaignBox .campaignList li a .textBox .infoList01 span.review{color: var(--color-orange-700); background-color: var(--color-orange-100); border-color: var(--color-orange-200);}
+.mypageBox .campaignBox .campaignList li a .textBox .infoList01 .shortForm{color: var(--color-purple-700); background-color: var(--color-purple-100); border-color: var(--color-purple-200);}
+.mypageBox .campaignBox .campaignList li a .btn{margin-bottom: 6px; display: flex; align-items: center; justify-content: center; gap: 0 10px; padding: 5px 10px; width: 100%; font-size: 12px;text-align: center; border-radius: 5px; }
+.mypageBox .campaignBox .campaignList li a .btn:last-child{margin-bottom: 0;}
+.mypageBox .campaignBox .campaignList li a .btn.downloadBtn{border: 1px solid var(--color-blue-500);  color: var(--color-blue-600); background-color: var(--color-white);}
+.mypageBox .campaignBox .campaignList li a .btn.submitBtn{background-color: var(--color-primary);  color: var(--color-white); }
+.mypageBox .campaignBox .campaignList li a .btn.modificationBtn{border: 1px solid var(--color-primary);  color: var(--color-primary); background-color: var(--color-white);}
+.mypageBox .campaignBox .campaignList li a .btn svg{margin-top: -1px; width: 14px; height: 14px;}
+.mypageBox .campaignBox .campaignList li a .textBox .text{margin-bottom: 5px; display: block; font-size: 12px;}
+.mypageBox .campaignBox .campaignList li a .textBox .infoBox{margin-bottom: 10px; padding: 10px; display: flex; justify-content: space-between; background-color: var(--color-blue-50); border-radius: 5px;}
+.mypageBox .campaignBox .campaignList li a .textBox .infoBox em{font-size: 12px;}
+.mypageBox .campaignBox .campaignList li a .textBox .infoBox strong{font-size: 14px; color: var(--color-primary);}
+.mypageBox .campaignBox .campaignList li a .textBox .infoList02{margin-bottom: 10px;}
+.mypageBox .campaignBox .campaignList li a .textBox .infoList02 li{margin-bottom: 6px; display: flex; justify-content: space-between;}
+.mypageBox .campaignBox .campaignList li a .textBox .infoList02 li:last-child{margin-bottom: 0;}
+.mypageBox .campaignBox .campaignList li a .textBox .infoList02 li span,
+.mypageBox .campaignBox .campaignList li a .textBox .infoList02 li em{font-size: 12px;}
+.mypageBox .campaignBox .campaignList li a .textBox .infoList02 li span{display: flex; align-items: center; gap:0 5px}
+.mypageBox .campaignBox .campaignList li a .textBox .infoList02 li span svg{margin-top: -1px; width: 11px; height: 11px;}
+.mypageBox .campaignBox .campaignList li a .textBox .infoList02 li em.deadline{color: var(--color-red-600);}
+.mypageBox .campaignBox .campaignList li a .textBox .infoList02 li em.selected{color: var(--color-green-600); }
+.mypageBox .campaignBox .campaignList li a .modificationBox{margin-bottom: 8px; padding: 10px; background-color: var(--color-red-50); border: 1px solid var(--color-red-200); border-radius: 8px;}
+.mypageBox .campaignBox .campaignList li a .modificationBox h4{display: flex; align-items: center; gap: 0 5px; color: var(--color-red-800); font-size: 12px; }     
+.mypageBox .campaignBox .campaignList li a .modificationBox h4 svg{width: 14px; height: 14px;}
+.mypageBox .campaignBox .campaignList li a .modificationBox p{padding-left: 20px; font-size: 12px; color: var(--color-red-700);}
 
 @media (max-width: 1024px){
 
