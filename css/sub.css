@@ -379,6 +379,52 @@
 
 
 
+.mypageBox .accountBox .accountContentBox{margin-bottom: 20px; position: relative; padding: 20px; background-color: var(--color-white); border-radius: 10px; border: 1px solid var(--border); }
+.mypageBox .accountBox .accountContentBox h4{margin-bottom: 30px; font-size: 14px; font-weight: 400;}
+.mypageBox .accountBox .accountContentBox .layoutBox{display: flex; gap: 0 20px;}
+.mypageBox .accountBox .accountContentBox .layoutBox .infoList{width: 100%;}
+.mypageBox .accountBox .accountContentBox .infoList{margin-bottom: 15px;}
+.mypageBox .accountBox .accountContentBox .infoList li{margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center;}
+.mypageBox .accountBox .accountContentBox .infoList li:last-child{margin-bottom: 0;}
+.mypageBox .accountBox .accountContentBox .infoList li span{font-size: 14px; font-weight: 600;}
+.mypageBox .accountBox .accountContentBox .infoList li em{font-size: 14px; font-weight: 300;}
+.mypageBox .accountBox .accountContentBox .profileImgBox{flex-shrink: 0; position: relative; width: 70px; height: 70px; border-radius: 50%; background-color: var(--color-primary);}
+.mypageBox .accountBox .accountContentBox .profileImgBox img{display: block; width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+.mypageBox .accountBox .accountContentBox .profileImgBox .btn{position: absolute; bottom: 0; right:0; width: 20px; height: 20px; border-radius: 50%; border: 1px solid var(--border); z-index: 99999; background-color: var(--color-white);}
+.mypageBox .accountBox .accountContentBox .profileImgBox .btn svg{width: 14px; height: 14px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.mypageBox .accountBox .accountContentBox .settingBtn{padding: 8px 10px; display: flex; align-items: center; gap: 0 10px; position: absolute; top:20px; right:20px; font-size: 12px; border: 1px solid var(--border); border-radius: 5px; line-height: 1;}
+.mypageBox .accountBox .accountContentBox .settingBtn svg{width: 14px; height: 14px;}
+.mypageBox .accountBox .accountContentBox .infoText{padding: 10px; border-radius: 5px; border: 1px solid var(--border); background-color: var(--color-gray-100); font-size: 12px;}
+.mypageBox .accountBox .accountContentBox .snsList > li{margin-bottom: 15px;}
+.mypageBox .accountBox .accountContentBox .snsList li:last-child{margin-bottom: 0;}
+.mypageBox .accountBox .accountContentBox .snsList li a{position: relative; padding: 15px 20px; display: flex; align-items: center; border: 1px solid var(--border); border-radius: 6px;}
+.mypageBox .accountBox .accountContentBox .snsList li a .imgBox{margin-right: 10px; position: relative; width: 35px; height: 35px; border-radius: 50%; overflow: hidden;}
+.mypageBox .accountBox .accountContentBox .snsList li a .imgBox svg{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.mypageBox .accountBox .accountContentBox .snsList li a .imgBox.youtube{background-color: var(--color-red-500);}
+.mypageBox .accountBox .accountContentBox .snsList li a .imgBox.youtube svg{width: 18px; height: 18px; color: var(--color-white);}
+.mypageBox .accountBox .accountContentBox .snsList li a .imgBox.instagram{background: linear-gradient(45deg, #fdf497 0%, #fd5949 45%, #d6249f 65%, #285AEB 100%);}
+.mypageBox .accountBox .accountContentBox .snsList li a .imgBox.instagram svg{width: 18px; height: 18px; color: var(--color-white);}
+.mypageBox .accountBox .accountContentBox .snsList li a .imgBox.naver{background-color: var(--color-green-500);}
+.mypageBox .accountBox .accountContentBox .snsList li a .imgBox.naver svg{width: 18px; height: 18px; color: var(--color-white);}
+.mypageBox .accountBox .accountContentBox .snsList li a .imgBox.tiktok{background-color: var(--color-black);}
+.mypageBox .accountBox .accountContentBox .snsList li a .imgBox.tiktok .tiktokText{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: var(--color-white); line-height: 1; font-size: 14px; font-weight: 700;}
+.mypageBox .accountBox .accountContentBox .snsList li a .imgBox.tiktok svg{width: 18px; height: 18px; color: var(--color-white);}
+.mypageBox .accountBox .accountContentBox .addBtn{padding: 7px 10px; display: flex; align-items: center; gap: 0 10px; position: absolute; top:20px; right:20px; font-size: 12px; border-radius: 5px; background-color: var(--color-primary); color: var(--color-white);}
+.mypageBox .accountBox .accountContentBox .addBtn svg{width: 15px; height: 15px;}
+
+
+.mypageBox .accountBox .accountContentBox .snsList li a .textBox h5{font-size: 14px;}
+.mypageBox .accountBox .accountContentBox .snsList li a .textBox .snsInfoList{display: flex; align-items: center; gap: 0 20px;}
+.mypageBox .accountBox .accountContentBox .snsList li a .textBox .snsInfoList li{position: relative; font-size: 12px; font-weight: 300;}
+.mypageBox .accountBox .accountContentBox .snsList li a .textBox .snsInfoList li::after{content: ''; position: absolute; top:8px; right:-10px; width: 2px; height: 2px; border-radius: 50%; background-color: var(--color-gray-400);}
+.mypageBox .accountBox .accountContentBox .snsList li a .textBox .snsInfoList li:last-child:after{display: none;}
+.mypageBox .accountBox .accountContentBox .snsList li a .textBox .snsInfoList li.followers svg{margin-left: 5px; width: 11px; height: 11px;}
+.mypageBox .accountBox .accountContentBox .snsList li a .delBtn{width: 34px; height: 28px; position: absolute; top: 50%; transform: translateY(-50%); right:20px; border: 1px solid var(--border); border-radius: 3px; background-color: var(--color-white);}
+.mypageBox .accountBox .accountContentBox .snsList li a .delBtn svg{width: 14px; height: 14px; color: var(--color-red-500);}
+
+
+
+
 
 @media (max-width: 1024px){
 

@@ -375,14 +375,14 @@
                                             </svg>
                                             결제관리
                                         </button>
-                                        <ul class="depth02 active">
+                                        <ul class="depth02">
                                             <li>
                                                 <a href="../sub/sub_mypage_payment01.html" class="btn">
                                                     포인트내역
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="../sub/sub_mypage_payment02.html" class="btn active">
+                                                <a href="../sub/sub_mypage_payment02.html" class="btn">
                                                     출금내역
                                                 </a>
                                             </li>
@@ -400,16 +400,16 @@
                                             </svg>
                                             계정관리
                                         </button>
-                                        <ul class="depth02">
+                                        <ul class="depth02 active">
                                             <li>
-                                                <button class="btn">
+                                                <a href="#" class="btn active">
                                                     기본정보
-                                                </button>
+                                                </a>
                                             </li>
                                             <li>
-                                                <button class="btn">
+                                                <a href="#" class="btn">
                                                     내 알림
-                                                </button>
+                                                </a>
                                             </li>
                                         </ul>
                                     </li>
@@ -448,108 +448,385 @@
                             <div class="mypageContentBox">
                                 <div class="topBox">
                                     <h3>
-                                        출금 내역
+                                        기본 정보
                                     </h3>
                                     <p>
-                                        포인트 출금 신청 내역을 확인하세요
+                                        프로필 정보를 확인하고 수정하세요
                                     </p>
                                 </div>
 
-                                <div class="paymentBox">
+                                <div class="accountBox">
+                                    <div class="accountContentBox">
+                                        <h4>기본정보</h4>
+                                        <div class="layoutBox">
+                                            <div class="profileImgBox">
+                                                <img src="" alt="">
+                                                <button class="btn">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="none" stroke="currentColor" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round"
+                                                        aria-hidden="true">
+                                                        <path
+                                                            d="M13.997 4a2 2 0 0 1 1.76 1.05l.486.9A2 2 0 0 0 18.003 7H20a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h1.997a2 2 0 0 0 1.759-1.048l.489-.904A2 2 0 0 1 10.004 4z">
+                                                        </path>
+                                                        <circle cx="12" cy="13" r="3"></circle>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <ul class="infoList">
+                                                <li>
+                                                    <span>
+                                                        이름
+                                                    </span>
+                                                    <em>
+                                                        홍길동
+                                                    </em>
+                                                </li>
+                                                <li>
+                                                    <span>
+                                                        이메일
+                                                    </span>
+                                                    <em>
+                                                        홍길동123@example.com
+                                                    </em>
+                                                </li>
+                                                <li>
+                                                    <span>
+                                                        연락처
+                                                    </span>
+                                                    <em>
+                                                        010-1234-5678
+                                                    </em>
+                                                </li>
+                                                <li>
+                                                    <span>
+                                                        주소
+                                                    </span>
+                                                    <em>
+                                                        서울특별시 강남구
+                                                    </em>
+                                                </li>
+                                                <li>
+                                                    <span>
+                                                        가입일
+                                                    </span>
+                                                    <em>
+                                                        2024.01.15
+                                                    </em>
+                                                </li>
+                                            </ul>
+                                        </div>
 
-                                    <div class="paymentHistoryBox">
-
-                                        <h5>
+                                        <button class="settingBtn">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                                                 stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                                 stroke-linejoin="round" aria-hidden="true">
-                                                <rect width="20" height="14" x="2" y="5" rx="2"></rect>
-                                                <line x1="2" x2="22" y1="10" y2="10"></line>
+                                                <path d="M13 21h8"></path>
+                                                <path
+                                                    d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z">
+                                                </path>
                                             </svg>
-                                            출금 내역
-                                        </h5>
+                                            수정
+                                        </button>
 
-                                        <!-- 
-                                        클래스 적용
-                                         paymentCompleted > 출금완료 시 적용
-                                         withdrawalPending > 출금보류 시 적용
-                                        withdrawalRequest > 출금신청 시 적용
-                                         -->
-                                        <ul class="withdrawalList">
-                                            <li class="paymentCompleted">
-                                                <div class="textBox">
-                                                    <div class="stateBox">
-                                                        <span>출금신청</span>
-                                                        <em>출금완료</em>
-                                                    </div>
-                                                    <ul class="infoList">
-                                                        <li>
-                                                            신청일: 2024.01.20
-                                                        </li>
-                                                        <li>
-                                                            출금일: 2024.01.22
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="amountBox">
-                                                    <strong>100,000원</strong>
-                                                    <em>
-                                                        지급 완료
-                                                    </em>
-                                                </div>
+                                    </div>
+
+                                    <div class="accountContentBox">
+                                        <h4>출금 계좌 정보</h4>
+
+                                        <ul class="infoList">
+                                            <li>
+                                                <span>
+                                                    은행
+                                                </span>
+                                                <em>
+                                                    KB국민은행
+                                                </em>
                                             </li>
-                                            <li class="withdrawalPending">
-                                                <div class="textBox">
-                                                    <div class="stateBox">
-                                                        <span>출금신청</span>
-                                                        <em>
-                                                            출금보류
-                                                            ⓘ
-                                                        </em>
-                                                        <span class="check">사유확인</span>
-                                                    </div>
-                                                    <ul class="infoList">
-                                                        <li>
-                                                            신청일: 2024.01.20
-                                                        </li>
-                                                        <li>
-                                                            출금일: 2024.01.22
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="amountBox">
-                                                    <strong>100,000원</strong>
-                                                    <em>
-                                                        보류중
-                                                    </em>
-                                                </div>
+                                            <li>
+                                                <span>
+                                                    예금주
+                                                </span>
+                                                <em>
+                                                    홍길동
+                                                </em>
                                             </li>
-                                            <li class="withdrawalRequest">
-                                                <div class="textBox">
-                                                    <div class="stateBox">
-                                                        <span>출금신청</span>
-                                                        <em>출금신청</em>
-                                                    </div>
-                                                    <ul class="infoList">
-                                                        <li>
-                                                            신청일: 2024.01.20
-                                                        </li>
-                                                        <li>
-                                                            출금일: 2024.01.22
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="amountBox">
-                                                    <strong>100,000원</strong>
-                                                    <em>
-                                                        처리중
-                                                    </em>
-                                                </div>
+                                            <li>
+                                                <span>
+                                                    계좌번호
+                                                </span>
+                                                <em>
+                                                    123-456-789012
+                                                </em>
                                             </li>
                                         </ul>
+
+                                        <button class="settingBtn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" aria-hidden="true">
+                                                <path d="M13 21h8"></path>
+                                                <path
+                                                    d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z">
+                                                </path>
+                                            </svg>
+                                            수정
+                                        </button>
+
                                     </div>
+
+                                    <div class="accountContentBox">
+                                        <h4>비밀번호 변경</h4>
+
+                                        <ul class="infoList">
+                                            <li>
+                                                <span>
+                                                    비밀번호
+                                                </span>
+                                                <em>
+                                                    ••••••••••
+                                                </em>
+                                            </li>
+                                            <li>
+                                                <span>
+                                                    마지막 변경일
+                                                </span>
+                                                <em>
+                                                    2024.01.01
+                                                </em>
+                                            </li>
+                                        </ul>
+
+                                        <p class="infoText">
+                                            보안을 위해 정기적으로 비밀번호를 변경해주세요.
+                                        </p>
+
+                                        <button class="settingBtn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" aria-hidden="true">
+                                                <path d="M13 21h8"></path>
+                                                <path
+                                                    d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z">
+                                                </path>
+                                            </svg>
+                                            수정
+                                        </button>
+
+                                    </div>
+
+                                    <div class="accountContentBox">
+                                        <h4>SNS 채널 관리</h4>
+
+                                        <ul class="snsList">
+                                            <li>
+                                                <a href="#">
+                                                    <div class="imgBox youtube">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                            fill="none" stroke="currentColor" stroke-width="2"
+                                                            stroke-linecap="round" stroke-linejoin="round"
+                                                            aria-hidden="true">
+                                                            <path
+                                                                d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17">
+                                                            </path>
+                                                            <path d="m10 15 5-3-5-3z"></path>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="textBox">
+                                                        <h5>YouTube 채널 1</h5>
+                                                        <ul class="snsInfoList">
+                                                            <li>
+                                                                YouTube
+                                                            </li>
+                                                            <li class="followers">
+                                                                팔로워 15.2K
+                                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 24 24" fill="none"
+                                                                    stroke="currentColor" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round"
+                                                                    aria-hidden="true">
+                                                                    <path d="M15 3h6v6"></path>
+                                                                    <path d="M10 14 21 3"></path>
+                                                                    <path
+                                                                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                                                    </path>
+                                                                </svg>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <button class="delBtn">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                            fill="none" stroke="currentColor" stroke-width="2"
+                                                            stroke-linecap="round" stroke-linejoin="round"
+                                                            aria-hidden="true">
+                                                            <path d="M10 11v6"></path>
+                                                            <path d="M14 11v6"></path>
+                                                            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"></path>
+                                                            <path d="M3 6h18"></path>
+                                                            <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                                        </svg>
+                                                    </button>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="imgBox instagram">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                            class="lucide lucide-instagram w-5 h-5" aria-hidden="true">
+                                                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5">
+                                                            </rect>
+                                                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z">
+                                                            </path>
+                                                            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="textBox">
+                                                        <h5>Instagram 채널 1</h5>
+                                                        <ul class="snsInfoList">
+                                                            <li>
+                                                                Instagram
+                                                            </li>
+                                                            <li class="followers">
+                                                                팔로워 25.8K
+                                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 24 24" fill="none"
+                                                                    stroke="currentColor" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round"
+                                                                    aria-hidden="true">
+                                                                    <path d="M15 3h6v6"></path>
+                                                                    <path d="M10 14 21 3"></path>
+                                                                    <path
+                                                                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                                                    </path>
+                                                                </svg>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <button class="delBtn">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                            fill="none" stroke="currentColor" stroke-width="2"
+                                                            stroke-linecap="round" stroke-linejoin="round"
+                                                            aria-hidden="true">
+                                                            <path d="M10 11v6"></path>
+                                                            <path d="M14 11v6"></path>
+                                                            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"></path>
+                                                            <path d="M3 6h18"></path>
+                                                            <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                                        </svg>
+                                                    </button>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="imgBox naver">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                            fill="none" stroke="currentColor" stroke-width="2"
+                                                            stroke-linecap="round" stroke-linejoin="round"
+                                                            aria-hidden="true">
+                                                            <circle cx="12" cy="12" r="10"></circle>
+                                                            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20">
+                                                            </path>
+                                                            <path d="M2 12h20"></path>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="textBox">
+                                                        <h5>Blog 채널 1</h5>
+                                                        <ul class="snsInfoList">
+                                                            <li>
+                                                                Blog
+                                                            </li>
+                                                            <li class="followers">
+                                                                팔로워 5.2K
+                                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 24 24" fill="none"
+                                                                    stroke="currentColor" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round"
+                                                                    aria-hidden="true">
+                                                                    <path d="M15 3h6v6"></path>
+                                                                    <path d="M10 14 21 3"></path>
+                                                                    <path
+                                                                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                                                    </path>
+                                                                </svg>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <button class="delBtn">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                            fill="none" stroke="currentColor" stroke-width="2"
+                                                            stroke-linecap="round" stroke-linejoin="round"
+                                                            aria-hidden="true">
+                                                            <path d="M10 11v6"></path>
+                                                            <path d="M14 11v6"></path>
+                                                            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"></path>
+                                                            <path d="M3 6h18"></path>
+                                                            <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                                        </svg>
+                                                    </button>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="imgBox tiktok">
+                                                        <span class="tiktokText">
+                                                            T
+                                                        </span>
+                                                    </div>
+                                                    <div class="textBox">
+                                                        <h5>Blog 채널 1</h5>
+                                                        <ul class="snsInfoList">
+                                                            <li>
+                                                                Blog
+                                                            </li>
+                                                            <li class="followers">
+                                                                팔로워 5.2K
+                                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 24 24" fill="none"
+                                                                    stroke="currentColor" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round"
+                                                                    aria-hidden="true">
+                                                                    <path d="M15 3h6v6"></path>
+                                                                    <path d="M10 14 21 3"></path>
+                                                                    <path
+                                                                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                                                    </path>
+                                                                </svg>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <button class="delBtn">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                            fill="none" stroke="currentColor" stroke-width="2"
+                                                            stroke-linecap="round" stroke-linejoin="round"
+                                                            aria-hidden="true">
+                                                            <path d="M10 11v6"></path>
+                                                            <path d="M14 11v6"></path>
+                                                            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"></path>
+                                                            <path d="M3 6h18"></path>
+                                                            <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                                        </svg>
+                                                    </button>
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                        <button class="addBtn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" aria-hidden="true">
+                                                <path d="M5 12h14"></path>
+                                                <path d="M12 5v14"></path>
+                                            </svg>
+                                            채널 추가
+                                        </button>
+
+                                    </div>
+
                                 </div>
-                                <!-- //paymentBox -->
+                                <!-- //accountBox -->
 
                             </div>
                         </div>
