@@ -571,5 +571,10 @@ top:50%; right: 20px; transform: translateY(-50%); width: 8px; height: 8px; tran
   .mypageBox .paymentBox .topPointBox .box{padding: 20px 20px 10px; min-height: auto;}
 
   .mypageBox .paymentBox .withdrawalList > li .textBox .stateBox{flex-direction: column; align-items: flex-start; gap: 5px 0;}
+  .mypageBox .accountBox .accountContentBox .layoutBox{flex-direction: column; align-items: center; gap: 30px 0;}
+  .mypageBox .accountBox .accountContentBox .addBtn{position: static; margin-top: 10px;}
+  .mypageBox .accountBox .accountContentBox h4{margin-bottom: 15px;}
+
+
 
 }
