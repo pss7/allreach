@@ -450,7 +450,7 @@ right:13px; width: 7px; height: 7px; border-radius: 50%; background-color: var(-
 .mypageBox .serviceCenterBox .btnBox .btn.addBtn{background-color: var(--color-primary); color: var(--color-white);}
 .mypageBox .serviceCenterBox .inquiryList > li{margin-bottom: 15px; padding: 10px 10px 10px 15px; border: 1px solid var(--border); border-radius: 10px;}
 .mypageBox .serviceCenterBox .inquiryList > li:last-child{margin-bottom: 0;}
-.mypageBox .serviceCenterBox .inquiryList li .layoutBox{margin-bottom: 10px; display: flex; align-items: center; gap: 0 10px;}
+.mypageBox .serviceCenterBox .inquiryList li .layoutBox{margin-bottom: 10px; display: flex; flex-wrap: wrap; align-items: center; gap: 5px 10px;}
 .mypageBox .serviceCenterBox .inquiryList li h5{font-size: 14px;}
 .mypageBox .serviceCenterBox .inquiryList li .stateBox{display: flex; gap: 0 8px;}
 .mypageBox .serviceCenterBox .inquiryList li .stateBox span{font-weight: 500;}
@@ -548,7 +548,9 @@ top:50%; right: 20px; transform: translateY(-50%); width: 8px; height: 8px; tran
   .mypageBox .tabLayoutBox{flex-direction: column; gap: 30px;}
   .mypageBox aside{width: 100%;}
 
+  .mypageBox .mypageInfoList li a strong,
   .mypageBox .paymentBox .topPointBox .box strong{font-size: 18px;}
+  .mypageBox .serviceCenterBox .formLayoutBox{flex-direction: column; gap: 6px 0;}
 
 }
 
@@ -570,11 +572,22 @@ top:50%; right: 20px; transform: translateY(-50%); width: 8px; height: 8px; tran
   .mypageBox .paymentBox .topPointBox{flex-direction: column; gap: 10px 0;}
   .mypageBox .paymentBox .topPointBox .box{padding: 20px 20px 10px; min-height: auto;}
 
+  .mypageBox .mypageInfoList li a{padding: 25px 20px 20px; height: auto;}
+
   .mypageBox .paymentBox .withdrawalList > li .textBox .stateBox{flex-direction: column; align-items: flex-start; gap: 5px 0;}
   .mypageBox .accountBox .accountContentBox .layoutBox{flex-direction: column; align-items: center; gap: 30px 0;}
   .mypageBox .accountBox .accountContentBox .addBtn{position: static; margin-top: 10px;}
   .mypageBox .accountBox .accountContentBox h4{margin-bottom: 15px;}
+  .mypageBox .accountBox .accountContentBox .alarmList > li .layoutBox{flex-direction: row; align-items: flex-start;}
+  .mypageBox .accountBox .accountContentBox .alarmList li a .text{margin-bottom: 12px;}
+  .mypageBox .accountBox .accountContentBox .alarmList li a .alarmListInfoList{flex-direction: column; gap:2px 0;}
+  .mypageBox .accountBox .accountContentBox .alarmList li a .alarmListInfoList li::after{display: none;}
+  .mypageBox .serviceCenterBox .box .topBox p{font-size: 12px;}
 
-
+  .mypageBox .serviceCenterBox .noticeBox .list .layoutBox{flex-direction: column; gap: 20px 0;}
+  .mypageBox .serviceCenterBox .noticeBox .list .imgBox{width: 100%; height: 170px;}
+  .mypageBox .serviceCenterBox .noticeBox .list .view{position: static; margin-top: 30px;}
+  .mypageBox .serviceCenterBox .noticeBox .list .bottomBox{margin: 20px 0 10px;}
+  .mypageBox .serviceCenterBox .noticeBox .list .bottomBox .readMore{font-size: 12px;}
 
 }
