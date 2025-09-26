@@ -317,6 +317,9 @@ main{flex: 1; padding: 110px 0 70px;}
   #headerWrap .headerTopBox .mobileAuthBox a svg{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: var(--color-white); width: 13px; height: 13px;}
 
   #headerWrap .headerTopBox .logoBox h1 a{font-size: 18px;}
+  #headerWrap.my .headerTopBox .linkBox .linkList,
+  #headerWrap.my .mobileAuthBox{display: none;}
+  #headerWrap.my .headerTopBox .linkBox{display: block;}
 
 }
 
