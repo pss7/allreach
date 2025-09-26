@@ -55,5 +55,24 @@ $(function () {
 
   initComLists();
 
+  //마이페이지
+  $('#headerWrap .accountBox .accountBtn').click(function (e) {
+    e.stopPropagation();
+    if ($(this).next().hasClass('active')) {
+      $('#headerWrap .accountBox .mypageInfoBox').removeClass('active');
+    } else {
+      $('#headerWrap .accountBox .mypageInfoBox').addClass('active');
+    }
+
+  });
+
+  $('#headerWrap .accountBox .mypageInfoBox').click(function (e) {
+    e.stopPropagation();
+  });
+
+  $('#wrap').click(function (e) {
+    if ($(e.target).closest('#headerWrap .accountBox').length) return;
+    $('#headerWrap .accountBox .mypageInfoBox').removeClass('active');
+  });
 
 });
