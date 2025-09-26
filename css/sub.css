@@ -548,6 +548,8 @@ top:50%; right: 20px; transform: translateY(-50%); width: 8px; height: 8px; tran
   .mypageBox .tabLayoutBox{flex-direction: column; gap: 30px;}
   .mypageBox aside{width: 100%;}
 
+  .mypageBox .paymentBox .topPointBox .box strong{font-size: 18px;}
+
 }
 
 @media (max-width: 576px){
@@ -561,5 +563,13 @@ top:50%; right: 20px; transform: translateY(-50%); width: 8px; height: 8px; tran
 
   .mypageBox .campaignBox .tabList{gap: 5px 1.5%;}
   .mypageBox .campaignBox .tabList li{width: 49.2%;}
+
+  .mypageBox .paymentBox .paymentHistoryBox h5{margin-bottom: 10px;}
+  .mypageBox .paymentBox .pointsHistoryList li a .leftBox{flex-direction: column; gap: 20px 0;}
+  .mypageBox .paymentBox .pointsHistoryList li a .imgBox{width: 100%; height: 160px;}
+  .mypageBox .paymentBox .topPointBox{flex-direction: column; gap: 10px 0;}
+  .mypageBox .paymentBox .topPointBox .box{padding: 20px 20px 10px; min-height: auto;}
+
+  .mypageBox .paymentBox .withdrawalList > li .textBox .stateBox{flex-direction: column; align-items: flex-start; gap: 5px 0;}
 
 }
