@@ -590,4 +590,6 @@ top:50%; right: 20px; transform: translateY(-50%); width: 8px; height: 8px; tran
   .mypageBox .serviceCenterBox .noticeBox .list .bottomBox{margin: 20px 0 10px;}
   .mypageBox .serviceCenterBox .noticeBox .list .bottomBox .readMore{font-size: 12px;}
 
+  .mypageBox .serviceCenterBox .questionList li .creationDateBox{flex-direction: column; align-items: flex-start; gap: 10px 0;}
+
 }
