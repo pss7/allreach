@@ -2,7 +2,7 @@ $(function () {
 
   //메인 슬라이드 영역
   const swiper = new Swiper("#mainSlideWrap .mySwiper", {
-    slidesPerView: 'auto',
+    slidesPerView: 3,
     centeredSlides: true,
     loop: true,
     navigation: {
