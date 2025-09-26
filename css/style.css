@@ -174,7 +174,7 @@ main{flex: 1; padding: 110px 0 70px;}
 .comSlideList button svg{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 18px; height: 18px;}
 .comSlideList .prev{left:15px;}
 .comSlideList .next{right:15px;}
-.comSlideList .slick .slick-list{overflow: visible;}
+.comSlideList .slick .slick-list{}
 .comSlideList .slick .slick-slide{width: 208px; margin: 0 10px;}
 
 .cols-1>* {flex: 0 0 100%; max-width: 100%;}
