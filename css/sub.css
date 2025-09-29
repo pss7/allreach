@@ -116,6 +116,7 @@
     .campaignDetailBox .leftBox .topImgBox .mainImgBox{height: 380px;}
     .campaignDetailBox .leftBox .topImgBox .subImgListBox{padding-bottom: 25px; overflow-y: auto;}
     .campaignDetailBox .leftBox .topImgBox .subImgListBox .subImgBox{width: 767px;}
+    .campaignDetailBox .leftBox .contentBox .offerContentBox strong{font-size: 20px;}
 
 }
 
@@ -124,6 +125,8 @@
     .campaignDetailBox .leftBox .topImgBox .subImgListBox .subImgBox{width: 480px;}
     .campaignDetailBox .leftBox .topImgBox .mainImgBox{margin-bottom: 15px; height: 250px;}
     .campaignDetailBox .leftBox .topImgBox .subImgBox .btn{width: 100px; height: 100px;}
+    .campaignDetailBox .leftBox .contentBox .offerContentBox strong{font-size: 18px;}
+    .campaignDetailBox .rightBox .box01 .pointBox strong{font-size: 18px;}
 
 }
 
@@ -646,3 +649,8 @@ top:50%; right: 20px; transform: translateY(-50%); width: 8px; height: 8px; tran
   .mypageBox .serviceCenterBox .questionList li .creationDateBox{flex-direction: column; align-items: flex-start; gap: 10px 0;}
 
 }
+
+/* 뒤로가기 */
+.returnLink{margin: 0 0 20px; padding: 7px; display: inline-flex; align-items: center; gap: 0 10px; font-size: 12px; border-radius: 5px; transition: all .15s;}
+.returnLink svg{width: 14px; height: 14px;}
+.returnLink:hover{background-color: var(--color-gray-200);}
