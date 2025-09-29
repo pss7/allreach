@@ -3,6 +3,10 @@
 .contentBox{padding: 50px 0 100px;}
 
 /* 상단 */
+.topTextBox{padding: 15px; background-color: var(--color-black); text-align: center;}
+.topTextBox p{text-align: center; color: #fff; font-size: 14px; font-weight: 600;}
+.topTextBox p span{ background: linear-gradient(90deg, #eaaa18 0%, #c87406 100%);
+  -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;}
 
 /* 캠페인 상세 */
 .campaignDetailBox .layoutBox{display: flex; gap: 0 20px;}
@@ -131,13 +135,55 @@
 .campaignApplicationBox .leftBox,
 .campaignApplicationBox .rightBox{padding: 20px; border: 1px solid var(--border); border-radius: 10px;}
 .campaignApplicationBox .leftBox h3{font-size: 21px; margin-bottom: 20px;}
+.campaignApplicationBox .formBox .infoText{margin:8px 0 10px; padding: 10px; display: flex; align-items: center; gap: 0 5px; font-size: 12px; background-color: var(--color-gray-50); border-radius: 5px;}
+.campaignApplicationBox .formBox .infoText svg{width: 12px; height: 12px; color: var(--color-blue-500);}
+.campaignApplicationBox .formBox .labelBox p{color: var(--color-gray-500); font-size: 12px;}
+.campaignApplicationBox .formBox .selectText{display: none; margin: 20px 0 0; padding: 8px 10px 8px 8px; background-color: var(--color-blue-50); font-size: 12px; color: var(--color-blue-800); border-radius: 5px;}
+.campaignApplicationBox .formBox .applicationList{display: flex; flex-wrap: wrap; gap: 10px 1.5%;}
+.campaignApplicationBox .formBox .applicationList li .btn:hover{box-shadow: 0 5px 8px rgba(0,0,0,.1);}
+.campaignApplicationBox .formBox .applicationList li .btn.active{border: 1px solid var(--color-primary);}
+.campaignApplicationBox .formBox .applicationList li .btn.active .textBox h3{color: var(--color-primary);}
+.campaignApplicationBox .formBox .applicationList li .btn.active .checkIconBox{display: block;}
+.campaignApplicationBox .formBox .applicationList li .btn .checkIconBox{display: none; position: absolute; top:5px; right: 5px; width: 21px; height: 21px; border-radius: 50%; background-color: var(--color-primary); z-index: 999;}
+.campaignApplicationBox .formBox .applicationList li .btn .checkIconBox svg{width: 12px; height: 12px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: var(--color-white);}
+.campaignApplicationBox .formBox .applicationList li .btn{position: relative; display: block; border-radius: 8px; border: 1px solid var(--border); overflow: hidden; text-align: left; transition: all .15s;}
+.campaignApplicationBox .formBox .applicationList li .btn .imgBox{position: relative; padding-top: 53%; height: 0;}
+.campaignApplicationBox .formBox .applicationList li .btn .imgBox.noImg{background: var(--color-gray-100);}
+.campaignApplicationBox .formBox .applicationList li .btn .imgBox.noImg img{position: absolute; top:50%; left: 50%; transform: translate(-50%, -50%); object-fit: contain;}
+.campaignApplicationBox .formBox .applicationList li .btn .imgBox img{position: absolute; top:0; left:0; right:0; bottom: 0; width: 100%; height: 100%; object-fit: cover;}
+.campaignApplicationBox .formBox .applicationList li .btn .textBox{padding: 30px 10px 10px;}
+.campaignApplicationBox .formBox .applicationList li .btn .textBox h3{margin-bottom: 3px; font-size: 11px;}
+.campaignApplicationBox .formBox .applicationList li .btn .textBox span{display: block; font-size: 10px; font-weight: 300;}
 .campaignApplicationBox .formBox .labelBox{margin-bottom: 6px; display: flex; align-items: center; gap: 0 7px;}
 .campaignApplicationBox .formBox .labelBox svg{width: 14px; height: 14px;}
 .campaignApplicationBox .formBox .labelBox .label{font-size: 12px; font-weight: 500;}
 .campaignApplicationBox .formBox .labelBox em{color: var(--color-red-500); font-size: 12px;}
+.campaignApplicationBox .formBox .channelList li{margin-bottom: 10px;}
+.campaignApplicationBox .formBox .channelList li a{padding: 15px; gap: 0 10px; display: flex; align-items: center; justify-content: space-between; border: 2px solid var(--border); border-radius: 8px;}
+.campaignApplicationBox .formBox .channelList li a.active{background-color: var(--color-blue-100); border: 2px solid var(--color-primary);}
+.campaignApplicationBox .formBox .channelList li a .btnBox{display: flex; align-items: center; gap: 0 5px;}
+.campaignApplicationBox .formBox .channelList li a.active .btnBox .select{display: block; padding: 2px 8px; border-radius: 50px; text-align: center; background-color: var(--color-primary); color: var(--color-white); font-size: 11px;}
+.campaignApplicationBox .formBox .channelList li a.active .iconBox .checkIconBox{display: block;}
+.campaignApplicationBox .formBox .channelList li a .btnBox .select{display: none;}
+.campaignApplicationBox .formBox .channelList li a .iconBox .checkIconBox{display: none; position: absolute; top:-5px; right:-5px; width: 14px; height: 14px; border-radius: 50%; background-color: var(--color-primary);}
+.campaignApplicationBox .formBox .channelList li a .iconBox .checkIconBox svg{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 9px; height: 9px;}
+.campaignApplicationBox .formBox .channelList li a .layoutBox{gap:0 10px;}
+.campaignApplicationBox .formBox .channelList li a .iconBox{position: relative; flex-shrink: 0; margin-right: 0; width: 21px; height: 21px; border-radius: 50%;}
+.campaignApplicationBox .formBox .channelList li a .iconBox.youtube{background-color: var(--color-red-500);}
+.campaignApplicationBox .formBox .channelList li a .iconBox.instagram{background: linear-gradient(45deg, #fdf497 0%, #fd5949 45%, #d6249f 65%, #285AEB 100%);}
+.campaignApplicationBox .formBox .channelList li a .iconBox.naver{background-color: var(--color-green-500);}
+.campaignApplicationBox .formBox .channelList li a .iconBox .tiktok{background-color: var(--color-black);}
+.campaignApplicationBox .formBox .channelList li a .iconBox .tiktok span{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: block; font-weight: 700; color: var(--color-white); font-size: 12px; text-align: center;}
+.campaignApplicationBox .formBox .channelList li a .iconBox.facebook{background-color: var(--color-blue-600);}
+.campaignApplicationBox .formBox .channelList li a .iconBox svg{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 11px; height: 11px; color: var(--color-white);}
+.campaignApplicationBox .formBox .channelList li a .textBox h3{margin: 0; font-size: 14px;}
+.campaignApplicationBox .formBox .channelList li a .textBox p{font-size: 12px; font-weight: 300;}
+.campaignApplicationBox .formBox .channelList li a .comBtn{padding: 0; width: 46px;}
+.campaignApplicationBox .comBtn:hover{background-color: var(--color-gray-100);}
+.campaignApplicationBox .border{margin: 25px 0; height: 1px; background-color: var(--border);}
 .campaignApplicationBox form{margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid var(--border);}
-.campaignApplicationBox .rightBox .imgBox{margin:0 auto 8px; height: 109px; border-radius: 10px; overflow: hidden;}
-.campaignApplicationBox .rightBox .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
+.campaignApplicationBox .rightBox .imgBox{position: relative; margin:0 auto 8px; height: 0; padding-top: 61%; border-radius: 10px; overflow: hidden;}
+.campaignApplicationBox .rightBox .imgBox img{position: absolute; top:0; left:0; right:0; bottom: 0; width: 100%; height: 100%; object-fit: cover;}
 .campaignApplicationBox .rightBox .topBox{margin-bottom: 8px;}
 .campaignApplicationBox .rightBox .topBox h3{margin-bottom: 3px; font-size: 14px;}
 .campaignApplicationBox .rightBox .topBox span{display: block; font-size: 12px; color: var(--color-gray-600);}
@@ -149,11 +195,13 @@
 
 @media (max-width: 1024px){
 
+  .campaignApplicationBox{max-width: none; width: 100%;}
   .campaignApplicationBox .leftBox,
   .campaignApplicationBox .rightBox{width: 100%;}
-  .campaignApplicationBox .rightBox .imgBox{height: 356px;}
   .campaignApplicationBox .layoutBox{flex-direction: column-reverse; gap: 20px 0;}
   .campaignApplicationBox .leftBox h3{font-size: 18px;}
+  .campaignApplicationBox .rightBox .imgBox{padding-top: 50%;}
+  .campaignApplicationBox .formBox .channelList li a .layoutBox{flex-direction: row;}
 
 }
 
@@ -161,7 +209,10 @@
 
   .campaignApplicationBox .leftBox,
   .campaignApplicationBox .rightBox{padding: 15px;}
-  .campaignApplicationBox .rightBox .imgBox{height: 270px;}
+
+  .campaignApplicationBox .rightBox .imgBox{padding-top: 55%;}
+  .campaignApplicationBox .formBox .labelBox{flex-wrap: wrap; gap: 5px;}
+
 
 }
 

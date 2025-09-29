@@ -20,6 +20,23 @@ $(function () {
     }
   });
 
+  //캠페인 신청하기 
+  $('.campaignApplicationBox .btn').click(function () {
+    if ($(this).hasClass('active')) {
+      $(this).removeClass('active');
+    } else {
+      $(this).addClass('active');
+    }
+  });
+
+  $('.campaignApplicationBox .channelList li a').click(function () {
+    if ($(this).hasClass('active')) {
+      $(this).removeClass('active');
+    } else {
+      $(this).addClass('active');
+    }
+  });
+
   //마이페이지
   $('.mypageBox aside .depth01 li .tabBtn').click(function () {
 
@@ -34,7 +51,7 @@ $(function () {
   })
 
   //자주묻는질문
-  $('.mypageBox .questionBtn').click(function(){
+  $('.mypageBox .questionBtn').click(function () {
     $(this).next().toggle();
   });
 
