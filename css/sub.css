@@ -2,6 +2,8 @@
 
 .contentBox{padding: 50px 0 100px;}
 
+/* 상단 */
+
 /* 캠페인 상세 */
 .campaignDetailBox .layoutBox{display: flex; gap: 0 20px;}
 .campaignDetailBox .leftBox{width: 64%;}

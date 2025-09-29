@@ -408,7 +408,103 @@ textarea{padding: 8px 8px 15px 12px; width: 100%; border: 0; background-color: v
 .comBtn{display: block; width: 100%; padding: 0 20px;  height: 42px; line-height: 42px; background-color: var(--color-primary); color: var(--color-white); text-align: center; font-weight: 700; border-radius: 5px; transition: all .5s;}
 .comBtn:hover{background-color: #0b3099;}
 .comBtn.grayTypeBtn{background-color: var(--color-gray-100); color: var(--color-gray-600);}
+.comBtn.borderTypeBtn{background-color: var(--color-white); border: 1px solid var(--border); color: #333;}
+.comBtn.comBtnSize{height: 32px; line-height: 32px; font-size: 12px;}
 
 /* 비활성화 */
 button:disabled,
 .disabled {opacity: .6; pointer-events: none; cursor: default;}
+
+/* 모달 */
+.modalWrap{display: flex; align-items: center; justify-content: center; position: absolute; top:0; left:0; right:0; bottom: 0; z-index: 99999; background-color: rgba(0,0,0,.5); }
+.modalWrap .modalBox{position: relative; max-width: 448px; width: 90%; margin: 0 auto; border-radius: 10px; overflow: hidden; background-color: var(--color-white);}
+.modalWrap .modalBox.applicationModal{padding: 0;}
+.modalWrap .modalBox.applicationModal .topBox{padding: 25px 20px 20px; background: linear-gradient(
+    135deg, #1d50dc 0%, #1e5af9 50%, #4231da 100% );}
+.modalWrap .modalBox.applicationModal .topBox p{text-align: center; font-size: 14px; color: #fff;}
+.modalWrap .modalBox.applicationModal .topBox p strong{display: block; margin-bottom: 6px; font-size: 12px; font-weight: 600;}
+.modalWrap .modalBox.applicationModal .topBox .iconBox{ position: relative; width: 70px; height: 70px; margin: 0 auto 15px; background-color: var(--color-white); border-radius: 50%; box-shadow: 0 5px 10px rgba(0,0,0,.2);}
+.modalWrap .modalBox.applicationModal .topBox .iconBox svg{width: 42px; height: 42px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: var(--color-primary);}
+.modalWrap .modalBox.applicationModal .icon01{position: absolute; top:10px; right:15px;}
+.modalWrap .modalBox.applicationModal .icon01 svg{width: 28px; height: 28px; color: var(--color-white); opacity: .3;}
+.modalWrap .modalBox.applicationModal .icon02{position: absolute; top:20px; left:10px;}
+.modalWrap .modalBox.applicationModal .icon02 svg{width: 21px; height: 21px; color: var(--color-white); opacity: .3;}
+.modalWrap .modalBox .modalContentBox{padding: 30px 20px 20px; background-color: var(--color-white);}
+.modalWrap .modalBox .modalContentBox .infoBox{margin-bottom: 20px; padding: 15px; border-radius: 5px; background-color: var(--color-blue-50);}
+.modalWrap .modalBox .modalContentBox .infoBox h1{position: relative; padding-left: 15px; margin-bottom: 7px; font-size: 14px; color: var(--color-primary);}
+.modalWrap .modalBox .modalContentBox .infoBox h1::before{content: ''; position: absolute; top:6px; left:0; width: 6px; height: 6px; border-radius: 50%; background-color: var(--color-primary);}
+.modalWrap .modalBox .modalContentBox .infoBox .infoList li{margin-bottom: 7px; display: flex; justify-content: space-between;}
+.modalWrap .modalBox .modalContentBox .infoBox .infoList li:last-child{margin-bottom: 0;}
+.modalWrap .modalBox .modalContentBox .infoBox .infoList li em,
+.modalWrap .modalBox .modalContentBox .infoBox .infoList li span{font-size: 12px;}
+.modalWrap .modalBox.applicationModal .stepBox .tit{display: flex; gap:0 8px;}
+.modalWrap .modalBox.applicationModal .stepBox .tit svg{margin-top: 2px; width: 14px; height: 14px; color: var(--color-primary);}
+.modalWrap .modalBox.applicationModal .stepBox .tit h2{margin-bottom: 7px; font-size: 14px;}
+.modalWrap .modalBox.applicationModal .stepBox .list{margin-bottom: 25px;}
+.modalWrap .modalBox.applicationModal .stepBox .list li{position: relative; padding-left: 13px; margin-bottom: 4px; font-size: 12px;}
+.modalWrap .modalBox.applicationModal .stepBox .list li::before{contain: ''; content: ''; position: absolute; top:6px; left:0; width: 5px; height: 5px; border-radius: 50%; background-color: var(--color-primary);}
+.modalWrap .modalBox.applicationModal .stepBox .list li:last-child{margin-bottom: 0;}
+.modalWrap .modalBox .btnBox{display: flex; gap: 0 10px;}
+.modalWrap .modalBox .btnBox .btn{display: block; padding: 8px 5px; flex: 1; border: 1px solid var(--border); text-align: center; font-weight: 700; font-size: 12px; border-radius: 5px;}
+.gradientBtn{margin-bottom: 20px; padding: 11px 10px; display: block; width: 100%; text-align: center; font-size: 14px; color: var(--color-white); background: linear-gradient(to right,#1d4fd9,#165cfa); border-radius: 5px; box-shadow: 0 5px 10px rgba(0,0,0,.2);} 
+
+
+
+
+
+.modalWrap .modalBox.withdrawModal .pointBox{padding: 12px 8px; display: flex; align-items: center; justify-content: space-between; background-color: var(--color-gray-50); border-radius: 5px;}
+.modalWrap .modalBox.withdrawModal .pointBox span{font-size: 12px; font-weight: 300;}
+.modalWrap .modalBox.withdrawModal .pointBox strong{font-size: 14px; font-weight: 700; color: var(--color-primary);}
+.modalWrap .modalBox{padding: 20px;}
+.modalWrap .modalBox.withdrawModal .applicationAmountBox .label{display: block; margin-bottom: 7px; font-size: 12px; font-weight: 700;}
+.modalWrap .modalBox.withdrawModal .applicationAmountBox .box{position: relative;}
+.modalWrap .modalBox.withdrawModal .applicationAmountBox em{position: absolute; top: 50%; transform: translateY(-50%); right: 10px; font-size: 14px;}
+.modalWrap .modalBox.withdrawModal .infoText{font-size: 12px; font-weight: 300;}
+.modalWrap .formBox .label{font-size: 12px; font-weight: 700;}
+.modalWrap .modalBox .infoListBox{margin-bottom: 30px; padding: 12px 10px 10px 15px; background: var(--color-blue-50); border-radius: 8px; border: 1px solid var(--color-blue-100);} 
+.modalWrap .modalBox .infoListBox h2{margin-bottom: 6px; font-size: 14px; color: var(--color-blue-900);}
+.modalWrap .modalBox .infoListBox .list li{margin-bottom: 3px; font-size: 12px; color: var(--color-blue-800);}
+.modalWrap .modalBox .infoListBox .list li:last-child{margin-bottom: 0;}
+.modalWrap .modalBox .modalTitleBox{margin-bottom: 26px;}
+.modalWrap .modalBox .modalTitleBox .layoutBox{display: flex; align-items: center; gap: 0 6px;}
+.modalWrap .modalBox .modalTitleBox h1{font-size: 16px;}
+.modalWrap .modalBox .modalTitleBox .iconBox{position: relative; width: 28px; height: 28px; border-radius: 50%; background-color: var(--color-primary);}
+.modalWrap .modalBox .modalTitleBox .iconBox svg{position: absolute; top:50%; left: 50%; transform: translate(-50%, -50%); width: 14px; height: 14px; color: var(--color-white);}
+.modalWrap .modalBox .modalTitleBox p{margin-top: 7px; font-size: 12px; font-weight: 300;}
+.modalWrap .modalBox.addChannelModal .iconBox{background: 0;}
+.modalWrap .modalBox.addChannelModal .layoutBox{gap: 0 3px;}
+.modalWrap .modalBox.addChannelModal .iconBox svg{color: #000; width: 18px; height: 18px; font-weight: 500;}
+.modalWrap .modalBox.submitCampaignModal{max-height: calc(100dvh - 100px); overflow-y: auto;}
+.modalWrap .modalBox.submitCampaignModal .channelList li{margin-bottom: 15px; padding: 15px;  background-color: var(--color-blue-50); border-radius: 10px; border: 2px solid var(--color-blue-500);}
+.modalWrap .modalBox.submitCampaignModal .channelList li a{margin-bottom: 10px; display: flex; align-items: center; gap: 0 15px; }
+.modalWrap .modalBox.submitCampaignModal .channelList li a .iconBox{ position: relative; width: 35px; height: 35px; border-radius: 50%;}
+.modalWrap .modalBox.submitCampaignModal .channelList li a .iconBox svg{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff;}
+.modalWrap .modalBox.submitCampaignModal .channelList li a .iconBox.youtube{background-color: var(--color-red-500);}
+.modalWrap .modalBox.submitCampaignModal .channelList li a .iconBox.instagram{background: linear-gradient(45deg, #fdf497 0%,#fd5949 45%, #d6249f 65%, #285AEB 100% );}
+.modalWrap .modalBox.submitCampaignModal .channelList li a .iconBox.tiktok{background-color: var(--color-black);}
+.modalWrap .modalBox.submitCampaignModal .channelList li a .iconBox.tiktok span{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: block; font-weight: 700; color: var(--color-white); font-size: 12px; text-align: center;}
+.modalWrap .modalBox.submitCampaignModal .channelList li a .iconBox.naver{background-color: var(--color-green-500);}
+.modalWrap .modalBox.submitCampaignModal .channelList li a .iconBox.facebook{background-color: var(--color-blue-600);}
+.modalWrap .modalBox.submitCampaignModal .channelList li a .textBox h2{font-size: 14px; font-weight: 600;}
+.modalWrap .modalBox.submitCampaignModal .channelList li a .textBox p{font-size: 12px;}
+.modalWrap .modalBox.submitCampaignModal h3{margin-bottom: 10px; font-size: 12px;}
+.modalWrap .modalBox.submitCampaignModal .inputTextBox input{background-color: var(--color-white);}
+.modalWrap .modalBox.submitCampaignModal .infoText{margin-bottom: 20px; font-size: 12px;}
+
+.modalWrap .modalBox.assetDownloadModal .modalTitleBox .iconBox{background:0;}
+.modalWrap .modalBox.assetDownloadModal .modalTitleBox .iconBox svg{color: #000; width: 18px; height: 18px; font-weight: 500;}
+.modalWrap .modalBox.assetDownloadModal .modalTitleBox strong{display: block; margin: 5px 0 2px;  font-size: 12px; color: var(--color-primary); font-weight: 600;}
+.modalWrap .modalBox.assetDownloadModal .modalTitleBox p{margin: 0;}
+.modalWrap .modalBox.assetDownloadModal .downloadBox{padding-bottom: 15px; margin-bottom: 35px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border);}
+
+.modalWrap .modalBox.assetDownloadModal .downloadBox .layoutBox{display: flex; align-items: center; gap: 0 7px; }
+.modalWrap .modalBox.assetDownloadModal .downloadBox button{padding: 10px 15px 10px 10px; width: auto; flex-shrink: 0; display: flex; align-items: center; gap: 0 5px; text-align: left;}
+.modalWrap .modalBox.assetDownloadModal .downloadBox button svg{width: 14px; height: 14px;}
+.modalWrap .modalBox.assetDownloadModal .downloadBox .selectText{font-size: 12px;}
+.modalWrap .modalBox.assetDownloadModal .downloadBox .searchBtn{padding: 0 10px; width: auto;}
+
+@media (max-width: 480px){
+
+  .modalWrap .modalBox.assetDownloadModal .downloadBox{flex-direction: column; align-items: flex-start; gap: 10px 0;}
+
+}
