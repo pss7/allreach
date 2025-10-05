@@ -368,6 +368,12 @@ main{flex: 1; padding: 110px 0 70px;}
 #footerWrap .footerBottomBox .footerInfoList li:last-child {margin-bottom: 0;}
 #footerWrap .copyright {display: block; padding: 25px 0 0; text-align: center; font-size: 11px;}
 
+@media (max-width: 1024px){
+
+  #footerWrap{padding: 60px 0 78px;}
+
+}
+
 @media (max-width: 767px) {
 
   #footerWrap .footerTopBox .leftBox p {margin-bottom: 15px;}
@@ -447,11 +453,6 @@ button:disabled,
 .modalWrap .modalBox .btnBox{display: flex; gap: 0 10px;}
 .modalWrap .modalBox .btnBox .btn{display: block; padding: 8px 5px; flex: 1; border: 1px solid var(--border); text-align: center; font-weight: 700; font-size: 12px; border-radius: 5px;}
 .gradientBtn{margin-bottom: 20px; padding: 11px 10px; display: block; width: 100%; text-align: center; font-size: 14px; color: var(--color-white); background: linear-gradient(to right,#1d4fd9,#165cfa); border-radius: 5px; box-shadow: 0 5px 10px rgba(0,0,0,.2);} 
-
-
-
-
-
 .modalWrap .modalBox.withdrawModal .pointBox{padding: 12px 8px; display: flex; align-items: center; justify-content: space-between; background-color: var(--color-gray-50); border-radius: 5px;}
 .modalWrap .modalBox.withdrawModal .pointBox span{font-size: 12px; font-weight: 300;}
 .modalWrap .modalBox.withdrawModal .pointBox strong{font-size: 14px; font-weight: 700; color: var(--color-primary);}
@@ -506,5 +507,17 @@ button:disabled,
 @media (max-width: 480px){
 
   .modalWrap .modalBox.assetDownloadModal .downloadBox{flex-direction: column; align-items: flex-start; gap: 10px 0;}
+
+}
+
+/* 하단 */
+#bottomBar{display: none; align-items: center; position: fixed; bottom: 0; left:0; width: 100%; background-color: #fff; border-top: 1px solid var(--border);}
+#bottomBar a{padding: 9px 0; display: block; flex: 1; text-align: center;}
+#bottomBar a svg{width: 17px; height: 17px;}
+#bottomBar a span{display: block; font-size: 11px; line-height: 1;}
+
+@media (max-width: 1199px){
+
+  #bottomBar{display: flex;}
 
 }
