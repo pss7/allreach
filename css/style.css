@@ -285,7 +285,7 @@ main{flex: 1; padding: 110px 0 70px;}
 #headerWrap .headerTopBox .linkBox .linkList li a {display: block; font-size: 12px; font-weight: 700; transition: all .15s;}
 #headerWrap .headerTopBox .linkBox .linkList li a:hover {color: var(--color-primary);}
 #headerWrap .headerTopBox .mobileAuthBox{display: none;}
-#headerWrap .headerTopBox .authBox a {display: block; padding: 7px 12px; border-radius: 7px; background-color: var(--color-primary); color: var(--color-white); font-size: 12px; text-align: center; font-weight: 500;
+#headerWrap .headerTopBox .authBox .login{display: block; padding: 7px 12px; border-radius: 7px; background-color: var(--color-primary); color: var(--color-white); font-size: 12px; text-align: center; font-weight: 500;
   transition: all .15s;}
 #headerWrap .headerTopBox .authBox a:hover {background-color: var(--color-blue-600);}
 #headerWrap .headerBottomWrap {box-shadow: 0 2px 2px rgba(0, 0, 0, .1);}
@@ -294,8 +294,33 @@ main{flex: 1; padding: 110px 0 70px;}
 #headerWrap .headerBottomBox a:hover { color: var(--color-primary);}
 #headerWrap .headerBottomBox a.active{color: var(--color-primary);}
 #headerWrap .alarmBox{position: relative;}
-#headerWrap .alarmBox .alarmBtn{display: flex; align-items: center;}
-#headerWrap .alarmBox .count{position: absolute; top:-10px; right:-12px; padding-top: 1px; display: flex; align-items: center; justify-content: center; width: 18px; height: 18px; font-size: 11px; color: #fff; font-weight: 700; background-color: var(--color-red-500); border-radius: 50%; text-align: center; line-height: 1;}
+#headerWrap .alarmBox .box{position: relative;}
+#headerWrap .alarmBox .box .alarmBtn{display: flex; align-items: center;}
+#headerWrap .alarmBox .box .count{position: absolute; top:-10px; right:-12px; padding-top: 1px; width: 18px; height: 18px; font-size: 11px; color: #fff; font-weight: 700; background-color: var(--color-red-500); border-radius: 50%; text-align: center;}
+#headerWrap .alarmBox .alarmContentBox{display: none; height: 424px; position: absolute; top:27px; right:0; width: 280px; border-radius: 10px; border: 1px solid var(--border); background-color: #fff;}
+#headerWrap .alarmBox .alarmContentBox .alarmTopBox{padding: 10px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border);}
+#headerWrap .alarmBox .alarmContentBox .alarmTopBox h2{font-size: 14px; font-weight: 500; }
+#headerWrap .alarmBox .alarmContentBox .alarmTopBox span{display: block; padding: 2px 10px; font-size: 12px; border-radius: 50px;  color: var(--color-primary); background-color: var(--color-blue-50);}
+#headerWrap .alarmBox .alarmContentBox .alarmList{height: 340px; overflow-y: auto;}
+#headerWrap .alarmBox .alarmContentBox .alarmList li a.unread{background-color: var(--color-blue-50);}
+#headerWrap .alarmBox .alarmContentBox .alarmList li a.unread::after{content: ''; position: absolute; top:13px; right:20px; border: 4px solid var(--color-primary); border-radius: 10px;}
+#headerWrap .alarmBox .alarmContentBox .alarmList li a{position: relative; padding:10px 10px 10px 35px; display: block; text-align: left; background-color: var(--color-white); transition: all .3s; border-radius: 0;}
+#headerWrap .alarmBox .alarmContentBox .alarmList li a:hover{background-color: var(--color-gray-100);}
+#headerWrap .alarmBox .alarmContentBox .alarmList li a .iconBox{position: absolute; top:12px; left:10px;}
+#headerWrap .alarmBox .alarmContentBox .alarmList li a .iconBox svg{width: 14px; height: 14px;}
+#headerWrap .alarmBox .alarmContentBox .alarmList li a h3{margin-bottom: 3px; font-size: 11px; color: var(--color-gray-900);}
+#headerWrap .alarmBox .alarmContentBox .alarmList li a p{margin-bottom: 5px; font-size: 10px; color: var(--color-gray-600); line-height: 1.3;}
+#headerWrap .alarmBox .alarmContentBox .alarmList li a .dateBox{display: flex; gap: 0 5px; align-items: center;}
+#headerWrap .alarmBox .alarmContentBox .alarmList li a .dateBox span{font-size: 10px; color: var(--color-gray-500);}
+#headerWrap .alarmBox .alarmContentBox .alarmList li a .iconBox.approval svg{color: var(--color-green-600);}
+#headerWrap .alarmBox .alarmContentBox .alarmList li a .iconBox.deadline svg{color: var(--color-orange-600);}
+#headerWrap .alarmBox .alarmContentBox .alarmList li a .iconBox.new svg{color: var(--color-blue-600);}
+#headerWrap .alarmBox .alarmContentBox .alarmList li a .iconBox.reward svg{color: var(--color-red-600);}
+#headerWrap .alarmBox .alarmContentBox .alarmList li a .iconBox.update svg{color: var(--color-gray-600);}
+#headerWrap .alarmBox .alarmContentBox .btnBox{padding: 0 10px; height: 40px; border-top: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between;}
+#headerWrap .alarmBox .alarmContentBox .btnBox .btn{font-size: 10px; color: var(--color-gray-500); transition: all .3s;}
+#headerWrap .alarmBox .alarmContentBox .btnBox .btn:hover{color: var(--color-primary);}
+#headerWrap .alarmBox .alarmContentBox .btnBox .alarmView{background-color: #fff; color: var(--color-primary); font-size: 10px;}
 #headerWrap .alarmBox svg{width: 18px; height: 18px;}
 #headerWrap .accountBox{position: relative;}
 #headerWrap .accountBox .accountBtn{position: relative; display: flex; align-items: center; gap: 0 13px;}
@@ -308,7 +333,7 @@ main{flex: 1; padding: 110px 0 70px;}
 #headerWrap .accountBox .mypageInfoBox .accountInfoBox span{display: block; font-size: 12px;}
 #headerWrap .accountBox .mypageInfoBox .accountInfoBox em{display: block; font-size: 10px;}
 #headerWrap .accountBox .mypageInfoBox .mypageList{padding: 10px 0; border-bottom: 1px solid var(--border);}
-#headerWrap .accountBox .mypageInfoBox .mypageList li a{ display: flex; align-items: center; gap: 0 8px; padding: 7px 10px 7px 15px; background-color: var(--color-white); text-align: left; color: #333; transition: all .15s;}
+#headerWrap .accountBox .mypageInfoBox .mypageList li a{ display: flex; align-items: center; gap: 0 8px; padding: 7px 10px 7px 15px; background-color: var(--color-white); text-align: left; color: #333; transition: all .15s; font-size: 12px;}
 #headerWrap .accountBox .mypageInfoBox .mypageList li a svg{width: 15px; height: 15px;}
 #headerWrap .accountBox .mypageInfoBox .mypageList li a:hover{color: var(--color-primary); background-color: var(--color-gray-100); border-radius: 0;}
 #headerWrap .accountBox .mypageInfoBox .logoutBtn{width: 100%; display: flex; align-items: center; gap: 0 8px; padding: 7px 10px 7px 15px; color: var(--color-red-600); font-size: 12px;}
@@ -336,6 +361,7 @@ main{flex: 1; padding: 110px 0 70px;}
 
   #headerWrap .headerTopBox .searchBox{width: 50%;}
   #headerWrap .authBox .layoutBox{gap: 0 20px;}
+  #headerWrap .alarmBox .alarmContentBox{position: fixed; top:55px; left:50%; transform: translateX(-50%); width: 95%;}
 
 }
 

@@ -75,4 +75,21 @@ $(function () {
     $('#headerWrap .accountBox .mypageInfoBox').removeClass('active');
   });
 
+  //알림
+  $('#headerWrap .alarmBox .box .alarmBtn').click(function (e) {
+    e.stopPropagation();
+    if ($(this).parents('.alarmBox').find('.alarmContentBox').hasClass('active')) {
+      $('.alarmContentBox').removeClass('active');
+      $('.alarmContentBox').fadeOut();
+    } else {
+      $('.alarmContentBox').addClass('active');
+      $('.alarmContentBox').fadeIn();
+    }
+  })
+
+  $('#wrap').click(function () {
+    $('.alarmContentBox').removeClass('active');
+    $('.alarmContentBox').fadeOut();
+  })
+
 });
